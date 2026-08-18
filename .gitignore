@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data / secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials.json
+
+# Logs
+*.log
+logs/
+
+# Reports generated at runtime
+reports/validation_report.json
+!reports/.gitkeep
+
+# Zip artifacts (keep the zip for release, exclude from tracking if desired)
+# SAS_Multimetric_Tribunal_Public_v1_0_0.zip

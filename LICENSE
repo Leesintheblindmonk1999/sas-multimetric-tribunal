@@ -1,0 +1,26 @@
+# Durante Invariance License v1.0
+
+Copyright (c) 2026 Gonzalo Emir Durante
+
+Registry: TAD EX-2026-18792778 (Argentina)
+DOI: 10.5281/zenodo.19702379
+
+## Terms
+
+1. **Attribution**: You must give appropriate credit to the original author (Gonzalo Emir Durante), provide a link to the license, and indicate if changes were made.
+
+2. **Non-Commercial**: This software may not be used for commercial purposes without explicit written permission from the author.
+
+3. **Research Use**: Academic and research use is permitted and encouraged. Publications using this software must cite the original work:
+   - SAS Standard: 10.5281/zenodo.19702379
+   - SAS Multimetric Tribunal: This repository
+
+4. **Integrity**: The structural coherence thresholds (κD = 0.56, κR = 0.15) must not be modified when reporting results. Derivative works may use different thresholds but must clearly document any changes.
+
+5. **No Warranty**: This software is provided "as is" without warranty of any kind, express or implied.
+
+6. **Liability**: The author shall not be liable for any damages arising from the use of this software.
+
+## Full Legal Text
+
+For the complete legal text, visit: https://github.com/Leesintheblindmonk1999/SAS/blob/main/LICENSE.md
