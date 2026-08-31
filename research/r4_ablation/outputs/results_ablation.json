@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "kappa_d": 0.56,
+    "kappa_r": 0.15,
+    "n_pairs": 1800,
+    "sampled": true
+  },
+  "results": [
+    {
+      "variant": "baseline_multiplicative",
+      "description": "Tribunal completo (multiplicativo)",
+      "f1": 0.9955,
+      "precision": 1.0,
+      "recall": 0.9911,
+      "accuracy": 0.9956,
+      "fp": 0,
+      "fn": 8,
+      "tp": 892,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 699,
+        "RUPTURA_RECUPERABLE": 193,
+        "COHERENTE": 908
+      }
+    },
+    {
+      "variant": "weighted_penalties",
+      "description": "Promedio ponderado de penalizaciones",
+      "f1": 0.9955,
+      "precision": 1.0,
+      "recall": 0.9911,
+      "accuracy": 0.9956,
+      "fp": 0,
+      "fn": 8,
+      "tp": 892,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 651,
+        "RUPTURA_RECUPERABLE": 241,
+        "COHERENTE": 908
+      }
+    },
+    {
+      "variant": "weighted_global",
+      "description": "Promedio ponderado global de metricas",
+      "f1": 0.2387,
+      "precision": 1.0,
+      "recall": 0.1356,
+      "accuracy": 0.5678,
+      "fp": 0,
+      "fn": 778,
+      "tp": 122,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 0,
+        "RUPTURA_RECUPERABLE": 122,
+        "COHERENTE": 1678
+      }
+    },
+    {
+      "variant": "no_stg",
+      "description": "Sin SourceTargetGuard",
+      "f1": 0.995,
+      "precision": 1.0,
+      "recall": 0.99,
+      "accuracy": 0.995,
+      "fp": 0,
+      "fn": 9,
+      "tp": 891,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 647,
+        "RUPTURA_RECUPERABLE": 244,
+        "COHERENTE": 909
+      }
+    },
+    {
+      "variant": "no_cre",
+      "description": "Sin CRE (curvatura semantica)",
+      "f1": 0.9955,
+      "precision": 1.0,
+      "recall": 0.9911,
+      "accuracy": 0.9956,
+      "fp": 0,
+      "fn": 8,
+      "tp": 892,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 691,
+        "RUPTURA_RECUPERABLE": 201,
+        "COHERENTE": 908
+      }
+    },
+    {
+      "variant": "no_negation",
+      "description": "Sin negation_penalty",
+      "f1": 0.9944,
+      "precision": 1.0,
+      "recall": 0.9889,
+      "accuracy": 0.9944,
+      "fp": 0,
+      "fn": 10,
+      "tp": 890,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 613,
+        "RUPTURA_RECUPERABLE": 277,
+        "COHERENTE": 910
+      }
+    },
+    {
+      "variant": "no_flow",
+      "description": "Sin flow_penalty",
+      "f1": 0.9955,
+      "precision": 1.0,
+      "recall": 0.9911,
+      "accuracy": 0.9956,
+      "fp": 0,
+      "fn": 8,
+      "tp": 892,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 682,
+        "RUPTURA_RECUPERABLE": 210,
+        "COHERENTE": 908
+      }
+    },
+    {
+      "variant": "no_arithmetic",
+      "description": "Sin arithmetic_penalty",
+      "f1": 0.9955,
+      "precision": 1.0,
+      "recall": 0.9911,
+      "accuracy": 0.9956,
+      "fp": 0,
+      "fn": 8,
+      "tp": 892,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 699,
+        "RUPTURA_RECUPERABLE": 193,
+        "COHERENTE": 908
+      }
+    },
+    {
+      "variant": "no_reference",
+      "description": "Sin reference_penalty",
+      "f1": 0.9955,
+      "precision": 1.0,
+      "recall": 0.9911,
+      "accuracy": 0.9956,
+      "fp": 0,
+      "fn": 8,
+      "tp": 892,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 699,
+        "RUPTURA_RECUPERABLE": 193,
+        "COHERENTE": 908
+      }
+    },
+    {
+      "variant": "lexical_only",
+      "description": "Solo lexical_baseline",
+      "f1": 0.9939,
+      "precision": 1.0,
+      "recall": 0.9878,
+      "accuracy": 0.9939,
+      "fp": 0,
+      "fn": 11,
+      "tp": 889,
+      "tn": 900,
+      "zone_distribution": {
+        "COLAPSO_ESTRUCTURAL": 487,
+        "RUPTURA_RECUPERABLE": 402,
+        "COHERENTE": 911
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+======================================================================
+SAS MULTIMETRIC TRIBUNAL - R5 MODULE PRECISION REPORT
+======================================================================
+Items evaluated: 70
+Items with expected trigger: 70
+
+Module                        Exp   TP   Recall  Fired     Prec  Pure   Purity
+----------------------------------------------------------------------
+lexical_baseline_score         10    1    0.100      1    1.000     1    0.100
+source_target_guard            10   10    1.000     14    0.714    10    1.000
+cre_isi                        10    0    0.000      0    0.000     0    0.000
+flow_penalty                   10    0    0.000      0    0.000     0    0.000
+negation_penalty               10    4    0.400      7    0.571     4    0.400
+arithmetic_penalty             10    0    0.000      0    0.000     0    0.000
+reference_penalty              10    0    0.000      0    0.000     0    0.000
+----------------------------------------------------------------------
+TOTAL                          70   15    0.214     22    0.682    15    0.214
+
+CONTAMINATION (fired without being expected)
+----------------------------------------------------------------------
+  source_target_guard: fired extra 4 times
+  negation_penalty: fired extra 3 times
+
+NOTE: source_target_guard fires on ANY loose-number change (its quantity-
+mutation branch). arithmetic_penalty items change a number, so STG is an
+expected 'extra' there - core behavior, not corpus contamination.
+
+STATUS: PILOT IN REVIEW (extras detected)

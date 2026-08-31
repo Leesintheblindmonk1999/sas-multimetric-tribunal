@@ -1,0 +1,1312 @@
+{
+  "meta": {
+    "n_pairs_sampled": 100,
+    "n_pairs_valid": 20790,
+    "kappa_d": 0.56,
+    "kappa_r": 0.15,
+    "methods_used": [
+      "synonym",
+      "backtranslation"
+    ],
+    "methods_available": [
+      "synonym",
+      "backtranslation"
+    ]
+  },
+  "summary": {
+    "synonym": {
+      "n_evaluated": 100,
+      "false_positives": 100,
+      "false_positive_rate": 1.0,
+      "zone_distribution": {
+        "A": 0,
+        "B": 15,
+        "F-S": 85
+      },
+      "mean_isi": 0.0554
+    },
+    "backtranslation": {
+      "n_evaluated": 27,
+      "false_positives": 26,
+      "false_positive_rate": 0.963,
+      "zone_distribution": {
+        "A": 1,
+        "B": 10,
+        "F-S": 16
+      },
+      "mean_isi": 0.1725
+    }
+  },
+  "detailed_results": [
+    {
+      "source": "Knowledge: The Mummy Returns is written by Stephen SommersStephen Sommers wrote Van Helsing. Van Helsing is starring Silvia CollocaVan Helsing is written by Stephen Sommers",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: John Seelye wrote The Adventures of Tom Sawyer",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Neill Blomkamp wrote District 9. District 9 has genre ActionDistrict 9 is written by Neill BlomkampNeill Blomkamp directed Elysium. Elysium has genre Thriller",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Philadelphia Eagles : `~Team Owned`: Jeffrey LurieJeffrey Lurie : `Team Owned`: Philadelphia Eagles. Philadelphia Eagles : `~Game`: Omar GaitherPhiladelphia Eagles : `~Game`: Omar Gaither",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Do Androids Dream of Electric Sheep? is written by Philip K. Dick",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ally Condie wrote Matched",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Alice's Adventures in Wonderland is written by Martin Gardner",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: In classical music, arioso ] (also aria parlante ] ) is a type of solo vocal piece, usually occurring in an opera or oratorio, falling somewhere between recitative and aria in style. It resembles sung ordinary speech more than a formal musical composition.",
+      "original_response": "Question: What differentiates Recitative from Arioso music style?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "inquiry : What differentiates Recitative from Arioso music style ?",
+      "isi_final": 0.043902,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Manchester United F.C. : `~Team coached`: Alex FergusonAlex Ferguson : `Team coached`: Manchester United F.C.Manchester United F.C. : `~Sponsorship`: Nike, Inc.",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: \"One Perfect Day\" is a song written by Phillip Buckle, David Hobson, and Paul van Dyk and recorded by Australian singer Lydia Denker as the theme to the 2004 film \"One Perfect Day\" (2004).David Hobson (born 18 November 1960) is an Australian opera singer and composer.",
+      "original_response": "Question: \"One Perfect Day\" is a song written by Phillip Buckle, Paul van Dyk and an Australian opera singer and what?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : `` One Perfect mean solar day '' is a vocal written by Phillip Buckle , Paul vanguard Dyk and an Australian opera singer and what ?",
+      "isi_final": 0.312195,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ludwig van Beethoven ( , ; ] ; baptised 17 December 177026 March 1827) was a German composer and pianist.Heinrich August Marschner (16 August 1795 – 14 December 1861) was the most important composer of German opera between Weber and Wagner.",
+      "original_response": "Question: In between Ludwig van Beethoven and Heinrich Marschner who was the most important composer of German opera between Weber and Wagner?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : In between Ludwig van Ludwig van Beethoven and Heinrich Marschner who be the most important composer of German opera between Weber and Otto Wagner ?",
+      "isi_final": 0.355556,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Truman Capote starred in Murder by Death (Comedy)Murder by Death (Comedy) is starring Truman CapoteTruman Capote starred in Murder by Death (Comedy)",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Real Madrid C.F. : `~Team coached`: José Mourinho",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The 40-Year-Old Virgin is starring Steve Carell",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Frank Coraci starred in Here Comes the Boom. Here Comes the Boom is written by Kevin James",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Harper Lee wrote To Kill a Mockingbird. To Kill a Mockingbird has genre Fiction",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Louis Dearborn L'Amour ( ; March 22 1908 –June 10 1988) was an American novelist and short story writer.David Herbert Lawrence (11 September 1885 – 2 March 1930) was an English novelist, poet, playwright, essayist, literary critic and painter.",
+      "original_response": "Question: Who has more scope of profession, Louis L'Amour or D. H. Lawrence?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Who has more compass of profession , Joseph Louis Barrow L'Amour or D. H. Lawrence ?",
+      "isi_final": 0.031304,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Buffalo Springfield was an American rock band active from 1966 to 1968 containing Stephen Stills, Neil Young, and Richie Furay, which released three albums, and several singles including \"For What It's Worth\". It was performed by Buffalo Springfield, recorded on December 5, 1966, and released as a single on Atco Records in January 1967.",
+      "original_response": "Question: Buffalo Springfield recorded a song in 1966 released on what record label?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Buffalo Springfield recorded a song in 1966 released on what record label ?",
+      "isi_final": 0.079412,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Game is starring Sean PennSean Penn directed Into the Wild. Into the Wild has genre Biographical filmInto the Wild is starring Zach Galifianakis",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Chappaquiddick is an upcoming American drama film directed by John Curran and written by Taylor Allen and Andrew Logan.Cecil Taylor Nichols (born March 3, 1959 in Louisville, Kentucky) is an American actor best known for roles in the Whit Stillman films \"Metropolitan\", \"Barcelona\", \"The Last Days of Disco\", and \"Damsels in Distress\".",
+      "original_response": "Question: Who is the director of the upcoming movie which features the actor who is known for playing Whit Stillman?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Who be the manager of the upcoming moving-picture show which feature the player who is known for playing smidge Stillman ?",
+      "isi_final": 0.0975,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: LeBron James : `Award Won`: NBA All-Rookie TeamNBA All-Rookie Team : `~Award Won`: Stephen CurryStephen Curry : `Gender`: Male. Male : `Institution`: Indiana State University",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: \" and \"What Do You Care What Other People Think?\", both written by Feynman and Ralph Leighton.: Further Adventures of a Curious Character (1988) is the second of two books consisting of transcribed and edited, oral reminiscences from American physicist Richard Feynman. It follows \"Surely You're Joking, Mr. Feynman!",
+      "original_response": "Question: The second of two books consisting of transcribed and edited, oral reminiscences from American physicist Richard Feynman which follows \"Surely You're Joking, Mr. Feynman!\" was written by Richard Feynman and who else?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : The second of two books consisting of transcribed and edited , oral reminiscence from American physicist Richard Feynman which follow `` sure You 're joke , Mister . Feynman ! '' was written by Richard Feynman and who else ?",
+      "isi_final": 0.164423,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  His diverse catalog of clients include Pharrell, Justin Timberlake, Christina Aguilera, Florence + the Machine, Shakira, Bleachers, Whitney Houston, Cobra Starship, Santigold, Jewel, Lenny Kravitz, Kelly Clarkson, Girls' Generation, Patti Labelle, James Blunt, Ludacris, and Huang Zitao. Her debut album, \"Santogold\", including the singles \"Creator\" and \"L.E.S. Artistes\", received very favorable reviews in 2008. Her second album, \"Master of My Make-Believe\", was released in 2012.",
+      "original_response": "Question: What was the second album by the singer who was a client of Andros Rodriguez, and whose debut album was  \"Santogold\"?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : What be the 2d record album by the vocaliser who was a client of Andros Rodriguez , and whose launching record album was `` Santogold '' ?",
+      "isi_final": 0.022168,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ocean's Thirteen : `~Sequel`: Ocean's Twelve",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Brookhaven High School was a public high school located on the northeast side of Columbus, Ohio, United States. He was drafted by the New England Patriots seventh overall in the 1996 NFL Draft, and also played for the Green Bay Packers and Dallas Cowboys.",
+      "original_response": "Question: In what city is the high school which was attended by the football player drafted by the New England Patriots seventh overall in the 1996 NFL Draft located?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "interrogation : In what city is the high school which be attend by the football participant drafted by the New England patriot seventh overall in the 1996 NFL Draft turn up ?",
+      "isi_final": 0.208,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Kerry Blue Terrier (also known as the Irish Blue Terrier) () is a breed of dog.The Norwegian Lundehund (\"Norsk Lundehund\") is a small dog breed of the Spitz type that originates from Norway.",
+      "original_response": "Question: What do both Norwegian Lundehund and Kerry Blue Terrier have in coman",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "interrogation : What make both Norwegian Lundehund and Kerry blueness Terrier hold in coman",
+      "isi_final": 0.043636,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Blood Promise has genre Urban fantasy",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "What is the largest desert in the world?",
+      "original_response": "The Antarctic Desert is the largest desert in the world",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "The Antarctic Zone Desert be the largest desert in the world",
+      "isi_final": 0.225,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Damian Lillard : `~has_person`: Oakland",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  He played Dr. Carlisle Cullen in the film adaptations of the \"Twilight\" novel series, and is also known for his role as Mike Dexter in the 1998 film \"Can't Hardly Wait\".Can't Hardly Wait is a 1998 American teen comedy film written and directed by Deborah Kaplan and Harry Elfont.",
+      "original_response": "Question: Peter Facinelli is known for his role as Mike Dexter in a 1998 American teen comedy film that was written and directed by Deborah Kaplan and who?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Saint Peter Facinelli is known for his office as Mike Dexter in a 1998 American teen comedy film that was written and direct by Deborah Kaplan and who ?",
+      "isi_final": 0.310204,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Wollongong Wolves Football Club is an Australian semi-professional football club based in Wollongong, in the Illawarra region of New South Wales. The club plays its home games out of WIN Stadium.Wollongong Showground, known as WIN Stadium for sponsorship reasons, is a multi-purpose stadium located in Wollongong, Australia. The stadium was officially opened in 1911.",
+      "original_response": "Question: When was the stadium Wollongong Wolves Football Club plays at opened?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : When be the arena Wollongong Wolves football game Club plays at open ?",
+      "isi_final": 0.045,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Derrick Rose : `Position(s)`: Point guardPoint guard : `~Position(s)`: Will Bynum",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Elton John starred in The Road to El Dorado. The Road to El Dorado is starring Kenneth Branagh",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Alex Morgan : `Sport played`: Football",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: John Bruce Yeh (born 1957) is an American clarinetist. Yeh is the founder and director of the chamber ensemble, Chicago Pro Musica, whose first recording, Stravinsky's \"L'Histoire du soldat\", won the 1985 Grammy Award for the Best New Classical Artist.L'Histoire du soldat (The Soldier's Tale) is a theatrical work \"to be read, played, and danced\" (\"lue, jouée et dansée \") by three actors and one or several dancers, accompanied by a septet of instruments. The piece was conceived by Igor Stravinsky and Swiss writer C. F. Ramuz based on a Russian folk tale (\"The Runaway Soldier and the Devil\") drawn from the collection of Alexander Afanasyev.",
+      "original_response": "Question: Joh Bruce Yeh founded a chamber ensemble who won a Grammy in 1985 for their recording of this work based on what Rusian folk tale?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "query : Joh Bruce Yeh founded a chamber ensemble who win a Grammy in 1985 for their recording of this work base on what Rusian folk tale ?",
+      "isi_final": 0.042271,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Terminator 2: Judgment Day is starring Jenette Goldstein",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ed Sheeran : `~Recorded by`: The A Team (Musical Recording) #4The A Team (Musical Recording) #4 : `Recorded by`: Ed Sheeran. Ed Sheeran is a/an Music executiveMusic executive has example: Justin Bieber",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Korean War (in South Korean Hangul: 한국전쟁 ; Hanja: 韓國戰爭 ; RR: \"Hanguk Jeonjaeng \" , \"Korean War\"; in North Korean Chosŏn'gŭl: 조국해방전쟁 ; Hancha: 祖國解放戰爭 ; MR: \"Choguk haebang chǒnjaeng \" , \"Fatherland Liberation War\"; 25 June 1950 – 27 July 1953) was a war between North Korea (with the support of China and the Soviet Union) and South Korea (with the principal support of the United States).The Battle of Mindanao was fought by United States forces and allied Filipino guerrillas against the Japanese from 10 March - 15 August 1945 on the island of Mindanao in the Philippines in a series of actions officially designated as Operation VICTOR V.",
+      "original_response": "Question: Which lasted longer, Korean War or Battle of Mindanao?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Which lasted longer , Korean warfare or Battle of Mindanao ?",
+      "isi_final": 0.051282,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Stargirl has genre Young-adult fiction",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Camassia is a genus of plants in the asparagus family native to Canada and the United States.Chelone is a genus of four species of perennial herbaceous plants native to eastern North America.",
+      "original_response": "Question: Are Camassia and Chelone both native to North America?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "interrogation : Are Camassia and Chelone both native to North America ?",
+      "isi_final": 0.2,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Charley and the Angel is a 1973 Disney family/comedy film set in an unidentified small city in the 1930s Depression-era Midwestern United States and starring Fred MacMurray in one of his final film appearances and his last movie for Disney.Planes is a 2013 American 3D computer-animated sports comedy film produced by DisneyToon Studios and released by Walt Disney Pictures.",
+      "original_response": "Question: Which was released second, Charley and the Angel or Planes?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "inquiry : Which be released second , Charley and the Angel or Planes ?",
+      "isi_final": 0.05,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Sheryl Gascoigne (née Failes; born 24 September 1965) is a British television personality and author. She is the former wife of footballer Paul Gascoigne and the mother of glamour model Bianca Gascoigne. She is the daughter of Sheryl Gascoigne, and adopted daughter of Paul Gascoigne, a former footballer.",
+      "original_response": "Question: Who is the Daughter of Sheryl Gascoigne, former wife of a footballer?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "query : Who be the Daughter of Sheryl Gascoigne , former married woman of a football player ?",
+      "isi_final": 0.194444,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Jon Krakauer wrote Where Men Win Glory: The Odyssey of Pat TillmanWhere Men Win Glory: The Odyssey of Pat Tillman is written by Jon Krakauer. Jon Krakauer wrote Into Thin Air: A Personal Account of the Mt. Everest Disaster",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Nick Cassavetes wrote My Sister's Keeper. My Sister's Keeper is written by Jodi Picoult",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  Harsha Chhina is a village near RajaSansi Airport, Amritsar.Amritsar (   ;] ), historically also known as \"Rāmdāspur\" and colloquially as \"Ambarsar\", is a city in north-western India which is the administrative headquarters of the Amritsar district - located in the Majha region of the Indian state of Punjab.",
+      "original_response": "Question: The Harsha Chhina Mogha Morcha was an agrarian revolt in Harsha Chhina, Punjab, India, that took place in 1946 under the leadership of the Communist Party, Harsha Chhina is a village near RajaSansi Airport in Amritsar, is a city in north-western India which is the administrative headquarters of the Amritsar district - located in the Majha region of the Indian state, of what?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "query : The Harsha Chhina Mogha Morcha was an agrarian revolt in Harsha Chhina , Punjab , India , that took place in 1946 under the leading of the Communist Party , Harsha Chhina is a village near RajaSansi Airport in Amritsar , is a city in north-western India which is the administrative headquarters of the Amritsar territory - located in the Majha part of the Indian state , of what ?",
+      "isi_final": 0.45283,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Thunder Dolphin (サンダードルフィン ) is a steel roller coaster at the Tokyo Dome City Attractions amusement park, which is part of Tokyo Dome City in Tokyo, Japan.Intimidator 305 is a steel roller coaster located at Kings Dominion in Doswell, Virginia, United States.",
+      "original_response": "Question: Intimidator 305 and Thunder Dolphin are what type of roller coaster?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Intimidator 305 and Thunder Dolphin are what type of roller coaster ?",
+      "isi_final": 0.194444,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: David Silverman directed The Simpsons MovieThe Simpsons Movie is written by Tim LongTim Long wrote The Simpsons Movie",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  The film is directed by Lee Chun-baek and Oh Sung-yoon and stars Do Kyung-soo, Park So-dam and Park Chul-min in the lead roles.Do Kyung-soo (born (1993--) 12, 1993 ), better known by his stage name D.O., is a South Korean singer and actor.",
+      "original_response": "Question: What is the stage name of the singer who is starring in \"The Underdog\" alongside Park So-dam and Park Chul-min?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : What is the stage name of the vocaliser who is star in `` The Underdog '' alongside parkland So-dam and Park Chul-min ?",
+      "isi_final": 0.140082,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Gravity has genre Sci-FiSci-Fi has examples: Titan A.E.Titan A.E. was released 2000",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Orleans Arena is a 9,500-seat multi-purpose arena in Paradise, Nevada, in the Las Vegas Valley. The largest urban agglomeration in the state, it is the heart of the Las Vegas–Paradise-Henderson, NV MSA. The Valley is largely defined by the Las Vegas Valley landform, a 600 sqmi basin area surrounded by mountains to the north, south, east and west of the metropolitan area.",
+      "original_response": "Question: What 9,500 seat arena is located in the largest urban agglomeration in Nevada?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : What 9,500 seat arena is located in the largest urban agglomeration in Nevada ?",
+      "isi_final": 0.234043,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Alice Walker wrote The Color PurpleThe Color Purple is written by Marsha NormanMarsha Norman wrote The Color Purple. The Color Purple has genre Musical theatre",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  The film is fictionally based on the criminal career of Frank Lucas, a gangster from La Grange, North Carolina who smuggled heroin into the United States on American service planes returning from the Vietnam War, before being detained by a task force led by detective Richie Roberts. Lucas boasted that he smuggled heroin using the coffins of dead American servicemen, but this claim is denied by his South East Asian associate, Leslie \"Ike\" Atkinson.",
+      "original_response": "Question: Which criminal from La Grange, North Carolina boasted that he smuggled heroin into the United States by using coffins of dead servicemen?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Which criminal from La Grange , North Carolina gas that he smuggled heroin into the United state by using casket of dead servicemen ?",
+      "isi_final": 0.0972,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Lion is a 2016 biographical film directed by Garth Davis (in his feature debut) and written by Luke Davies, based on the non-fiction book \"A Long Way Home\" by Saroo Brierley with Larry Buttrose. The film stars Dev Patel, Rooney Mara, David Wenham and Nicole Kidman.David Wenham (born 21 September 1965) is an Australian actor who has appeared in movies, television series and theatre productions. He is known in Hollywood for his roles as Faramir in \"The Lord of the Rings\" film trilogy, Carl in \"Van Helsing\", Dilios in \"300\" and its sequel \"\", Neil Fletcher in \"Australia\" and Lieutenant John Scarfield in \"\".",
+      "original_response": "Question: Which film star from the movie \"Lion\" released in 2016 was also in the movie \"300\" ?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "interrogation : Which film star from the picture show `` Lion '' released in 2016 be also in the movie `` 300 '' ?",
+      "isi_final": 0.02967,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ellie is a fictional character in the 2013 video game \"The Last of Us\", and the main protagonist of the upcoming video game \"The Last of Us Part II\".The Last of Us Part II is an upcoming action-adventure survival horror video game developed by Naughty Dog and published by Sony Interactive Entertainment for PlayStation 4.",
+      "original_response": "Question: Who publishes a horror game with protagonist Ellie?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Who publishes a horror game with champion Ellie ?",
+      "isi_final": 0.043902,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Tightrope is a 1984 American suspense thriller produced by and starring Clint Eastwood and written and directed by Richard Tuggle. After achieving success in the Western TV series \"Rawhide\", he rose to international fame with his role as the Man with No Name in Sergio Leone's \"Dollars\" Trilogy of Spaghetti Westerns during the 1960s, and as antihero cop Harry Callahan in the five \"Dirty Harry\" films throughout the 1970s and 1980s.",
+      "original_response": "Question: Tightrope starred the actor who achieved success in what TV series?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Tightrope starred the actor who achieved success in what TV series ?",
+      "isi_final": 0.092308,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: John McTiernan directed Last Action Hero. Last Action Hero is starring Danny DeVito",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Frank Capra directed It's a Wonderful Life. It's a Wonderful Life is written by Philip Van Doren Stern",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: X-Men Origins: Wolverine is starring Hugh Jackman",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Confessions of a Shopaholic is written by Sophie KinsellaSophie Kinsella wrote Wedding NightWedding Night is written by Sophie Kinsella. Sophie Kinsella wrote Shopaholic to the Stars (Shopaholic, #7)",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Tim Burton wrote Frankenweenie. Frankenweenie is starring Robert CapronFrankenweenie is starring Jeff BennettJeff Bennett starred in Leroy & Stitch. Leroy & Stitch is starring David Ogden Stiers",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Wayne Rooney : `~Player statistics`: Manchester United F.C.",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Eden Hazard : `~Player statistics`: Belgium national football teamBelgium national football team : `Player statistics`: Eden HazardEden Hazard : `~Player statistics`: Chelsea F.C.",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ravichandran Ashwin is a/an AthleteAthlete has example: Zlatan IbrahimovićZlatan Ibrahimović : `~has_person`: Malmö Municipality",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  Justice Scott was the author of the majority opinion in \"Scott v. Emerson\", 15 Missouri 572 (1852), which was part of the \"Dred Scott v. Sandford\" case.Dred Scott v. Sandford, 60 U.S. 393 (1857) , also known simply as the Dred Scott case, was a landmark decision by the United States Supreme Court on US labor law and constitutional law.",
+      "original_response": "Question: \"Scott v. Emerson\" was part of of a case in which year ?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "query : `` Scott v. Ralph Waldo Emerson '' be part of of a case in which yr ?",
+      "isi_final": 0.058776,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Stefan Kapicic starred in Deadpool",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  \"Outlaw\" stars Sean Bean, Danny Dyer, Bob Hoskins, Lennie James, Rupert Friend and Sean Harris. From 2012 to 2017, he portrayed Peter Quinn on the Showtime series \"Homeland\", for which he was nominated for an Emmy in 2013.",
+      "original_response": "Question: Which \"Outlaw\" star was nominated for an Emmy in 2013?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Which `` Outlaw '' star be nominated for an Emmy in 2013 ?",
+      "isi_final": 0.092308,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  The heat is turned off and the coriander leaves are mixed in the eggs, adding salt.Refried beans (Spanish: \"frijoles refritos\") is a dish of cooked and mashed beans and is a traditional staple of Mexican and Tex-Mex cuisine, although each cuisine has a different approach when making the dish.",
+      "original_response": "Question: In addition to cooked and mashed beans accompanying Huevos a la mexicana what food is mixed in the eggs at the end of preparation?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : In add-on to cooked and squelch bean accompanying Huevos a la mexicana what food is mixed in the eggs at the end of preparation ?",
+      "isi_final": 0.132453,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Mesut Özil : `~Player`: Germany national football teamGermany national football team : `Player statistics`: Toni KroosToni Kroos : `~Player statistics`: FC Bayern Munich. FC Bayern Munich : `~Home venue for`: Allianz Arena",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  He was the last major Tahirid to hold high office, having served as the governor of Baghdad at various points between 867 and 891.The Tahirid dynasty (Persian: طاهریان‎ ‎ , \"Tâhereyân\") was a dynasty, of Persian dihqan origin, that governed the Abbasid province of Khorasan from 821 to 873 and the city of Baghdad from 820 until 891.",
+      "original_response": "Question: Ubaydallah ibn Abdallah ibn Tahir was the last major Tahirid to hold high office in what dynasty?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "query : Ubaydallah ibn Abdallah ibn Tahir was the last major Tahirid to hold high office in what dynasty ?",
+      "isi_final": 0.204082,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Serguei Kouchnerov (born 22 June 1960 in Rahachow, Belarusian SSR) - artist, animator, director, story artist and screenwriter.Arvid E. Gillstrom (13 August 1889 – 21 May 1935), was a Swedish film director and screenwriter.",
+      "original_response": "Question: Were Serguei Kouchnerov and Arvid E. Gillstrom both in the same industry?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Were Serguei Kouchnerov and Arvid E. Gillstrom both in the same industry ?",
+      "isi_final": 0.062222,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Brad Garrett starred in Underdog (Action/Adventure Film)Underdog (Action/Adventure Film) is starring Jim BelushiJim Belushi starred in Who's Harry Crumb?",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Delirium is written by Lauren Oliver. Lauren Oliver wrote PandemoniumLauren Oliver wrote Pandemonium. Pandemonium has genre Speculative fiction",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: White Oleander is written by Janet Fitch",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Gene were an English alternative rock quartet that rose to prominence in the mid-1990s.Daniel Amos (aka D. A., Dä) is an American Christian rock band formed in 1974 by Terry Scott Taylor on guitars and vocals, Marty Dieckmeyer on bass guitar, Steve Baxter on guitars and Jerry Chamberlain on lead guitars. Over the band's career, they have experimented with country rock, rock, new wave, and alternative rock.",
+      "original_response": "Question: Between the American Christian rock band, Daniel Amos, and English alternative rock quartet, Gene, which experimented with country rock?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Between the American Christian rock circle , Daniel Amos , and English alternative stone tetrad , Gene , which experiment with country rock ?",
+      "isi_final": 0.067935,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Gautam Gambhir is a/an AthleteAthlete has example: Gautam Gambhir",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Kern Island Canal is an irrigation canal in Kern County, California.The Cayuga–Seneca Canal is a canal in New York, United States.",
+      "original_response": "Question: What is the irrigation canal in Kern County, California, Kern Island Canal or Cayuga–Seneca Canal?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : What be the irrigation canal in Kern County , California , Kern Island Canal or Cayuga – Seneca Canal ?",
+      "isi_final": 0.204545,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Scorch Trials has genre Dystopia",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Evermore has genre Fantasy",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Lady Alexandra Naldera Curzon, CBE (20 March/April 1904 – 7 August 1995), was the third daughter of George Curzon, 1st Marquess Curzon of Kedleston and Viceroy of India, and Lord Curzon's first wife, the American mercantile heiress, Mary Victoria Curzon, Baroness Curzon of Kedleston (née Leiter).George Nathaniel Curzon, 1st Marquess Curzon of Kedleston (11 January 1859 – 20 March 1925), known as The Lord Curzon of Kedleston between 1898 and 1911 and as The Earl Curzon of Kedleston between 1911 and 1921, was a British Conservative statesman.",
+      "original_response": "Question: Who was the third daughter of the Earl Curzon of Kedleston?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Who was the third daughter of the Earl Curzon of Kedleston ?",
+      "isi_final": 0.116364,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Bulbophyllum is the largest genus in the orchid family Orchidaceae. With more than 2,000 species, it is also one of the largest genera of flowering plants, exceeded only by \"Astragalus\". The genus is named for the first chancellor of the German Empire Otto von Bismarck and the epithet for its only species, Bismarckia nobilis, comes from Latin for 'noble'.",
+      "original_response": "Question: Which genus of flowering plant has more species Bulbophyllum or Bismarckia?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "inquiry : Which genus of flowering industrial plant hold more species Bulbophyllum or Bismarckia ?",
+      "isi_final": 0.061765,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: King Kong is starring Thomas Kretschmann",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  They included Tom Peters, Malcolm Gladwell, Guy Kawasaki, Mark Cuban, and Dan Pink. He is the owner of the NBA's Dallas Mavericks, co-owner of 2929 Entertainment and chairman of the AXS TV.",
+      "original_response": "Question: The Big Moo includes an essay by the co-owner and chairman of what television station?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : The Big Moo include an essay by the co-owner and chairman of what TV station ?",
+      "isi_final": 0.066316,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: San Francisco Giants : `~time/event/participant`: 2012 World Series",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Chinua Achebe wrote Things Fall ApartThings Fall Apart is a/an Book",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Greg Mottola directed SuperbadSuperbad is written by Evan GoldbergEvan Goldberg wrote Superbad",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Chicago Cubs : `~Team`: Major League BaseballMajor League Baseball : `Team`: San Francisco GiantsSan Francisco Giants : `~Home venue for`: Candlestick Park",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Hobbit: An Unexpected Journey has genre Fantasy. Fantasy has examples: The WolfmanThe Wolfman is starring Anthony Hopkins",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: New York Jets : `~Team`: National Football League",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  Solana was also a proficient Jai alai player and his racing career was partly funded by this. It is a variation of Basque pelota.",
+      "original_response": "Question:  Moisés Solano helped fund his racing career by playing a sport that is a variation of what game?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Moisés Solano help fund his racing calling by play a sport that is a fluctuation of what game ?",
+      "isi_final": 0.171429,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Anthony Russo directed You, Me and Dupree",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Iron Man 3 is starring Robert Downey Jr.Robert Downey Jr. starred in Zodiac (Crime Fiction Film)Zodiac (Crime Fiction Film) is starring Clea DuVall",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: In Cold Blood is written by Truman Capote",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Scarface Nation: The Ultimate Gangster Movie and How It Changed America is a 2008 book written by Ken Tucker and published by St. Martin’s Press about the 1983 American crime film \"Scarface\" and its influence on society, film, and the music industry.Kenneth Tucker is an American arts, music and television critic, magazine editor, and non-fiction book writer.",
+      "original_response": "Question: Scarface Nation was a book written by an arts critic of what nationality?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Scarface Nation was a book compose by an humanistic discipline critic of what nationality ?",
+      "isi_final": 0.12963,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Black Hawk Down has genre War. War has genre Thriller",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "dialog :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Transformers is written by Alex KurtzmanAlex Kurtzman : `~Program creator`: Fringe. Fringe has genre ThrillerFringe has genre Television",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Bryan Howard (born October 7, 1976) is an American former sprinter.Maurice Greene (born July 23, 1974) is an American former track and field sprinter who specialized in the 100 meters and 200 meters.",
+      "original_response": "Question: Who was born more recently, Bryan Howard, or Maurice Greene?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Who was bear more recently , Bryan Howard , or Maurice Greene ?",
+      "isi_final": 0.151515,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: In addition to the Beatles' films \"A Hard Day's Night\" (1964), \"Help!\" (1965), \"Magical Mystery Tour\" (1967), \"Yellow Submarine\" (1968) and \"Let It Be\" (1970), Ringo Starr also acted in films such as \"Candy\" (1968), \"The Magic Christian\" (1969, alongside Peter Sellers), \"Blindman\" (1971), \"Son of Dracula\" (1974) and \"Caveman\" (1981).The Magic Christian is a 1969 British satirical black comedy film directed by Joseph McGrath and starring Peter Sellers and Ringo Starr, with appearances by John Cleese, Graham Chapman, Raquel Welch, Spike Milligan, Christopher Lee, Richard Attenborough and Roman Polanski.",
+      "original_response": "Question: Who is the director of the movie \"The Magic Christian\" in which Peter Sellers was acted?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Who is the director of the movie `` The Magic Christian '' in which Peter Sellers be acted ?",
+      "isi_final": 0.125,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  \"H. forsteriana\" in particular is commonly grown as an indoor plant in the Northern Hemisphere, and the two species form the mainstay of the island's palm seed industry and more importantly its trade in newly germinated seedlings. It is found throughout most of the warmer parts of the world: Africa, southern Asia, Latin America, the West Indies, and various islands in the Indian and Pacific Oceans.",
+      "original_response": "Question: Is it true that both Howea and Bulbophyllum can be found in countries in the Northern Hemisphere?",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Question : Is it true that both Howea and Bulbophyllum can be found in commonwealth in the Northern Hemisphere ?",
+      "isi_final": 0.131148,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Rihanna : `~Artist`: We Found Love (Music video)We Found Love (Music video) : `Artist`: Calvin HarrisCalvin Harris : `Award Won`: MTV Video Music Award for Best Electronic Dance Music Video",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "duologue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: X-Men Origins: Wolverine is starring Ryan ReynoldsRyan Reynolds starred in X-Men Origins: WolverineX-Men Origins: Wolverine is starring Ryan Reynolds. Ryan Reynolds starred in The Change-Up",
+      "original_response": "Dialogue:",
+      "paraphrase_method": "synonym",
+      "paraphrased_response": "Dialogue :",
+      "isi_final": 0.0,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: In classical music, arioso ] (also aria parlante ] ) is a type of solo vocal piece, usually occurring in an opera or oratorio, falling somewhere between recitative and aria in style. It resembles sung ordinary speech more than a formal musical composition.",
+      "original_response": "Question: What differentiates Recitative from Arioso music style?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: What differentiates the Recitative musical style from the Arioso?",
+      "isi_final": 0.042857,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Ludwig van Beethoven ( , ; ] ; baptised 17 December 177026 March 1827) was a German composer and pianist.Heinrich August Marschner (16 August 1795 – 14 December 1861) was the most important composer of German opera between Weber and Wagner.",
+      "original_response": "Question: In between Ludwig van Beethoven and Heinrich Marschner who was the most important composer of German opera between Weber and Wagner?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Between Ludwig van Beethoven and Heinrich Marschner, who was the most important German opera composer between Weber and Wagner?",
+      "isi_final": 0.174545,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Louis Dearborn L'Amour ( ; March 22 1908 –June 10 1988) was an American novelist and short story writer.David Herbert Lawrence (11 September 1885 – 2 March 1930) was an English novelist, poet, playwright, essayist, literary critic and painter.",
+      "original_response": "Question: Who has more scope of profession, Louis L'Amour or D. H. Lawrence?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Who has more professional reach, Louis L'Amour or D.H. Lawrence?",
+      "isi_final": 0.04186,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Buffalo Springfield was an American rock band active from 1966 to 1968 containing Stephen Stills, Neil Young, and Richie Furay, which released three albums, and several singles including \"For What It's Worth\". It was performed by Buffalo Springfield, recorded on December 5, 1966, and released as a single on Atco Records in January 1967.",
+      "original_response": "Question: Buffalo Springfield recorded a song in 1966 released on what record label?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Buffalo Springfield recorded a song in 1966 and on what record label?",
+      "isi_final": 0.079412,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Chappaquiddick is an upcoming American drama film directed by John Curran and written by Taylor Allen and Andrew Logan.Cecil Taylor Nichols (born March 3, 1959 in Louisville, Kentucky) is an American actor best known for roles in the Whit Stillman films \"Metropolitan\", \"Barcelona\", \"The Last Days of Disco\", and \"Damsels in Distress\".",
+      "original_response": "Question: Who is the director of the upcoming movie which features the actor who is known for playing Whit Stillman?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Who is the director of the next movie starring the actor known for playing Whit Stillman?",
+      "isi_final": 0.122353,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: \" and \"What Do You Care What Other People Think?\", both written by Feynman and Ralph Leighton.: Further Adventures of a Curious Character (1988) is the second of two books consisting of transcribed and edited, oral reminiscences from American physicist Richard Feynman. It follows \"Surely You're Joking, Mr. Feynman!",
+      "original_response": "Question: The second of two books consisting of transcribed and edited, oral reminiscences from American physicist Richard Feynman which follows \"Surely You're Joking, Mr. Feynman!\" was written by Richard Feynman and who else?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: The second of two books consisting of transcribed and edited oral reminiscences of American physicist Richard Feynman, following \"Surely You're Joking, Mr. Feynman!\" It was written by Richard Feynman and who else?",
+      "isi_final": 0.195745,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  His diverse catalog of clients include Pharrell, Justin Timberlake, Christina Aguilera, Florence + the Machine, Shakira, Bleachers, Whitney Houston, Cobra Starship, Santigold, Jewel, Lenny Kravitz, Kelly Clarkson, Girls' Generation, Patti Labelle, James Blunt, Ludacris, and Huang Zitao. Her debut album, \"Santogold\", including the singles \"Creator\" and \"L.E.S. Artistes\", received very favorable reviews in 2008. Her second album, \"Master of My Make-Believe\", was released in 2012.",
+      "original_response": "Question: What was the second album by the singer who was a client of Andros Rodriguez, and whose debut album was  \"Santogold\"?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: What was the second album by Andros Rodríguez's client singer, and whose debut album was \"Santogold\"?",
+      "isi_final": 0.032091,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Brookhaven High School was a public high school located on the northeast side of Columbus, Ohio, United States. He was drafted by the New England Patriots seventh overall in the 1996 NFL Draft, and also played for the Green Bay Packers and Dallas Cowboys.",
+      "original_response": "Question: In what city is the high school which was attended by the football player drafted by the New England Patriots seventh overall in the 1996 NFL Draft located?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: In what city is the high school attended by the football player selected seventh overall by the New England Patriots in the 1996 NFL Draft?",
+      "isi_final": 0.282609,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: The Kerry Blue Terrier (also known as the Irish Blue Terrier) () is a breed of dog.The Norwegian Lundehund (\"Norsk Lundehund\") is a small dog breed of the Spitz type that originates from Norway.",
+      "original_response": "Question: What do both Norwegian Lundehund and Kerry Blue Terrier have in coman",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: What do both the Norwegian Lundehund and the Kerry Blue Terrier have in common?",
+      "isi_final": 0.12,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "What is the largest desert in the world?",
+      "original_response": "The Antarctic Desert is the largest desert in the world",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "The Antarctic Desert is the largest desert in the world.",
+      "isi_final": 0.75,
+      "zona": "COHERENTE",
+      "codigo_zona": "A",
+      "fp": false
+    },
+    {
+      "source": "Knowledge:  He played Dr. Carlisle Cullen in the film adaptations of the \"Twilight\" novel series, and is also known for his role as Mike Dexter in the 1998 film \"Can't Hardly Wait\".Can't Hardly Wait is a 1998 American teen comedy film written and directed by Deborah Kaplan and Harry Elfont.",
+      "original_response": "Question: Peter Facinelli is known for his role as Mike Dexter in a 1998 American teen comedy film that was written and directed by Deborah Kaplan and who?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Peter Facinelli is known for his role as Mike Dexter in a 1998 American teen comedy film written and directed by Deborah Kaplan and Who?",
+      "isi_final": 0.381818,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Wollongong Wolves Football Club is an Australian semi-professional football club based in Wollongong, in the Illawarra region of New South Wales. The club plays its home games out of WIN Stadium.Wollongong Showground, known as WIN Stadium for sponsorship reasons, is a multi-purpose stadium located in Wollongong, Australia. The stadium was officially opened in 1911.",
+      "original_response": "Question: When was the stadium Wollongong Wolves Football Club plays at opened?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: When was the stadium where Wollongong Wolves Football Club plays opened?",
+      "isi_final": 0.204545,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: John Bruce Yeh (born 1957) is an American clarinetist. Yeh is the founder and director of the chamber ensemble, Chicago Pro Musica, whose first recording, Stravinsky's \"L'Histoire du soldat\", won the 1985 Grammy Award for the Best New Classical Artist.L'Histoire du soldat (The Soldier's Tale) is a theatrical work \"to be read, played, and danced\" (\"lue, jouée et dansée \") by three actors and one or several dancers, accompanied by a septet of instruments. The piece was conceived by Igor Stravinsky and Swiss writer C. F. Ramuz based on a Russian folk tale (\"The Runaway Soldier and the Devil\") drawn from the collection of Alexander Afanasyev.",
+      "original_response": "Question: Joh Bruce Yeh founded a chamber ensemble who won a Grammy in 1985 for their recording of this work based on what Rusian folk tale?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Joh Bruce Yeh founded a chamber ensemble that won a Grammy in 1985 for the recording of this work, based on which Russian folk tale?",
+      "isi_final": 0.056791,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Tightrope is a 1984 American suspense thriller produced by and starring Clint Eastwood and written and directed by Richard Tuggle. After achieving success in the Western TV series \"Rawhide\", he rose to international fame with his role as the Man with No Name in Sergio Leone's \"Dollars\" Trilogy of Spaghetti Westerns during the 1960s, and as antihero cop Harry Callahan in the five \"Dirty Harry\" films throughout the 1970s and 1980s.",
+      "original_response": "Question: Tightrope starred the actor who achieved success in what TV series?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Tightrope starred the actor who achieved success in which television series?",
+      "isi_final": 0.075758,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  Justice Scott was the author of the majority opinion in \"Scott v. Emerson\", 15 Missouri 572 (1852), which was part of the \"Dred Scott v. Sandford\" case.Dred Scott v. Sandford, 60 U.S. 393 (1857) , also known simply as the Dred Scott case, was a landmark decision by the United States Supreme Court on US labor law and constitutional law.",
+      "original_response": "Question: \"Scott v. Emerson\" was part of of a case in which year ?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: \"Scott v. Emerson\" was part of a case in what year?",
+      "isi_final": 0.191489,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  He was the last major Tahirid to hold high office, having served as the governor of Baghdad at various points between 867 and 891.The Tahirid dynasty (Persian: طاهریان‎ ‎ , \"Tâhereyân\") was a dynasty, of Persian dihqan origin, that governed the Abbasid province of Khorasan from 821 to 873 and the city of Baghdad from 820 until 891.",
+      "original_response": "Question: Ubaydallah ibn Abdallah ibn Tahir was the last major Tahirid to hold high office in what dynasty?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Ubaydallah ibn Abdallah ibn Tahir was the last important Tahiri to hold high office in which dynasty?",
+      "isi_final": 0.122353,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Serguei Kouchnerov (born 22 June 1960 in Rahachow, Belarusian SSR) - artist, animator, director, story artist and screenwriter.Arvid E. Gillstrom (13 August 1889 – 21 May 1935), was a Swedish film director and screenwriter.",
+      "original_response": "Question: Were Serguei Kouchnerov and Arvid E. Gillstrom both in the same industry?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Were Sergei Kouchnerov and Arvid E. Gillstrom both in the same industry?",
+      "isi_final": 0.051892,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Gene were an English alternative rock quartet that rose to prominence in the mid-1990s.Daniel Amos (aka D. A., Dä) is an American Christian rock band formed in 1974 by Terry Scott Taylor on guitars and vocals, Marty Dieckmeyer on bass guitar, Steve Baxter on guitars and Jerry Chamberlain on lead guitars. Over the band's career, they have experimented with country rock, rock, new wave, and alternative rock.",
+      "original_response": "Question: Between the American Christian rock band, Daniel Amos, and English alternative rock quartet, Gene, which experimented with country rock?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Between the American Christian rock band Daniel Amos and the English alternative rock quartet Gene, who experimented with country rock?",
+      "isi_final": 0.116379,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Kern Island Canal is an irrigation canal in Kern County, California.The Cayuga–Seneca Canal is a canal in New York, United States.",
+      "original_response": "Question: What is the irrigation canal in Kern County, California, Kern Island Canal or Cayuga–Seneca Canal?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: What is the irrigation canal in Kern County, California, the Kern Island Canal or the Cayuga-Seneca Canal?",
+      "isi_final": 0.52381,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Lady Alexandra Naldera Curzon, CBE (20 March/April 1904 – 7 August 1995), was the third daughter of George Curzon, 1st Marquess Curzon of Kedleston and Viceroy of India, and Lord Curzon's first wife, the American mercantile heiress, Mary Victoria Curzon, Baroness Curzon of Kedleston (née Leiter).George Nathaniel Curzon, 1st Marquess Curzon of Kedleston (11 January 1859 – 20 March 1925), known as The Lord Curzon of Kedleston between 1898 and 1911 and as The Earl Curzon of Kedleston between 1911 and 1921, was a British Conservative statesman.",
+      "original_response": "Question: Who was the third daughter of the Earl Curzon of Kedleston?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Who was the third daughter of Earl Curzon of Kedleston?",
+      "isi_final": 0.116364,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Bulbophyllum is the largest genus in the orchid family Orchidaceae. With more than 2,000 species, it is also one of the largest genera of flowering plants, exceeded only by \"Astragalus\". The genus is named for the first chancellor of the German Empire Otto von Bismarck and the epithet for its only species, Bismarckia nobilis, comes from Latin for 'noble'.",
+      "original_response": "Question: Which genus of flowering plant has more species Bulbophyllum or Bismarckia?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Which genus of flowering plant has more Bulbophyllum or Bismarckia species?",
+      "isi_final": 0.14,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  They included Tom Peters, Malcolm Gladwell, Guy Kawasaki, Mark Cuban, and Dan Pink. He is the owner of the NBA's Dallas Mavericks, co-owner of 2929 Entertainment and chairman of the AXS TV.",
+      "original_response": "Question: The Big Moo includes an essay by the co-owner and chairman of what television station?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: The Big Moo includes an essay by the co-owner and president of which television station?",
+      "isi_final": 0.045,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  Solana was also a proficient Jai alai player and his racing career was partly funded by this. It is a variation of Basque pelota.",
+      "original_response": "Question:  Moisés Solano helped fund his racing career by playing a sport that is a variation of what game?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Moisés Solano helped finance his sports career by playing a sport that is a variation of what game?",
+      "isi_final": 0.205882,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Scarface Nation: The Ultimate Gangster Movie and How It Changed America is a 2008 book written by Ken Tucker and published by St. Martin’s Press about the 1983 American crime film \"Scarface\" and its influence on society, film, and the music industry.Kenneth Tucker is an American arts, music and television critic, magazine editor, and non-fiction book writer.",
+      "original_response": "Question: Scarface Nation was a book written by an arts critic of what nationality?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Scarface Nation was a book written by an art critic of what nationality?",
+      "isi_final": 0.153846,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: Bryan Howard (born October 7, 1976) is an American former sprinter.Maurice Greene (born July 23, 1974) is an American former track and field sprinter who specialized in the 100 meters and 200 meters.",
+      "original_response": "Question: Who was born more recently, Bryan Howard, or Maurice Greene?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Who was born more recently, Bryan Howard or Maurice Greene?",
+      "isi_final": 0.1875,
+      "zona": "RUPTURA_RECUPERABLE",
+      "codigo_zona": "B",
+      "fp": true
+    },
+    {
+      "source": "Knowledge: In addition to the Beatles' films \"A Hard Day's Night\" (1964), \"Help!\" (1965), \"Magical Mystery Tour\" (1967), \"Yellow Submarine\" (1968) and \"Let It Be\" (1970), Ringo Starr also acted in films such as \"Candy\" (1968), \"The Magic Christian\" (1969, alongside Peter Sellers), \"Blindman\" (1971), \"Son of Dracula\" (1974) and \"Caveman\" (1981).The Magic Christian is a 1969 British satirical black comedy film directed by Joseph McGrath and starring Peter Sellers and Ringo Starr, with appearances by John Cleese, Graham Chapman, Raquel Welch, Spike Milligan, Christopher Lee, Richard Attenborough and Roman Polanski.",
+      "original_response": "Question: Who is the director of the movie \"The Magic Christian\" in which Peter Sellers was acted?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Who is the director of the movie \"The Magic Christian\" in which Peter Sellers acted?",
+      "isi_final": 0.1125,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    },
+    {
+      "source": "Knowledge:  \"H. forsteriana\" in particular is commonly grown as an indoor plant in the Northern Hemisphere, and the two species form the mainstay of the island's palm seed industry and more importantly its trade in newly germinated seedlings. It is found throughout most of the warmer parts of the world: Africa, southern Asia, Latin America, the West Indies, and various islands in the Indian and Pacific Oceans.",
+      "original_response": "Question: Is it true that both Howea and Bulbophyllum can be found in countries in the Northern Hemisphere?",
+      "paraphrase_method": "backtranslation",
+      "paraphrased_response": "Question: Is it true that both Howea and Bulbophyllum can be found in countries in the northern hemisphere?",
+      "isi_final": 0.131148,
+      "zona": "COLAPSO_ESTRUCTURAL",
+      "codigo_zona": "F-S",
+      "fp": true
+    }
+  ]
+}
