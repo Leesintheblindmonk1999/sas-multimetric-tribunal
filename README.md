@@ -207,6 +207,10 @@ sas-multimetric-tribunal/
 │       └── truthfulqa/
 ├── reports/
 │   └── validation_report.json     # Full validation results
+├── research/
+│   ├── r3_negative_control/       # A→C paraphrase negative control
+│   ├── r4_ablation/               # Combination strategy ablation
+│   └── r5_module_pilot/           # Controlled module precision pilot
 ├── tests/
 │   └── test_tribunal.py           # Unit tests
 ├── README.md                      # This file
@@ -229,6 +233,27 @@ This tribunal is the result of the SAS / κD=0.56 research program:
 | R1-D | Structural evaluation over declarative corpus | [10.5281/zenodo.21282332](https://doi.org/10.5281/zenodo.21282332) |
 | R2.1 | Code hallucination detection via AST | [10.5281/zenodo.21365707](https://doi.org/10.5281/zenodo.21365707) |
 | **Tribunal** | **Multimetric 3-zone classification** | **This repository** |
+
+---
+
+## Research Series
+
+The `research/` directory contains the internal validation studies that stress-test the tribunal beyond the main benchmark:
+
+| Study | Status | Key Finding |
+|-------|--------|-------------|
+| **R3 — Negative Control (A→C)** | ⚠️ Open issue | Paraphrase FP rate 99.2% — the lexical layer is blind to semantic equivalence. **Top-priority fix (R3.1): add a semantic-equivalence guard.** |
+| **R4 — Ablation** | ✅ Complete | Multiplicative cascade validated (F1=0.9955, 1,800 pairs). `weighted_global` collapses to F1=0.2387 (recall 13.6%). All 7 modules contribute positively. |
+| **R5 — Module Pilot** | ✅ Complete | Controlled 5-domain × 7-module pilot (70 items). `source_target_guard` recall=1.000, purity=1.000. CRE/flow/arithmetic/reference need more edge cases. |
+
+```
+research/
+├── r3_negative_control/    # A→C paraphrase control (Reviewer #1 response)
+├── r4_ablation/            # Combination strategy + module ablation
+└── r5_module_pilot/        # Controlled per-module trigger precision
+```
+
+Each study includes its own `README.md`, scripts, and outputs for full reproducibility.
 
 ---
 
