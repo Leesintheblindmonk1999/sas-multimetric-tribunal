@@ -545,5 +545,6 @@ unaudited.
 
 ## Integrity verification of this document
 
-SHA-256 of this file (computed at publication time, excluding this
-section): see `CHANGELOG.md.sha256` in the same directory.
+SHA-256 of this file (computed at publication time, over the full
+document): see `CHANGELOG.md.sha256` in the same directory. Verify with:
+`sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
