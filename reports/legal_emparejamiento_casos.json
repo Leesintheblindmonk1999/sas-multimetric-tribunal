@@ -1,0 +1,326 @@
+{
+  "n_ids": 99,
+  "mismo_caso": [],
+  "distinto_caso": [
+    {
+      "id": "161655",
+      "caso_a": "Bitterman v. Louisville and Nashville Railroad Company",
+      "anio_a": "1907",
+      "caso_b": "The decision below was rendered prior to the decision of the Supreme Court in Kirschbaum v. Walling",
+      "anio_b": ""
+    },
+    {
+      "id": "183002",
+      "caso_a": "Brown v. Board of Education",
+      "anio_a": "1954",
+      "caso_b": "Did the court in Graves and Barnewall v. Boston Marine Insurance Company",
+      "anio_b": "1805"
+    },
+    {
+      "id": "188825",
+      "caso_a": "Provide a verbatim quotation from the majority opinion in the case United States v. City of New Britain et al.",
+      "anio_a": "1953",
+      "caso_b": "Did the court in United States v. Brown",
+      "anio_b": "1964"
+    },
+    {
+      "id": "188872",
+      "caso_a": "Appellants v. The United States",
+      "anio_a": "1833",
+      "caso_b": "Did the court in United States v. Johnson",
+      "anio_b": "1981"
+    },
+    {
+      "id": "189969",
+      "caso_a": "Provide a verbatim quotation from the majority opinion in the case United States v. Aloyzas Balsys",
+      "anio_a": "1997",
+      "caso_b": "Did the court in United States v. Trans-Missouri Freight Association",
+      "anio_b": "1896"
+    }
+  ],
+  "sin_caso": [
+    {
+      "id": "105367"
+    },
+    {
+      "id": "109361"
+    },
+    {
+      "id": "109921"
+    },
+    {
+      "id": "119631"
+    },
+    {
+      "id": "126153"
+    },
+    {
+      "id": "131769"
+    },
+    {
+      "id": "132054"
+    },
+    {
+      "id": "132076"
+    },
+    {
+      "id": "132840"
+    },
+    {
+      "id": "135196"
+    },
+    {
+      "id": "156915"
+    },
+    {
+      "id": "157344"
+    },
+    {
+      "id": "158475"
+    },
+    {
+      "id": "161570"
+    },
+    {
+      "id": "162150"
+    },
+    {
+      "id": "164052"
+    },
+    {
+      "id": "164723"
+    },
+    {
+      "id": "164748"
+    },
+    {
+      "id": "16479"
+    },
+    {
+      "id": "168338"
+    },
+    {
+      "id": "17359"
+    },
+    {
+      "id": "175684"
+    },
+    {
+      "id": "178592"
+    },
+    {
+      "id": "179455"
+    },
+    {
+      "id": "183879"
+    },
+    {
+      "id": "188713"
+    },
+    {
+      "id": "192534"
+    },
+    {
+      "id": "193424"
+    },
+    {
+      "id": "193840"
+    },
+    {
+      "id": "198176"
+    },
+    {
+      "id": "198743"
+    },
+    {
+      "id": "198906"
+    },
+    {
+      "id": "200281"
+    },
+    {
+      "id": "205188"
+    },
+    {
+      "id": "20617"
+    },
+    {
+      "id": "207465"
+    },
+    {
+      "id": "20826"
+    },
+    {
+      "id": "209637"
+    },
+    {
+      "id": "217000"
+    },
+    {
+      "id": "218447"
+    },
+    {
+      "id": "219432"
+    },
+    {
+      "id": "224059"
+    },
+    {
+      "id": "225245"
+    },
+    {
+      "id": "225738"
+    },
+    {
+      "id": "225913"
+    },
+    {
+      "id": "226388"
+    },
+    {
+      "id": "227897"
+    },
+    {
+      "id": "229473"
+    },
+    {
+      "id": "229752"
+    },
+    {
+      "id": "230632"
+    },
+    {
+      "id": "231647"
+    },
+    {
+      "id": "231676"
+    },
+    {
+      "id": "233048"
+    },
+    {
+      "id": "235450"
+    },
+    {
+      "id": "23690"
+    },
+    {
+      "id": "237159"
+    },
+    {
+      "id": "238264"
+    },
+    {
+      "id": "24167"
+    },
+    {
+      "id": "25458"
+    },
+    {
+      "id": "26487"
+    },
+    {
+      "id": "27166"
+    },
+    {
+      "id": "28401"
+    },
+    {
+      "id": "28842"
+    },
+    {
+      "id": "30166"
+    },
+    {
+      "id": "31554"
+    },
+    {
+      "id": "36427"
+    },
+    {
+      "id": "36864"
+    },
+    {
+      "id": "37119"
+    },
+    {
+      "id": "37964"
+    },
+    {
+      "id": "40342"
+    },
+    {
+      "id": "41219"
+    },
+    {
+      "id": "41875"
+    },
+    {
+      "id": "44603"
+    },
+    {
+      "id": "45054"
+    },
+    {
+      "id": "47727"
+    },
+    {
+      "id": "49477"
+    },
+    {
+      "id": "50477"
+    },
+    {
+      "id": "51507"
+    },
+    {
+      "id": "52910"
+    },
+    {
+      "id": "54079"
+    },
+    {
+      "id": "55917"
+    },
+    {
+      "id": "57065"
+    },
+    {
+      "id": "58199"
+    },
+    {
+      "id": "58897"
+    },
+    {
+      "id": "62729"
+    },
+    {
+      "id": "65819"
+    },
+    {
+      "id": "66003"
+    },
+    {
+      "id": "66315"
+    },
+    {
+      "id": "66864"
+    },
+    {
+      "id": "74829"
+    },
+    {
+      "id": "94499"
+    },
+    {
+      "id": "97183"
+    },
+    {
+      "id": "9855"
+    },
+    {
+      "id": "98674"
+    }
+  ],
+  "errores": []
+}

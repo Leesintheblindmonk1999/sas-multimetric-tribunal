@@ -1,0 +1,62 @@
+[
+  {
+    "id": "SAS_PILOT_A_finance_negation_penalty_00",
+    "domain": "finance",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_finance_negation_penalty_01",
+    "domain": "finance",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_legal_negation_penalty_00",
+    "domain": "legal",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_legal_negation_penalty_01",
+    "domain": "legal",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_biomed_negation_penalty_00",
+    "domain": "biomed",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_biomed_negation_penalty_01",
+    "domain": "biomed",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_general_negation_penalty_00",
+    "domain": "general",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_general_negation_penalty_01",
+    "domain": "general",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_narrative_negation_penalty_00",
+    "domain": "narrative",
+    "inversion_count": 1,
+    "penalty": 0.45
+  },
+  {
+    "id": "SAS_PILOT_A_narrative_negation_penalty_01",
+    "domain": "narrative",
+    "inversion_count": 1,
+    "penalty": 0.45
+  }
+]

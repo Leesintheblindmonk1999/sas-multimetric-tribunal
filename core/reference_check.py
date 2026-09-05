@@ -1,5 +1,5 @@
 """
-core/reference_check.py — Reference Entity Cross-Check v1.1
+core/reference_check.py — Reference Entity Cross-Check v1.3
 ═══════════════════════════════════════════════════════════════════════════════
 Detects fabricated or modified citations in text B relative to text A.
 
@@ -23,6 +23,50 @@ Correction from v1.0:
     (same key field changed), which is the true hallucination signal.
   - Author name validation now uses Unicode character classes to support
     Asian, Arabic, and hyphenated names.
+  - v1.2 anachronisms enter the penalty formula (n_total = fab + anac).
+  - v1.3 the un-delimited "Author (Year)" pattern was restricted to proper-name
+    sequences to stop over-capturing surrounding context as author names.
+
+CHANGELOG v1.3 (2026-09-04) — fix de sobrecaptura del patrón "Author (Year)"
+--------------------------------------------------------------------------
+[BLOCKER][pares adversariales de citas + calibración CiteTracer]
+    El 4to patrón de _CITATION_PATTERNS ("Author (Year)" sin delimitador
+    de paréntesis/coma) usaba `{2,40}` para capturar el nombre, lo que
+    sobre-capturaba contexto léxico ("work on reinforcement learning
+    a. raffin", "676 F.3d 19", "347 U.S. 483") como si fuera un autor.
+    En pares donde A y B comparten un año pero el "autor" capturado es
+    contexto distinto, se generaba un same_year_diff_author FALSO.
+
+    Confirmado: 3/5 pares adversariales producían FP (ADV_CITA_01,
+    ADV_CITA_02, ADV_CITA_04). En la matriz de 1,600, 6 items
+    (legal_hallucinations) disparaban por capturar números de caso
+    legal como autores.
+
+    Cambio: el patrón "Author (Year)" ahora exige secuencias de nombres
+    propios — palabras con mayúscula inicial (mismo criterio que
+    source_target_guard), entre 1 y 4 palabras, con partículas de
+    apellido (de/van/von/du/la/del/den/der), guiones compuestos y
+    "et al." opcional. La clase de letras se amplió a Unicode latino
+    extendido (cualquier letra Unicode) para cubrir diacríticos
+    alemanes/turcos presentes en CiteTracer (Müller, Alikaşifoğlu).
+    Se excluyen palabras comunes al inicio (Según, Como, The, In, ...)
+    para no capturar contexto léxico como parte del nombre.
+
+    NOTA: `{2,40}` también capturaba números de caso legal
+    ("676 F.3d 19 (2012)") en legal_hallucinations — el fix elimina
+    esos FPs por construcción.
+
+    Antes/después (5 pares adversariales):
+      - ADV_CITA_01: fab=1 → 0 (FP eliminado)
+      - ADV_CITA_02: fab=1 → 0 (FP eliminado)
+      - ADV_CITA_03: fab=0 → 0 (correcto, sin cambio)
+      - ADV_CITA_04: fab=1 → 0 (FP eliminado)
+      - ADV_CITA_05: fab=0 → 0 (correcto, sin cambio)
+    Calibración CiteTracer (686 pares): TP=299 → 299, FN=44 → 44,
+      FP=0 → 0, TN=343 → 343. Recall 0.8717, precision 1.0 — SIN CAMBIO.
+    Matriz 1,600: 6 FPs eliminados (todos legal_hallucinations, por la
+      sobrecaptura de números de caso como autores), 0 regresiones,
+      0 cambios de magnitud.
 
 Known limitations:
   - Citation extraction relies on regex patterns and may miss uncommon formats
@@ -77,10 +121,27 @@ _CITATION_PATTERNS: List[re.Pattern] = [
         r'\)',
         re.UNICODE,
     ),
-    # "Author (Year)"
+    # "Author (Year)" — v1.3: restringido a secuencias de nombres propios.
+    # El rango {2,40} anterior sobre-capturaba contexto léxico (p.ej. "work on
+    # reinforcement learning a. raffin") y producía same_year_diff_author falso
+    # (confirmado: 3/5 pares adversariales). Ahora usa el mismo criterio de
+    # nombres que source_target_guard (palabras con mayúscula inicial × 1-4),
+    # con partículas de apellido (de/van/von/du/la/del/den/der), guiones
+    # compuestos y "et al." opcional. La clase de letras se amplió a Unicode
+    # latino extendido (cualquier letra Unicode) para cubrir diacríticos
+    # alemanes/turcos (Müller, Alikaşifoğlu) presentes en CiteTracer.
+    # Se excluyen palabras comunes al inicio (Según, Como, El, La, En, ...)
+    # para no capturar contexto léxico como parte del nombre.
+    # Los otros 3 patrones (delimitados por paréntesis o coma) no se tocaron.
     re.compile(
-        r'([\w\u00C0-\u024F\u4E00-\u9FFF\u0600-\u06FF][\w\u00C0-\u024F\u4E00-\u9FFF\u0600-\u06FF\s\-\.]{2,40}?)'
-        r'\s+\((\d{4}[a-z]?)\)',
+        r'\b('
+        r'(?!(?:Según|Como|El|La|Los|Las|En|De|Del|Un|Una|The|A|An|In|On|At|For|With|From|By|This|That|These|Those|Their|His|Her|Its|Our|Your|My|Work|Study|Paper|Research|Results|Authors|According)\b)'
+        r'(?:[A-ZÁÉÍÓÚÑ][^\W\d_]+(?:-[A-ZÁÉÍÓÚÑ][^\W\d_]+)?'                       # nombre (con guión)
+        r'(?:\s+(?:de|van|von|du|la|del|den|der)\s+[A-ZÁÉÍÓÚÑ][^\W\d_]+)?'        # partícula media + nombre
+        r'(?:\s+[A-ZÁÉÍÓÚÑ][^\W\d_]+(?:-[A-ZÁÉÍÓÚÑ][^\W\d_]+)?){0,2})'            # hasta 3-4 palabras
+        r'(?:\s+et\s+al\.?)?'                                                     # " et al." opcional
+        r')'
+        r'\s*\((\d{4}[a-z]?)\)',
         re.UNICODE,
     ),
 ]
@@ -272,15 +333,22 @@ def detect_fabrications(text_a: str, text_b: str) -> ReferenceResult:
     fabricated  = [e for e in events if e.event_type != "anachronistic"]
     anachronistic = [e for e in events if e.event_type == "anachronistic"]
 
-    n_fab = len(fabricated)
-    if n_fab == 0:
+    # v1.2: n_total incluye anacronismos en la fórmula exponencial.
+    # Antes solo entraba n_fab (fabricated_count) en el cálculo de penalty,
+    # así que un anacronismo puro disparaba el módulo (fix v1.1.1 en
+    # tribunal_multimetrico.py) pero con penalty=1.0 — cero impacto en ISI.
+    # fabricated_count y anachronistic_count se siguen reportando por
+    # separado en ReferenceResult (para evidencia/XAI); solo cambia qué
+    # entra en `penalty`.
+    n_total = len(fabricated) + len(anachronistic)
+    if n_total == 0:
         penalty = 1.0
     else:
-        raw_penalty = REFERENCE_PENALTY_BASE ** min(n_fab, 4)
+        raw_penalty = REFERENCE_PENALTY_BASE ** min(n_total, 4)
         penalty = max(MAX_PENALTY_FLOOR, raw_penalty)
 
     return ReferenceResult(
-        fabricated_count=n_fab,
+        fabricated_count=len(fabricated),
         anachronistic_count=len(anachronistic),
         penalty=round(penalty, 6),
         events=events,

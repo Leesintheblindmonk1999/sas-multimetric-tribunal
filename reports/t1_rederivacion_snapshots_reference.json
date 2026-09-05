@@ -1,0 +1,131 @@
+{
+ "fecha": "2026-09-05",
+ "adversariales": {
+  "antes": [
+   {
+    "id": "ADV_CITA_01",
+    "fabricated_count": 1,
+    "anachronistic_count": 0,
+    "penalty": 0.75,
+    "events": [
+     {
+      "type": "same_year_diff_author",
+      "citation_a": "(martínez, 2018)",
+      "citation_b": "Como demuestra Martínez (2018)"
+     }
+    ]
+   },
+   {
+    "id": "ADV_CITA_02",
+    "fabricated_count": 1,
+    "anachronistic_count": 0,
+    "penalty": 0.75,
+    "events": [
+     {
+      "type": "same_year_diff_author",
+      "citation_a": "(po de investigación liderado por thompson, 2020)",
+      "citation_b": "El abogado defensor citó a Thompson (2020)"
+     }
+    ]
+   },
+   {
+    "id": "ADV_CITA_03",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   },
+   {
+    "id": "ADV_CITA_04",
+    "fabricated_count": 1,
+    "anachronistic_count": 0,
+    "penalty": 0.75,
+    "events": [
+     {
+      "type": "same_year_diff_author",
+      "citation_a": "(garcía, garcía et al, 2019)",
+      "citation_b": "Según García (2019)"
+     }
+    ]
+   },
+   {
+    "id": "ADV_CITA_05",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   }
+  ],
+  "despues": [
+   {
+    "id": "ADV_CITA_01",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   },
+   {
+    "id": "ADV_CITA_02",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   },
+   {
+    "id": "ADV_CITA_03",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   },
+   {
+    "id": "ADV_CITA_04",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   },
+   {
+    "id": "ADV_CITA_05",
+    "fabricated_count": 0,
+    "anachronistic_count": 0,
+    "penalty": 1.0,
+    "events": []
+   }
+  ]
+ },
+ "calibracion": {
+  "antes": {
+   "tp": 299,
+   "fn": 44,
+   "fp": 0,
+   "tn": 343,
+   "recall": 0.8717201166180758,
+   "precision": 1.0
+  },
+  "despues": {
+   "tp": 299,
+   "fn": 44,
+   "fp": 0,
+   "tn": 343,
+   "recall": 0.8717201166180758,
+   "precision": 1.0
+  },
+  "diffs_item_level": []
+ },
+ "matriz_1600": {
+  "n": 1600,
+  "antes_fired": 6,
+  "despues_fired": 0,
+  "suben": [],
+  "bajan": [
+   "legal_hallucinations/115526",
+   "legal_hallucinations/115962",
+   "legal_hallucinations/2528",
+   "legal_hallucinations/175684",
+   "legal_hallucinations/114730",
+   "legal_hallucinations/114102"
+  ],
+  "magnitud": []
+ }
+}

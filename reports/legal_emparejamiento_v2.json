@@ -1,0 +1,504 @@
+{
+  "n_ids": 99,
+  "mismo_caso": [
+    {
+      "id": "44603",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "45054",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "47727",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "49477",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "58199",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    }
+  ],
+  "distinto_caso": [
+    {
+      "id": "105367",
+      "a": "Is the case Weeks, Doing Business Under the Name of O. J. Weeks & Company, v. Un",
+      "b": "Which federal circuit court decided the case United States v. Mu"
+    },
+    {
+      "id": "109361",
+      "a": "Is the case Jenkins v. Mc",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "109921",
+      "a": "Is the case Samuel Davis, Plaintiff in Error, v. Th",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "119631",
+      "a": "Brown v. Bo",
+      "b": "What did Judge Van Orsdel  Justiee argue in their dissent in Frisco v. Al"
+    },
+    {
+      "id": "126153",
+      "a": "What is the citation for the case Waters-Pierce Oil Company v. St",
+      "b": "Who wrote the majority opinion in Zachry v. No"
+    },
+    {
+      "id": "131769",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in Washington Water Power Co. v. Sh"
+    },
+    {
+      "id": "132054",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in Perrone v. Un"
+    },
+    {
+      "id": "132076",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in Investment Co. Institute v. Co"
+    },
+    {
+      "id": "132840",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in Dunfee v. Te"
+    },
+    {
+      "id": "135196",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in Morgenstern Chemical Co. v. G."
+    },
+    {
+      "id": "157344",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case Kramer v. Kr"
+    },
+    {
+      "id": "158475",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case United States v. Li"
+    },
+    {
+      "id": "161570",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case Smith v. Mo"
+    },
+    {
+      "id": "161655",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case Burton v. Zi"
+    },
+    {
+      "id": "162150",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case United States v. Pa"
+    },
+    {
+      "id": "164052",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case Townsend v. Lu"
+    },
+    {
+      "id": "164723",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case Santucci v. Al"
+    },
+    {
+      "id": "164748",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case United States v. Qu"
+    },
+    {
+      "id": "16479",
+      "a": "Is the case Trimble v. Bo",
+      "b": "United States v. On"
+    },
+    {
+      "id": "168338",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "United States v. On"
+    },
+    {
+      "id": "17359",
+      "a": "Is the case Dabney v. Si",
+      "b": "United States v. On"
+    },
+    {
+      "id": "175684",
+      "a": "What did Justice Earl Warren argue in their dissent in Lawlor et Al., Trading as Independent Poster Exchange, v. Na",
+      "b": "United States v. On"
+    },
+    {
+      "id": "178592",
+      "a": "Who wrote the majority opinion in Cummings v. Ch",
+      "b": "United States v. On"
+    },
+    {
+      "id": "179455",
+      "a": "Who wrote the majority opinion in Food and Drug Administration, et al. v. Br",
+      "b": "United States v. On"
+    },
+    {
+      "id": "183002",
+      "a": "Brown v. Bo",
+      "b": "Did the court in Graves and Barnewall v. Bo"
+    },
+    {
+      "id": "183879",
+      "a": "Provide a verbatim quotation from the majority opinion in the case Society for Savings in the City of Cleveland v. Bo",
+      "b": "Did the court in Griffin et al. v. Co"
+    },
+    {
+      "id": "188713",
+      "a": "Provide a verbatim quotation from the majority opinion in the case Robert Marshall, Appellant, v. Su",
+      "b": "Did the court in City of Trenton v. St"
+    },
+    {
+      "id": "188825",
+      "a": "Provide a verbatim quotation from the majority opinion in the case United States v. Ci",
+      "b": "Did the court in United States v. Br"
+    },
+    {
+      "id": "188872",
+      "a": "Provide a verbatim quotation from the majority opinion in the case The Heirs of P. F. Dubourg De St Colombe, Appellants v. Th",
+      "b": "Did the court in United States v. Jo"
+    },
+    {
+      "id": "189969",
+      "a": "Provide a verbatim quotation from the majority opinion in the case United States v. Al",
+      "b": "Did the court in United States v. Tr"
+    },
+    {
+      "id": "192534",
+      "a": "Is the case Cogo v. Ce",
+      "b": "Plessy v. Fe"
+    },
+    {
+      "id": "193424",
+      "a": "Is the case De Jur-Amsco Corp. v. Fo",
+      "b": "Plessy v. Fe"
+    },
+    {
+      "id": "193840",
+      "a": "Is the case Willets v. In",
+      "b": "Plessy v. Fe"
+    },
+    {
+      "id": "198176",
+      "a": "Is the case Rush Presbyterian St. Luke's Medical Center v. Sa",
+      "b": "Plessy v. Fe"
+    },
+    {
+      "id": "198743",
+      "a": "Is the case Delon v. El",
+      "b": "Plessy v. Fe"
+    },
+    {
+      "id": "198906",
+      "a": "Is the case Pressure Science, Inc. v. Kr",
+      "b": "Plessy v. Fe"
+    },
+    {
+      "id": "200281",
+      "a": "Is the case Taylor v. Ha",
+      "b": "Is the case Kennedy v. Br"
+    },
+    {
+      "id": "205188",
+      "a": "Is the case New Maine National Bank v. Se",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "20617",
+      "a": "Is the case Cold Blast Transp. Co. v. Ka",
+      "b": "Is the case Ambrose v. Ma"
+    },
+    {
+      "id": "207465",
+      "a": "Is the case Dennett v. Ar",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "20826",
+      "a": "Is the case United States v. Cl",
+      "b": "Is the case Monash Younker Co. v. Na"
+    },
+    {
+      "id": "209637",
+      "a": "Scheck v. Bu",
+      "b": "What is the citation for the case Daniel Garrard, Plaintiff in Error, v. Le"
+    },
+    {
+      "id": "217000",
+      "a": "Scheck v. Bu",
+      "b": "What is the citation for the case Kener, Administrator of Kener, v. La"
+    },
+    {
+      "id": "218447",
+      "a": "Scheck v. Bu",
+      "b": "What is the citation for the case Roller v. Ho"
+    },
+    {
+      "id": "219432",
+      "a": "Scheck v. Bu",
+      "b": "What is the citation for the case Buel v. Va"
+    },
+    {
+      "id": "224059",
+      "a": "What is the citation for the district court case Keller v. Ba",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "225245",
+      "a": "Scheck v. Bu",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "225738",
+      "a": "Scheck v. Bu",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "225913",
+      "a": "Scheck v. Bu",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "226388",
+      "a": "Scheck v. Bu",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "227897",
+      "a": "What is a precedent that is cited in the majority opinion of the case National Union Fire Insurance of Pittsburgh, Pa. v. Ae",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "229473",
+      "a": "Which federal district court decided the case Candelore v. Cl",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "229752",
+      "a": "Which federal district court decided the case Secakuku v. Na",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "230632",
+      "a": "Which federal district court decided the case Canuel v. Os",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "231647",
+      "a": "Which federal district court decided the case Itt World Communications, Inc. v. We",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "231676",
+      "a": "Which federal district court decided the case McClendon v. Ci",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "233048",
+      "a": "Scheck v. Bu",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "235450",
+      "a": "Is the case Harper v. Si",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "23690",
+      "a": "Is the case Smith v. Bl",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "237159",
+      "a": "Who wrote the majority opinion in Wyoming Lodging & Restaurant Ass'n v. Un",
+      "b": "McEwen v. Bu"
+    },
+    {
+      "id": "238264",
+      "a": "Scheck v. Bu",
+      "b": "Hackley v. Pa"
+    },
+    {
+      "id": "24167",
+      "a": "Is the case Strachman v. Pa",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "25458",
+      "a": "Is the case Estes Express Lines v. Un",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "27166",
+      "a": "Is the case Stone v. Ci",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "28401",
+      "a": "Is the case Klefstad v. Am",
+      "b": "What is the citation for the circuit court case Wadsworth v. Al"
+    },
+    {
+      "id": "28842",
+      "a": "Is the case Deans v. Un",
+      "b": "What is the citation for the circuit court case Rappaport v. Un"
+    },
+    {
+      "id": "30166",
+      "a": "Is the case Bottsford v. Sh",
+      "b": "What is the citation for the circuit court case Halebian v. Be"
+    },
+    {
+      "id": "31554",
+      "a": "Is the case Ross v. We",
+      "b": "What is the citation for the circuit court case Rubber Tire Wheel Co. v. Go"
+    },
+    {
+      "id": "36427",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Esteva v. Ho"
+    },
+    {
+      "id": "36864",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case United States v. Gu"
+    },
+    {
+      "id": "37119",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Central Illinois Public Service Co. v. Un"
+    },
+    {
+      "id": "37964",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case South Carolina & G. R. v. Ca"
+    },
+    {
+      "id": "40342",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Barker v. He"
+    },
+    {
+      "id": "41219",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Atlantic Coast Line R. v. Mc"
+    },
+    {
+      "id": "41875",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Northern Wire Corp. v. Na"
+    },
+    {
+      "id": "50477",
+      "a": "What is a precedent that is cited in the majority opinion of the case Clayton v. Ex",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "51507",
+      "a": "Which federal circuit court decided the case Williams v. Un",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "52910",
+      "a": "Which federal circuit court decided the case Black v. Ca",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "54079",
+      "a": "Which federal circuit court decided the case Markham v. A.",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "55917",
+      "a": "Which federal circuit court decided the case Alexander v. Un",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "57065",
+      "a": "Which federal circuit court decided the case Preiss Trading Corp. v. Pe",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "58897",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is a precedent that is cited in the majority opinion of the case Texas & P. Ry. Co. v. Bo"
+    },
+    {
+      "id": "62729",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is a precedent that is cited in the majority opinion of the case Funai v. Co"
+    },
+    {
+      "id": "65819",
+      "a": "Is the case Hughes v. Un",
+      "b": "What is a precedent that is cited in the majority opinion of the case United States v. Ye"
+    },
+    {
+      "id": "66003",
+      "a": "Is the case Quinn v. Ca",
+      "b": "What is a precedent that is cited in the majority opinion of the case United States Ex Rel. Bauder v. Uh"
+    },
+    {
+      "id": "66315",
+      "a": "Is the case Lewis v. Sh",
+      "b": "What is a precedent that is cited in the majority opinion of the case Colliton v. Ne"
+    },
+    {
+      "id": "66864",
+      "a": "What did Judge Buffihgtoh argue in their dissent in Irish Lesbian & Gay Organization v. Gi",
+      "b": "What is a precedent that is cited in the majority opinion of the case Monzo v. De"
+    },
+    {
+      "id": "74829",
+      "a": "Provide a verbatim quotation from the majority opinion in the case Lambie v. Ti",
+      "b": "What is a precedent that is cited in the majority opinion of the case Knight v. Da"
+    },
+    {
+      "id": "94499",
+      "a": "Plessy v. Fe",
+      "b": "Which federal circuit court decided the case Grim v. Fi"
+    },
+    {
+      "id": "97183",
+      "a": "Plessy v. Fe",
+      "b": "Which federal circuit court decided the case Hansen v. Am"
+    },
+    {
+      "id": "9855",
+      "a": "United States v. On",
+      "b": "Did the court in Farshy v. Ka"
+    }
+  ],
+  "solo_a": [
+    {
+      "id": "156915",
+      "caso": "Viacom International Inc. v. Yo"
+    }
+  ],
+  "solo_b": [
+    {
+      "id": "26487",
+      "caso": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "98674",
+      "caso": "Which federal circuit court decided the case Abbott v. Pi"
+    }
+  ],
+  "sin_caso": []
+}

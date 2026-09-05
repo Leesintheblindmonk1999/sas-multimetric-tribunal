@@ -1,0 +1,213 @@
+{
+ "n_total": 45,
+ "n_a": 32,
+ "n_b": 13,
+ "precision_total": 0.7111,
+ "por_subtipo": {
+  "primalidad": {
+   "n": 26,
+   "n_a": 22,
+   "n_b": 4,
+   "precision": 0.8462,
+   "items": [
+    {
+     "base": "0018",
+     "clasif": "b"
+    },
+    {
+     "base": "0212",
+     "clasif": "b"
+    },
+    {
+     "base": "0235",
+     "clasif": "b"
+    },
+    {
+     "base": "10757",
+     "clasif": "a"
+    },
+    {
+     "base": "10999",
+     "clasif": "a"
+    },
+    {
+     "base": "13644",
+     "clasif": "a"
+    },
+    {
+     "base": "13722",
+     "clasif": "a"
+    },
+    {
+     "base": "13802",
+     "clasif": "a"
+    },
+    {
+     "base": "13936",
+     "clasif": "a"
+    },
+    {
+     "base": "13959",
+     "clasif": "a"
+    },
+    {
+     "base": "15016",
+     "clasif": "a"
+    },
+    {
+     "base": "15083",
+     "clasif": "a"
+    },
+    {
+     "base": "15332",
+     "clasif": "b"
+    },
+    {
+     "base": "1587",
+     "clasif": "a"
+    },
+    {
+     "base": "16918",
+     "clasif": "a"
+    },
+    {
+     "base": "16937",
+     "clasif": "a"
+    },
+    {
+     "base": "16970",
+     "clasif": "a"
+    },
+    {
+     "base": "16981",
+     "clasif": "a"
+    },
+    {
+     "base": "16987",
+     "clasif": "a"
+    },
+    {
+     "base": "19785",
+     "clasif": "a"
+    },
+    {
+     "base": "19874",
+     "clasif": "a"
+    },
+    {
+     "base": "19904",
+     "clasif": "a"
+    },
+    {
+     "base": "19959",
+     "clasif": "a"
+    },
+    {
+     "base": "6378",
+     "clasif": "a"
+    },
+    {
+     "base": "7585",
+     "clasif": "a"
+    },
+    {
+     "base": "9267",
+     "clasif": "a"
+    }
+   ]
+  },
+  "vuelos": {
+   "n": 9,
+   "n_a": 6,
+   "n_b": 3,
+   "precision": 0.6667,
+   "items": [
+    {
+     "base": "11642",
+     "clasif": "a"
+    },
+    {
+     "base": "11854",
+     "clasif": "a"
+    },
+    {
+     "base": "11972",
+     "clasif": "b"
+    },
+    {
+     "base": "14819",
+     "clasif": "a"
+    },
+    {
+     "base": "19337",
+     "clasif": "a"
+    },
+    {
+     "base": "20553",
+     "clasif": "a"
+    },
+    {
+     "base": "20989",
+     "clasif": "a"
+    },
+    {
+     "base": "5559",
+     "clasif": "b"
+    },
+    {
+     "base": "5959",
+     "clasif": "b"
+    }
+   ]
+  },
+  "senador": {
+   "n": 10,
+   "n_a": 4,
+   "n_b": 6,
+   "precision": 0.4,
+   "items": [
+    {
+     "base": "11206",
+     "clasif": "a"
+    },
+    {
+     "base": "11468",
+     "clasif": "a"
+    },
+    {
+     "base": "12916",
+     "clasif": "b"
+    },
+    {
+     "base": "15784",
+     "clasif": "a"
+    },
+    {
+     "base": "15914",
+     "clasif": "a"
+    },
+    {
+     "base": "18751",
+     "clasif": "b"
+    },
+    {
+     "base": "20119",
+     "clasif": "b"
+    },
+    {
+     "base": "20367",
+     "clasif": "b"
+    },
+    {
+     "base": "2145",
+     "clasif": "b"
+    },
+    {
+     "base": "5403",
+     "clasif": "b"
+    }
+   ]
+  }
+ },
+ "confirmado": false
+}

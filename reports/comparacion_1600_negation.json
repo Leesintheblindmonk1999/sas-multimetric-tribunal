@@ -1,0 +1,29 @@
+{
+  "subieron": [
+    {
+      "pid": "halueval_general/2789",
+      "antes_fired": [
+        "flow_penalty",
+        "lexical_baseline_score"
+      ],
+      "despues_fired": [
+        "flow_penalty",
+        "lexical_baseline_score",
+        "negation_penalty"
+      ]
+    }
+  ],
+  "bajaron": [],
+  "isi_cambio": [
+    {
+      "pid": "halueval_general/2789",
+      "antes": 0.043919,
+      "despues": 0.019764
+    },
+    {
+      "pid": "halueval_summarization/4119",
+      "antes": 0.046515,
+      "despues": 0.052329
+    }
+  ]
+}

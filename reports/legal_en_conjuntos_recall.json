@@ -1,0 +1,23 @@
+{
+  "conjunto_1600": {
+    "n": 1600,
+    "legal": 200,
+    "pct": 12.5,
+    "neg_fired": 862,
+    "neg_fired_sin_legal": 764
+  },
+  "conjunto_191": {
+    "n": 191,
+    "legal": 17,
+    "pct": 8.9,
+    "det_viejo": 112,
+    "det_nuevo": 109
+  },
+  "conjunto_59": {
+    "n": 96,
+    "legal": 7,
+    "pct": 7.3,
+    "det_viejo": 53,
+    "det_nuevo": 56
+  }
+}

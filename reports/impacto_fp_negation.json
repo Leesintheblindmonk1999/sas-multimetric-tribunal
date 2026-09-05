@@ -1,0 +1,62 @@
+[
+  {
+    "id": "SAS_PILOT_A_biomed_cre_isi_00",
+    "negation_antes": false,
+    "negation_despues": true,
+    "isi_antes": 0.888889,
+    "isi_despues": 0.4,
+    "zona_antes": "A",
+    "zona_despues": "B",
+    "cambio_veredicto": true
+  },
+  {
+    "id": "SAS_PILOT_A_biomed_cre_isi_01",
+    "negation_antes": false,
+    "negation_despues": true,
+    "isi_antes": 0.888889,
+    "isi_despues": 0.4,
+    "zona_antes": "A",
+    "zona_despues": "B",
+    "cambio_veredicto": true
+  },
+  {
+    "id": "SAS_PILOT_A_biomed_lexical_baseline_score_00",
+    "negation_antes": false,
+    "negation_despues": true,
+    "isi_antes": 0.521739,
+    "isi_despues": 0.234783,
+    "zona_antes": "B",
+    "zona_despues": "F-S",
+    "cambio_veredicto": true
+  },
+  {
+    "id": "SAS_PILOT_A_biomed_lexical_baseline_score_01",
+    "negation_antes": false,
+    "negation_despues": true,
+    "isi_antes": 0.789474,
+    "isi_despues": 0.355263,
+    "zona_antes": "A",
+    "zona_despues": "B",
+    "cambio_veredicto": true
+  },
+  {
+    "id": "SAS_PILOT_A_legal_lexical_baseline_score_00",
+    "negation_antes": false,
+    "negation_despues": true,
+    "isi_antes": 0.714286,
+    "isi_despues": 0.321429,
+    "zona_antes": "A",
+    "zona_despues": "B",
+    "cambio_veredicto": true
+  },
+  {
+    "id": "SAS_PILOT_A_narrative_lexical_baseline_score_00",
+    "negation_antes": false,
+    "negation_despues": true,
+    "isi_antes": 0.615385,
+    "isi_despues": 0.276923,
+    "zona_antes": "A",
+    "zona_despues": "B",
+    "cambio_veredicto": true
+  }
+]

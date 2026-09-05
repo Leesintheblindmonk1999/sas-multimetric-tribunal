@@ -1,5 +1,5 @@
 """
-core/tribunal_multimetrico.py — Tribunal Multimétrico SAS v1.0
+core/tribunal_multimetrico.py — Tribunal Multimétrico SAS v1.0.1
 ═══════════════════════════════════════════════════════════════════════════════
 TRIBUNAL MULTIMÉTRICO — Clasificación en 3 Zonas
 
@@ -13,6 +13,29 @@ Arquitectura:
       - ISI ≥ κD       → COHERENTE
   · κD = 0.56 (validado, TAD EX-2026-18792778)
   · κR = validación experimental (barrido 0.15-0.40)
+
+CHANGELOG v1.0.1 (2026-09-02) — fix de integración reference_penalty anacrónico
+------------------------------------------------------------------------------
+[BLOCKER][matriz de disparo + corpus reference_penalty (Tarea 2)]
+    _calcular_reference_penalty() solo disparaba con
+    `result.fabricated_count > 0`, ignorando `result.anachronistic_count`.
+    La rama anacronística de reference_check.py (año fuera de
+    [MIN_YEAR=1800, MAX_YEAR=2030] sin ser modificación de cita existente
+    en A) nunca activaba el módulo a nivel tribunal, aunque el detector
+    lo marcara correctamente.
+
+    Línea cambiada: condición de disparo en _calcular_reference_penalty:
+      ANTES: if result.fabricated_count > 0:
+      AHORA: if result.fabricated_count > 0 or result.anachronistic_count > 0:
+    El string de descripción pasó de "(N anacrónica(s))" a "N fabricación(es),
+    M anacrónica(s)" — mismo formato, sin romper consumidores (ningún
+    código parsea ese string; verificado por grep en tests y dependencias).
+
+    Antes/después (3 pares anacronistic_pure del corpus controlado):
+      - fire: 0/3 → 3/3 (100%)
+    Regresión (60 pares mutación/control + 1,600 pares de la matriz):
+      - 0 diferencias en fired_modules ni ISI_final. El fix NO altera nada
+        fuera del caso anacronismo-puro.
 
 Registry: EX-2026-18792778 (TAD, Argentina)
 Author: Gonzalo Emir Durante — Project Manifold 0.56
@@ -478,14 +501,23 @@ class TribunalMultimetrico:
             return 1.0, False, f"ArithmeticDetector: no disponible ({e})"
 
     def _calcular_reference_penalty(self, text_a: str, text_b: str) -> Tuple[float, bool, str]:
-        """Calcula penalización por fabricación de referencias."""
+        """Calcula penalización por fabricación de referencias.
+
+        v1.1.1 (2026-09-02): fix de integración — la condición ahora dispara
+        también con anachronistic_count > 0. Antes solo se consideraba
+        fabricated_count, dejando muerta la rama anacronística de
+        reference_check.py (un año fuera de [MIN_YEAR, MAX_YEAR] sin ser
+        modificación de una cita de A nunca activaba el módulo a nivel
+        tribunal). Detectado por la matriz de disparo + corpus
+        reference_penalty (Tarea 2). No cambia firma ni formato del string.
+        """
         try:
             from core.reference_check import detect_fabrications
             result = detect_fabrications(text_a, text_b)
-            if result.fabricated_count > 0:
+            if result.fabricated_count > 0 or result.anachronistic_count > 0:
                 return result.penalty, True, (
-                    f"ReferenceCheck: {result.fabricated_count} fabricación(es) "
-                    f"({result.anachronistic_count} anacrónica(s))"
+                    f"ReferenceCheck: {result.fabricated_count} fabricación(es), "
+                    f"{result.anachronistic_count} anacrónica(s)"
                 )
             return 1.0, False, "ReferenceCheck: sin fabricaciones"
         except Exception as e:

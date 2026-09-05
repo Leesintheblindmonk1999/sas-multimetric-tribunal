@@ -56,5 +56,12 @@ logs/
 reports/validation_report.json
 !reports/.gitkeep
 
+# Large local artifacts (not for publication)
+reports/corpus_index.db
+reports/corpus_clean_manifest.json
+reports/bad_pairs_quarantine_list.txt
+reports/duplicate_groups_partial.json
+reports/quick_test_paper_results.json
+
 # Zip artifacts (keep the zip for release, exclude from tracking if desired)
 # SAS_Multimetric_Tribunal_Public_v1_0_0.zip

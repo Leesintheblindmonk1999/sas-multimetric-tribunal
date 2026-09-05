@@ -1,0 +1,149 @@
+{
+  "total_citas": 1372,
+  "n_sospechosas": 1372,
+  "pct_sospechosas": 100.0,
+  "sospechosas_en_fn": 88,
+  "sospechosas_en_fp": 0,
+  "ejemplos": [
+    {
+      "pid": "CAL_R1-0055",
+      "autor": "work on contrastive learning wei-lin chen",
+      "anio": "2023",
+      "match": "work on contrastive learning Wei-Lin Chen (2023)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_R1-0055",
+      "autor": "work on contrastive learning wei-lin chen",
+      "anio": "2023",
+      "match": "work on contrastive learning Wei-Lin Chen (2023)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_H4-0059",
+      "autor": "their work on speech recognition taiqi he",
+      "anio": "2024",
+      "match": "their work on speech recognition Taiqi He (2024)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_H4-0059",
+      "autor": "their work on speech recognition taiqi he",
+      "anio": "2021",
+      "match": "their work on speech recognition Taiqi He (2021)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_R1-0085",
+      "autor": "k on graph neural networks ryosuke yamaki",
+      "anio": "2023",
+      "match": "k on graph neural networks Ryosuke Yamaki (2023)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_R1-0085",
+      "autor": "k on graph neural networks ryosuke yamaki",
+      "anio": "2023",
+      "match": "k on graph neural networks Ryosuke Yamaki (2023)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_R3-0029",
+      "autor": "rk on reinforcement learning lingbing guo",
+      "anio": "2022",
+      "match": "rk on reinforcement learning Lingbing Guo (2022)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_R3-0029",
+      "autor": "rk on reinforcement learning lingbing guo",
+      "anio": "2022",
+      "match": "rk on reinforcement learning Lingbing Guo (2022)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_H2-0142",
+      "autor": "work on knowledge distillation haoyu wang",
+      "anio": "2024",
+      "match": "work on knowledge distillation Haoyu Wang (2024)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_H2-0142",
+      "autor": "on knowledge distillation dr. elara voss",
+      "anio": "2024",
+      "match": "on knowledge distillation Dr. Elara Voss (2024)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_R3-0011",
+      "autor": "retrieval augmented generation kranti ch",
+      "anio": "2024",
+      "match": "retrieval augmented generation Kranti Ch (2024)",
+      "razon": "5 palabras"
+    },
+    {
+      "pid": "CAL_R3-0011",
+      "autor": "retrieval augmented generation kranti ch",
+      "anio": "2024",
+      "match": "retrieval augmented generation Kranti Ch (2024)",
+      "razon": "5 palabras"
+    },
+    {
+      "pid": "CAL_R3-0032",
+      "autor": "on reinforcement learning songyang zhang",
+      "anio": "2022",
+      "match": "on reinforcement learning Songyang Zhang (2022)",
+      "razon": "5 palabras"
+    },
+    {
+      "pid": "CAL_R3-0032",
+      "autor": "on reinforcement learning songyang zhang",
+      "anio": "2022",
+      "match": "on reinforcement learning Songyang Zhang (2022)",
+      "razon": "5 palabras"
+    },
+    {
+      "pid": "CAL_R1-0038",
+      "autor": "r work on transformer attention jiguo liu",
+      "anio": "2023",
+      "match": "r work on transformer attention Jiguo Liu (2023)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_R1-0038",
+      "autor": "r work on transformer attention jiguo liu",
+      "anio": "2023",
+      "match": "r work on transformer attention Jiguo Liu (2023)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_R3-0002",
+      "autor": "work on federated learning jianqing zhang",
+      "anio": "2024",
+      "match": "work on federated learning Jianqing Zhang (2024)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_R3-0002",
+      "autor": "work on federated learning jianqing zhang",
+      "anio": "2024",
+      "match": "work on federated learning Jianqing Zhang (2024)",
+      "razon": "6 palabras"
+    },
+    {
+      "pid": "CAL_R2-0009",
+      "autor": "eir work on diffusion models chengyu wang",
+      "anio": "2024",
+      "match": "eir work on diffusion models Chengyu Wang (2024)",
+      "razon": "7 palabras"
+    },
+    {
+      "pid": "CAL_R2-0009",
+      "autor": "eir work on diffusion models chengyu wang",
+      "anio": "2024",
+      "match": "eir work on diffusion models Chengyu Wang (2024)",
+      "razon": "7 palabras"
+    }
+  ]
+}

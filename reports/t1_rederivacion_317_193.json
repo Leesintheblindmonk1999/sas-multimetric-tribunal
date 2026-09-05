@@ -1,0 +1,4097 @@
+{
+ "fecha": "2026-09-05",
+ "metodo": "detect_inversions() real (negation_probe.py v1.3)",
+ "n_true_false": 510,
+ "n_regresiones": 0,
+ "n_fp_eliminados": 510,
+ "n_sin_texto": 0,
+ "publicado_anterior": {
+  "n_regresiones": 193,
+  "n_fp_eliminados": 317
+ },
+ "regresiones": [],
+ "fp_eliminados": [
+  "codehalu/5907",
+  "codehalu/0430",
+  "codehalu/6001",
+  "codehalu/5593",
+  "codehalu/6882",
+  "codehalu/2898",
+  "codehalu/3433",
+  "codehalu/2896",
+  "codehalu/3403",
+  "codehalu/1137",
+  "codehalu/3907",
+  "codehalu/3463",
+  "codehalu/6015",
+  "codehalu/7217",
+  "codehalu/1361",
+  "codehalu/3895",
+  "codehalu/6908",
+  "codehalu/6530",
+  "codehalu/2428",
+  "codehalu/1127",
+  "codehalu/3908",
+  "codehalu/2897",
+  "codehalu/6886",
+  "codehalu/6712",
+  "codehalu/7213",
+  "codehalu/3903",
+  "codehalu/6721",
+  "codehalu/5681",
+  "codehalu/5594",
+  "codehalu/1472",
+  "codehalu/7469",
+  "codehalu/1635",
+  "codehalu/3947",
+  "codehalu/3921",
+  "codehalu/5951",
+  "codehalu/2638",
+  "codehalu/6192",
+  "halubench/2253",
+  "halubench/2006",
+  "halubench/1828",
+  "halubench/6033",
+  "halubench/0839",
+  "halubench/5543",
+  "halubench/0260",
+  "halubench/0244",
+  "halubench/1791",
+  "halubench/1905",
+  "halubench/4139",
+  "halubench/0217",
+  "halubench/4597",
+  "halubench/5323",
+  "halubench/6216",
+  "halubench/1307",
+  "halubench/2276",
+  "halubench/1273",
+  "halubench/1763",
+  "halubench/6254",
+  "halubench/4945",
+  "halubench/2166",
+  "halubench/0355",
+  "halubench/7140",
+  "halubench/4729",
+  "halubench/1575",
+  "halubench/5771",
+  "halubench/5417",
+  "halubench/6332",
+  "halubench/0653",
+  "halubench/1907",
+  "halubench/0827",
+  "halubench/3113",
+  "halubench/2277",
+  "halubench/2988",
+  "halubench/3032",
+  "halubench/5490",
+  "halubench/2187",
+  "halubench/5749",
+  "halubench/5308",
+  "halubench/5201",
+  "halubench/1401",
+  "halubench/4375",
+  "halubench/2005",
+  "halubench/3108",
+  "halubench/2211",
+  "halubench/5242",
+  "halubench/5637",
+  "halubench/1799",
+  "halubench/6957",
+  "halubench/0458",
+  "halubench/1876",
+  "halubench/6743",
+  "halubench/6594",
+  "halubench/4646",
+  "halubench/1741",
+  "halubench/4089",
+  "halubench/1170",
+  "halubench/2169",
+  "halubench/2020",
+  "halubench/6102",
+  "halubench/4598",
+  "halubench/2152",
+  "halubench/6119",
+  "halubench/3509",
+  "halubench/3271",
+  "halubench/1796",
+  "halubench/1133",
+  "halubench/0744",
+  "halubench/6191",
+  "halubench/7133",
+  "halubench/1252",
+  "halubench/5140",
+  "halubench/1310",
+  "halubench/3152",
+  "halubench/0094",
+  "halubench/5572",
+  "halubench/5904",
+  "halubench/4398",
+  "halubench/2185",
+  "halubench/6296",
+  "halubench/5250",
+  "halubench/5895",
+  "halubench/2157",
+  "halueval_dialogue/1824",
+  "halueval_dialogue/0409",
+  "halueval_dialogue/3657",
+  "halueval_dialogue/8935",
+  "halueval_dialogue/9674",
+  "halueval_dialogue/1535",
+  "halueval_dialogue/3811",
+  "halueval_dialogue/8279",
+  "halueval_dialogue/9863",
+  "halueval_dialogue/3257",
+  "halueval_dialogue/6873",
+  "halueval_dialogue/3611",
+  "halueval_dialogue/7359",
+  "halueval_dialogue/4557",
+  "halueval_dialogue/2615",
+  "halueval_dialogue/5574",
+  "halueval_dialogue/3527",
+  "halueval_dialogue/5881",
+  "halueval_dialogue/9891",
+  "halueval_dialogue/7527",
+  "halueval_dialogue/2045",
+  "halueval_dialogue/9459",
+  "halueval_dialogue/0750",
+  "halueval_dialogue/4554",
+  "halueval_dialogue/7428",
+  "halueval_dialogue/4374",
+  "halueval_dialogue/9980",
+  "halueval_dialogue/2803",
+  "halueval_dialogue/5313",
+  "halueval_dialogue/0916",
+  "halueval_dialogue/6572",
+  "halueval_dialogue/4386",
+  "halueval_dialogue/8179",
+  "halueval_dialogue/6482",
+  "halueval_dialogue/7517",
+  "halueval_dialogue/8830",
+  "halueval_dialogue/4304",
+  "halueval_dialogue/6543",
+  "halueval_dialogue/5930",
+  "halueval_dialogue/3593",
+  "halueval_dialogue/8348",
+  "halueval_dialogue/8085",
+  "halueval_dialogue/2621",
+  "halueval_dialogue/6252",
+  "halueval_dialogue/8669",
+  "halueval_dialogue/9064",
+  "halueval_dialogue/0188",
+  "halueval_dialogue/1876",
+  "halueval_dialogue/5573",
+  "halueval_dialogue/2591",
+  "halueval_dialogue/4315",
+  "halueval_dialogue/8201",
+  "halueval_dialogue/2927",
+  "halueval_dialogue/8317",
+  "halueval_dialogue/1743",
+  "halueval_dialogue/2646",
+  "halueval_dialogue/8689",
+  "halueval_dialogue/9813",
+  "halueval_dialogue/5310",
+  "halueval_dialogue/1832",
+  "halueval_dialogue/5038",
+  "halueval_dialogue/0949",
+  "halueval_dialogue/3946",
+  "halueval_dialogue/9295",
+  "halueval_dialogue/1290",
+  "halueval_dialogue/7787",
+  "halueval_dialogue/4342",
+  "halueval_dialogue/6932",
+  "halueval_dialogue/8835",
+  "halueval_dialogue/3295",
+  "halueval_dialogue/5107",
+  "halueval_dialogue/4061",
+  "halueval_dialogue/3681",
+  "halueval_dialogue/1049",
+  "halueval_dialogue/5539",
+  "halueval_dialogue/0344",
+  "halueval_dialogue/9638",
+  "halueval_dialogue/9075",
+  "halueval_dialogue/1163",
+  "halueval_dialogue/3750",
+  "halueval_general/3619",
+  "halueval_general/0043",
+  "halueval_general/1085",
+  "halueval_general/0930",
+  "halueval_general/3230",
+  "halueval_general/2388",
+  "halueval_general/3397",
+  "halueval_general/3641",
+  "halueval_general/3814",
+  "halueval_general/0626",
+  "halueval_general/3800",
+  "halueval_general/0881",
+  "halueval_general/4455",
+  "halueval_general/0311",
+  "halueval_general/1200",
+  "halueval_general/0095",
+  "halueval_general/3142",
+  "halueval_general/3301",
+  "halueval_general/3568",
+  "halueval_general/3505",
+  "halueval_general/0743",
+  "halueval_general/0099",
+  "halueval_general/1542",
+  "halueval_general/0234",
+  "halueval_general/4316",
+  "halueval_general/0348",
+  "halueval_general/3989",
+  "halueval_general/4019",
+  "halueval_general/2066",
+  "halueval_general/3746",
+  "halueval_general/0669",
+  "halueval_general/4471",
+  "halueval_general/1289",
+  "halueval_general/3762",
+  "halueval_general/0891",
+  "halueval_general/0148",
+  "halueval_general/4402",
+  "halueval_general/1819",
+  "halueval_general/2235",
+  "halueval_general/3457",
+  "halueval_general/2844",
+  "halueval_general/4463",
+  "halueval_general/1102",
+  "halueval_general/4291",
+  "halueval_general/3518",
+  "halueval_general/2231",
+  "halueval_general/3933",
+  "halueval_general/2898",
+  "halueval_general/3589",
+  "halueval_general/4044",
+  "halueval_general/4029",
+  "halueval_general/2165",
+  "halueval_general/2696",
+  "halueval_general/3067",
+  "halueval_general/3342",
+  "halueval_general/4439",
+  "halueval_general/4025",
+  "halueval_general/3883",
+  "halueval_general/0004",
+  "halueval_general/2865",
+  "halueval_general/0383",
+  "halueval_general/3584",
+  "halueval_general/3825",
+  "halueval_general/3654",
+  "halueval_general/3542",
+  "halueval_general/2806",
+  "halueval_general/1714",
+  "halueval_general/1065",
+  "halueval_general/0193",
+  "halueval_general/3100",
+  "halueval_general/0478",
+  "halueval_qa/4506",
+  "halueval_qa/2286",
+  "halueval_qa/1424",
+  "halueval_qa/9674",
+  "halueval_qa/6912",
+  "halueval_qa/3257",
+  "halueval_qa/6873",
+  "halueval_qa/4557",
+  "halueval_qa/0106",
+  "halueval_qa/2615",
+  "halueval_qa/5574",
+  "halueval_qa/4552",
+  "halueval_qa/2547",
+  "halueval_qa/9891",
+  "halueval_qa/9044",
+  "halueval_qa/9459",
+  "halueval_qa/3150",
+  "halueval_qa/1139",
+  "halueval_qa/3733",
+  "halueval_qa/7428",
+  "halueval_qa/5977",
+  "halueval_qa/2677",
+  "halueval_qa/4422",
+  "halueval_qa/3598",
+  "halueval_qa/5168",
+  "halueval_qa/4386",
+  "halueval_qa/5155",
+  "halueval_qa/1796",
+  "halueval_qa/2504",
+  "halueval_qa/2621",
+  "halueval_qa/6916",
+  "halueval_qa/0188",
+  "halueval_qa/2591",
+  "halueval_qa/2927",
+  "halueval_qa/8317",
+  "halueval_qa/9977",
+  "halueval_qa/5038",
+  "halueval_qa/0949",
+  "halueval_qa/9295",
+  "halueval_qa/1133",
+  "halueval_qa/2705",
+  "halueval_qa/0344",
+  "halueval_qa/9638",
+  "halueval_qa/9075",
+  "halueval_qa/3770",
+  "halueval_qa/9641",
+  "halueval_summarization/8935",
+  "halueval_summarization/0520",
+  "halueval_summarization/3582",
+  "halueval_summarization/3811",
+  "halueval_summarization/9863",
+  "halueval_summarization/0434",
+  "halueval_summarization/9195",
+  "halueval_summarization/3257",
+  "halueval_summarization/3611",
+  "halueval_summarization/7359",
+  "halueval_summarization/9654",
+  "halueval_summarization/0106",
+  "halueval_summarization/2615",
+  "halueval_summarization/2547",
+  "halueval_summarization/1674",
+  "halueval_summarization/6224",
+  "halueval_summarization/1584",
+  "halueval_summarization/5635",
+  "halueval_summarization/4333",
+  "halueval_summarization/1291",
+  "halueval_summarization/9044",
+  "halueval_summarization/4803",
+  "halueval_summarization/3733",
+  "halueval_summarization/3814",
+  "halueval_summarization/1654",
+  "halueval_summarization/4554",
+  "halueval_summarization/7428",
+  "halueval_summarization/5977",
+  "halueval_summarization/2664",
+  "halueval_summarization/6065",
+  "halueval_summarization/5820",
+  "halueval_summarization/3432",
+  "halueval_summarization/1169",
+  "halueval_summarization/2803",
+  "halueval_summarization/8751",
+  "halueval_summarization/2677",
+  "halueval_summarization/6216",
+  "halueval_summarization/5313",
+  "halueval_summarization/0916",
+  "halueval_summarization/5168",
+  "halueval_summarization/6572",
+  "halueval_summarization/4386",
+  "halueval_summarization/3456",
+  "halueval_summarization/9292",
+  "halueval_summarization/5155",
+  "halueval_summarization/8179",
+  "halueval_summarization/7517",
+  "halueval_summarization/4339",
+  "halueval_summarization/4040",
+  "halueval_summarization/4304",
+  "halueval_summarization/7019",
+  "halueval_summarization/9560",
+  "halueval_summarization/5930",
+  "halueval_summarization/2266",
+  "halueval_summarization/8085",
+  "halueval_summarization/1489",
+  "halueval_summarization/6916",
+  "halueval_summarization/9771",
+  "halueval_summarization/6252",
+  "halueval_summarization/7668",
+  "halueval_summarization/4119",
+  "halueval_summarization/9064",
+  "halueval_summarization/4808",
+  "halueval_summarization/7123",
+  "halueval_summarization/2591",
+  "halueval_summarization/7433",
+  "halueval_summarization/8201",
+  "halueval_summarization/2927",
+  "halueval_summarization/8317",
+  "halueval_summarization/1743",
+  "halueval_summarization/4889",
+  "halueval_summarization/3258",
+  "halueval_summarization/2646",
+  "halueval_summarization/8837",
+  "halueval_summarization/5947",
+  "halueval_summarization/3923",
+  "halueval_summarization/3946",
+  "halueval_summarization/9295",
+  "halueval_summarization/7962",
+  "halueval_summarization/1133",
+  "halueval_summarization/7787",
+  "halueval_summarization/9007",
+  "halueval_summarization/2705",
+  "halueval_summarization/9938",
+  "halueval_summarization/3295",
+  "halueval_summarization/5107",
+  "halueval_summarization/6537",
+  "halueval_summarization/7177",
+  "halueval_summarization/8479",
+  "halueval_summarization/3681",
+  "halueval_summarization/0344",
+  "halueval_summarization/9075",
+  "halueval_summarization/9641",
+  "halueval_summarization/3608",
+  "halueval_summarization/0964",
+  "halueval_summarization/3750",
+  "legal_hallucinations/164052",
+  "legal_hallucinations/132054",
+  "legal_hallucinations/119631",
+  "legal_hallucinations/105367",
+  "legal_hallucinations/231647",
+  "legal_hallucinations/238264",
+  "legal_hallucinations/164723",
+  "legal_hallucinations/55917",
+  "legal_hallucinations/178592",
+  "legal_hallucinations/188825",
+  "legal_hallucinations/183879",
+  "legal_hallucinations/109361",
+  "legal_hallucinations/229473",
+  "legal_hallucinations/168338",
+  "legal_hallucinations/109921",
+  "legal_hallucinations/58199",
+  "legal_hallucinations/188872",
+  "legal_hallucinations/183002",
+  "legal_hallucinations/97183",
+  "legal_hallucinations/156915",
+  "legal_hallucinations/188713",
+  "legal_hallucinations/94499",
+  "legal_hallucinations/230632",
+  "legal_hallucinations/175684",
+  "legal_hallucinations/74829",
+  "legal_hallucinations/57065",
+  "legal_hallucinations/58897",
+  "legal_hallucinations/98674",
+  "legal_hallucinations/233048",
+  "legal_hallucinations/132840",
+  "legal_hallucinations/132076",
+  "legal_hallucinations/157344",
+  "legal_hallucinations/51507",
+  "legal_hallucinations/231676",
+  "legal_hallucinations/237159",
+  "legal_hallucinations/131769",
+  "legal_hallucinations/54079",
+  "legal_hallucinations/135196",
+  "legal_hallucinations/62729",
+  "legal_hallucinations/189969",
+  "legal_hallucinations/158475",
+  "legal_hallucinations/229752",
+  "legal_hallucinations/9855",
+  "legal_hallucinations/126153",
+  "legal_hallucinations/52910",
+  "truthfulqa/0692",
+  "truthfulqa/0089",
+  "truthfulqa/0604",
+  "truthfulqa/0095",
+  "truthfulqa/0223",
+  "truthfulqa/0203",
+  "truthfulqa/0718",
+  "truthfulqa/0284",
+  "truthfulqa/0006",
+  "truthfulqa/0774",
+  "truthfulqa/0220",
+  "truthfulqa/0094",
+  "truthfulqa/0367",
+  "truthfulqa/0618",
+  "truthfulqa/0044",
+  "truthfulqa/0387",
+  "truthfulqa/0080",
+  "truthfulqa/0643",
+  "truthfulqa/0633",
+  "truthfulqa/0196",
+  "truthfulqa/0046",
+  "truthfulqa/0081",
+  "truthfulqa/0749",
+  "truthfulqa/0650",
+  "truthfulqa/0373",
+  "truthfulqa/0166",
+  "truthfulqa/0273",
+  "truthfulqa/0663",
+  "truthfulqa/0623",
+  "truthfulqa/0712",
+  "truthfulqa/0167",
+  "truthfulqa/0388",
+  "truthfulqa/0224",
+  "truthfulqa/0469",
+  "truthfulqa/0146",
+  "truthfulqa/0269",
+  "truthfulqa/0690",
+  "truthfulqa/0751",
+  "truthfulqa/0257",
+  "truthfulqa/0705",
+  "truthfulqa/0750",
+  "truthfulqa/0666",
+  "truthfulqa/0512",
+  "truthfulqa/0382",
+  "truthfulqa/0165",
+  "truthfulqa/0500",
+  "truthfulqa/0019",
+  "truthfulqa/0371",
+  "truthfulqa/0314",
+  "truthfulqa/0246",
+  "truthfulqa/0087"
+ ],
+ "detalle": [
+  {
+   "pid": "codehalu/5907",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/0430",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6001",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/5593",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6882",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/2898",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3433",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/2896",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3403",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/1137",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3907",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3463",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6015",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/7217",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/1361",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3895",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6908",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6530",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/2428",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/1127",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3908",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/2897",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6886",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6712",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/7213",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3903",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6721",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/5681",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/5594",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/1472",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/7469",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/1635",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3947",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/3921",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/5951",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/2638",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "codehalu/6192",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2253",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2006",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1828",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6033",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0839",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5543",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0260",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0244",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1791",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1905",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4139",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0217",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4597",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5323",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6216",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1307",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2276",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1273",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1763",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6254",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4945",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2166",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0355",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/7140",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4729",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1575",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5771",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5417",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6332",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0653",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1907",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0827",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/3113",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2277",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2988",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/3032",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5490",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2187",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5749",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5308",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5201",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1401",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4375",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2005",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/3108",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2211",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5242",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5637",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1799",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6957",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0458",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1876",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6743",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6594",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4646",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1741",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4089",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1170",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2169",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2020",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6102",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4598",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2152",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6119",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/3509",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/3271",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1796",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1133",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0744",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6191",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/7133",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1252",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5140",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/1310",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/3152",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/0094",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5572",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5904",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/4398",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2185",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/6296",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5250",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/5895",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halubench/2157",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1824",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/0409",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3657",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8935",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9674",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1535",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3811",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8279",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9863",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3257",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/6873",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3611",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/7359",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4557",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2615",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5574",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3527",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5881",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9891",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/7527",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2045",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9459",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/0750",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4554",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/7428",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4374",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9980",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2803",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5313",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/0916",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/6572",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4386",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8179",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/6482",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/7517",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8830",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4304",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/6543",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5930",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3593",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8348",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8085",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2621",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/6252",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8669",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9064",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/0188",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1876",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5573",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2591",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4315",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8201",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2927",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8317",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1743",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/2646",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8689",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9813",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5310",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1832",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5038",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/0949",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3946",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9295",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1290",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/7787",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4342",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/6932",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/8835",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3295",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5107",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/4061",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3681",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1049",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/5539",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/0344",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9638",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/9075",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/1163",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_dialogue/3750",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3619",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0043",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1085",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0930",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3230",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2388",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3397",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3641",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3814",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0626",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3800",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0881",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4455",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0311",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1200",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0095",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3142",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3301",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3568",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3505",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0743",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0099",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1542",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0234",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4316",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0348",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3989",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4019",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2066",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3746",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0669",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4471",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1289",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3762",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0891",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0148",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4402",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1819",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2235",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3457",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2844",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4463",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1102",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4291",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3518",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2231",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3933",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2898",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3589",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4044",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4029",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2165",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2696",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3067",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3342",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4439",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/4025",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3883",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0004",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2865",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0383",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3584",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3825",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3654",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3542",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/2806",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1714",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/1065",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0193",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/3100",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_general/0478",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/4506",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2286",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/1424",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9674",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/6912",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/3257",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/6873",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/4557",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/0106",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2615",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/5574",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/4552",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2547",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9891",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9044",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9459",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/3150",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/1139",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/3733",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/7428",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/5977",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2677",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/4422",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/3598",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/5168",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/4386",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/5155",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/1796",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2504",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2621",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/6916",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/0188",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2591",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2927",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/8317",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9977",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/5038",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/0949",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9295",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/1133",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/2705",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/0344",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9638",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9075",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/3770",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_qa/9641",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8935",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/0520",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3582",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3811",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9863",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/0434",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9195",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3257",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3611",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7359",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9654",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/0106",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2615",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2547",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1674",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6224",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1584",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5635",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4333",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1291",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9044",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4803",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3733",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3814",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1654",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4554",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7428",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5977",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2664",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6065",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5820",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3432",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1169",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2803",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8751",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2677",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6216",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5313",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/0916",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5168",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6572",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4386",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3456",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9292",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5155",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8179",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7517",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4339",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4040",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4304",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7019",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9560",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5930",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2266",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8085",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1489",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6916",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9771",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6252",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7668",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4119",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9064",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4808",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7123",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2591",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7433",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8201",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2927",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8317",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1743",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/4889",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3258",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2646",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8837",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5947",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3923",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3946",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9295",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7962",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/1133",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7787",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9007",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/2705",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9938",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3295",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/5107",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/6537",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/7177",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/8479",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3681",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/0344",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9075",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/9641",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3608",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/0964",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "halueval_summarization/3750",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/164052",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/132054",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/119631",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/105367",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/231647",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/238264",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/164723",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/55917",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/178592",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/188825",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/183879",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/109361",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/229473",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/168338",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/109921",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/58199",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/188872",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/183002",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/97183",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/156915",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/188713",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/94499",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/230632",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/175684",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/74829",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/57065",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/58897",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/98674",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/233048",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/132840",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/132076",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/157344",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/51507",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/231676",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/237159",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/131769",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/54079",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/135196",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/62729",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/189969",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/158475",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/229752",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/9855",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/126153",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "legal_hallucinations/52910",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0692",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0089",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0604",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0095",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0223",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0203",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0718",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0284",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0006",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0774",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0220",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0094",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0367",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0618",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0044",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0387",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0080",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0643",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0633",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0196",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0046",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0081",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0749",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0650",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0373",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0166",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0273",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0663",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0623",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0712",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0167",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0388",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0224",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0469",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0146",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0269",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0690",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0751",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0257",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0705",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0750",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0666",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0512",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0382",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0165",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0500",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0019",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0371",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0314",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0246",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  },
+  {
+   "pid": "truthfulqa/0087",
+   "inversion_count": 0,
+   "weighted_score": 0,
+   "tiene_inv_negacion": false,
+   "penalty": 1.0
+  }
+ ]
+}

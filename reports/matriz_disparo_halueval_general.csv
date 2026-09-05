@@ -1,0 +1,8 @@
+modulo,n_total,n_disparos,pct
+lexical_baseline_score,200,200,100.0
+source_target_guard,200,10,5.0
+cre_isi,200,120,60.0
+flow_penalty,200,185,92.5
+negation_penalty,200,80,40.0
+arithmetic_penalty,200,2,1.0
+reference_penalty,200,0,0.0

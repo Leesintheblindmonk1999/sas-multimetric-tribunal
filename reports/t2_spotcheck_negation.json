@@ -1,0 +1,131 @@
+{
+  "t2_1_regresiones": [
+    {
+      "pid": "legal_hallucinations/183879",
+      "marcador_a": "is not",
+      "marcador_b": null
+    },
+    {
+      "pid": "halubench/1741",
+      "marcador_a": "cannot",
+      "marcador_b": null
+    },
+    {
+      "pid": "codehalu/6530",
+      "marcador_a": null,
+      "marcador_b": "doesn't"
+    },
+    {
+      "pid": "truthfulqa/0165",
+      "marcador_a": "no",
+      "marcador_b": null
+    },
+    {
+      "pid": "halueval_general/0234",
+      "marcador_a": null,
+      "marcador_b": "do not"
+    }
+  ],
+  "t2_2_dudosos": [
+    {
+      "pid": "legal_hallucinations/207465",
+      "inv_count": 1
+    },
+    {
+      "pid": "codehalu/0757",
+      "inv_count": 1
+    },
+    {
+      "pid": "codehalu/1012",
+      "inv_count": 1
+    },
+    {
+      "pid": "halueval_dialogue/9044",
+      "inv_count": 1
+    },
+    {
+      "pid": "halueval_dialogue/0711",
+      "inv_count": 1
+    }
+  ],
+  "t2_3_comparacion": {
+    "n_total": 191,
+    "detect_viejo": 112,
+    "detect_nuevo": 109,
+    "solo_viejo": [
+      "codehalu/5593",
+      "codehalu/6530",
+      "codehalu/5681",
+      "codehalu/5594",
+      "halubench/0839",
+      "halubench/6254",
+      "halubench/7140",
+      "halubench/0653",
+      "halubench/0827",
+      "halubench/6957",
+      "halubench/6743",
+      "halubench/6119",
+      "halubench/0744",
+      "halubench/6191",
+      "halubench/7133",
+      "halueval_general/3230",
+      "halueval_general/4455",
+      "halueval_general/0234",
+      "halueval_general/0348",
+      "halueval_general/4019",
+      "halueval_general/4471",
+      "halueval_general/0891",
+      "halueval_general/2235",
+      "halueval_general/4463",
+      "halueval_general/2898",
+      "halueval_general/4439",
+      "halueval_general/3883",
+      "halueval_general/3584",
+      "halueval_general/3654",
+      "halueval_general/2806",
+      "halueval_general/1714",
+      "halueval_general/0478",
+      "legal_hallucinations/178592",
+      "legal_hallucinations/168338",
+      "legal_hallucinations/74829",
+      "legal_hallucinations/58897",
+      "legal_hallucinations/158475"
+    ],
+    "solo_nuevo": [
+      "codehalu/4710",
+      "codehalu/4712",
+      "halubench/1143",
+      "halubench/2787",
+      "halubench/4788",
+      "halueval_dialogue/6201",
+      "halueval_general/0403",
+      "halueval_general/0890",
+      "halueval_general/2357",
+      "halueval_general/4082",
+      "halueval_general/2015",
+      "halueval_general/3661",
+      "halueval_general/4176",
+      "halueval_general/3102",
+      "halueval_general/3374",
+      "halueval_general/2828",
+      "halueval_general/0309",
+      "halueval_general/0113",
+      "halueval_general/1122",
+      "halueval_general/3939",
+      "halueval_general/3161",
+      "halueval_general/2094",
+      "halueval_general/3749",
+      "halueval_general/0489",
+      "halueval_qa/6216",
+      "halueval_qa/8669",
+      "legal_hallucinations/179455",
+      "legal_hallucinations/161570",
+      "legal_hallucinations/164748",
+      "legal_hallucinations/162150",
+      "legal_hallucinations/161655",
+      "truthfulqa/0616",
+      "truthfulqa/0743",
+      "truthfulqa/0681"
+    ]
+  }
+}

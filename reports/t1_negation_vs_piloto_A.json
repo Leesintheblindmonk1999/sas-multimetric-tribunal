@@ -1,0 +1,78 @@
+{
+ "version_negation": "v1.3",
+ "n_pares": 10,
+ "detectados": 10,
+ "recall": 1.0,
+ "detalle": [
+  {
+   "id": "SAS_PILOT_A_finance_negation_penalty_00",
+   "source": "El reporte final indica que las ventas totales fueron 25 y 18, sumando 43 unidades en Buenos Aires.",
+   "response": "El reporte final indica que las ventas totales no fueron 25 y 18, sumando 43 unidades en Buenos Aires.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_finance_negation_penalty_01",
+   "source": "El reporte final indica que las ventas totales fueron 25 y 18, sumando 43 unidades en Buenos Aires.",
+   "response": "El reporte final indica que las ventas totales, que no fueron 25 y 18, sumaron 43 unidades en Buenos Aires.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_legal_negation_penalty_00",
+   "source": "El juez revisó el contrato en Buenos Aires y autorizó dos pagos de 600 dólares cada uno, sumando 1200 dólares.",
+   "response": "El juez revisó el contrato en Buenos Aires y autorizó dos pagos que no fueron de 600 dólares cada uno, sumando 1200 dólares.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_legal_negation_penalty_01",
+   "source": "El juez revisó el contrato en Buenos Aires y autorizó dos pagos de 600 dólares cada uno, sumando 1200 dólares.",
+   "response": "El juez revisó el contrato en Buenos Aires, aunque los pagos autorizados no fueron de 600 dólares cada uno, sumando 1200 dólares.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_biomed_negation_penalty_00",
+   "source": "El paciente consumió 2 pastillas por día durante 5 días, sumando 10 pastillas, en el hospital de Buenos Aires.",
+   "response": "El paciente consumió pastillas en el hospital de Buenos Aires, pero no fueron 2 por día durante 5 días.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_biomed_negation_penalty_01",
+   "source": "El paciente consumió 2 pastillas por día durante 5 días, sumando 10 pastillas, en el hospital de Buenos Aires.",
+   "response": "El paciente consumió pastillas en el hospital de Buenos Aires durante 5 días, aunque no fueron 2 por día.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_general_negation_penalty_00",
+   "source": "La producción agrícola aumentó un 3 por ciento el primer semestre y un 4 por ciento el segundo semestre, sumando un 7 por ciento en el año, según el informe de Argentina.",
+   "response": "La producción agrícola aumentó en Argentina, aunque no fue un 3 por ciento el primer semestre ni un 4 por ciento el segundo.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_general_negation_penalty_01",
+   "source": "La producción agrícola aumentó un 3 por ciento el primer semestre y un 4 por ciento el segundo semestre, sumando un 7 por ciento en el año, según el informe de Argentina.",
+   "response": "Según el informe de Argentina, el aumento no fue de un 3 por ciento el primer semestre y un 4 por ciento el segundo.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_narrative_negation_penalty_00",
+   "source": "La cerradura de la casa se abrió en 4 segundos y la alarma se desactivó en 6 segundos, sumando 10 segundos en total, según las cámaras de Buenos Aires.",
+   "response": "La cerradura de la casa se abrió y la alarma se desactivó, pero no en 4 y 6 segundos según las cámaras de Buenos Aires.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  },
+  {
+   "id": "SAS_PILOT_A_narrative_negation_penalty_01",
+   "source": "La cerradura de la casa se abrió en 4 segundos y la alarma se desactivó en 6 segundos, sumando 10 segundos en total, según las cámaras de Buenos Aires.",
+   "response": "Según las cámaras de Buenos Aires, la cerradura se abrió y la alarma se desactivó, aunque no en 4 y 6 segundos.",
+   "inversion_count": 1,
+   "penalty": 0.45
+  }
+ ]
+}

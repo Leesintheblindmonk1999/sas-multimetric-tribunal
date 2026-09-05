@@ -1,5 +1,5 @@
 """
-core/negation_probe.py — Negation & Quantifier Probe v1.1
+core/negation_probe.py — Negation & Quantifier Probe v1.3
 ═══════════════════════════════════════════════════════════════════════════════
 Detects logical inversions and quantifier changes in binary assertions.
 
@@ -14,11 +14,41 @@ Methodology:
   5. Weight inversions by type (negation=1.0, quantifier=0.6) and
      apply a proportional penalty to ISI.
 
+CHANGELOG v1.3 (2026-09-03) — comparación directa de marcadores de negación
+--------------------------------------------------------------------------
+[BUG][piloto R5 Subset A — confirmado por baseline con datos reales]
+    detect_inversions() usaba _is_affirmative() para determinar la polaridad
+    de cada oración. _is_affirmative() dependía de una whitelist cerrada de
+    verbos (_AFFIRM_STRONG). Cuando el verbo del source NO estaba en la
+    whitelist pero el verbo de la respuesta SÍ (o viceversa), se generaba
+    una falsa inversión de polaridad, aunque no hubiera ninguna negación
+    real. Esto causó 6 falsos positivos en el intento v1.2 (REVERTIDO).
+
+    La causa real NO era alineación de oraciones (los 6 FP son pares de
+    una sola oración, sin ambigüedad de alineación) sino asimetría de
+    cobertura de la whitelist de verbos.
+
+    Cambio: reemplazar _is_affirmative() por _tiene_negacion() en la
+    detección de inversión de polaridad. _tiene_negacion() solo pregunta
+    "¿hay marcador de negación en el texto?" mediante _NEGATION, sin
+    depender de ningún verbo. La comparación de cuantificadores NO se tocó.
+
+    _is_affirmative() y _AFFIRM_STRONG se mantienen en el archivo (sin
+    uso en detect_inversions()) por si se necesitan para otra cosa.
+
+    Antes/después (10 pares piloto Subset A): recall 4/10 → 10/10
+    (remedido con el script 63 el 2026-09-04 — la única pieza que
+    quedaba sin remedir tras el rediseño; ver reports/t1_negation_vs_piloto_A.json).
+    6 FP históricos (impacto_fp_negation.json): 0/6 deben disparar.
+    1,600 pares matriz: reportar todos los cambios (ver script 36).
+
 Known limitations:
   - BoW alignment is approximate; paraphrased sentences may not align.
-  - Polarity detection is regex-based and may miss complex grammatical
+  - _tiene_negacion() is regex-based and may miss complex grammatical
     negations (e.g., "It is not the case that X holds").
   - Does not resolve negation scope across clause boundaries.
+  - Negation markers are language-specific; the current set covers
+    English and Spanish patterns. Other languages may need extension.
 
 Registry: EX-2026-18792778
 Author: Gonzalo Emir Durante — Project Manifold 0.56
@@ -50,6 +80,17 @@ INVERSION_WEIGHTS: Dict[str, float] = {
 
 # Strong modal / auxiliary affirmations (deliberately excluding weak modals
 # "may", "can", "could", "might" to reduce false positives)
+#
+# v1.2 (2026-09-02): INTENTO de ampliación con verbos de reporte/acción en
+# español — REVERTIDO. El fix subió recall (4/10 → 10/10) pero generó 6
+# falsos positivos NUEVOS que CAMBIAN el veredicto final del tribunal en
+# pares de paráfrasis válida (zona A→B). Los verbos agregados (consumió,
+# revisó, abrió, desactivó) aparecen en el source de pares que NO son
+# negaciones, y al marcar el source como "afirmativo", cualquier negación
+# en la respuesta dispara. Ver reports/comparacion_1600_negation.json y
+# reports/impacto_fp_negation.json. Rediseño pendiente: alineación por
+# oración + verificación de que la negación esté en la MISMA oración
+# alineada, no en cualquier parte del texto.
 _AFFIRM_STRONG = re.compile(
     r"\b(shall|will|must|is|are|was|were|has|have|had|does|do|did"
     r"|accepts|agrees|confirms|acknowledges|approves"
@@ -108,12 +149,22 @@ def _quantifier_class(sentence: str) -> str:
     return "neutral"
 
 
+def _tiene_negacion(sentence: str) -> bool:
+    """Return True if the sentence contains a negation marker.
+
+    v1.3: reemplaza _is_affirmative() para la detección de inversión de
+    polaridad. _is_affirmative() dependía de una whitelist cerrada de
+    verbos (_AFFIRM_STRONG), lo que causaba falsos positivos cuando el
+    verbo del source no estaba en la whitelist pero el de la respuesta
+    sí (o viceversa). La comparación directa de marcadores de negación
+    evita este problema por completo: solo pregunta "¿hay negación en A?"
+    vs "¿hay negación en B?", sin depender de qué verbo se usó.
+    """
+    return bool(_NEGATION.search(sentence.lower()))
+
+
 def _is_affirmative(sentence: str) -> bool:
-    """
-    Return True if the sentence is affirmative (no dominant negation).
-    A sentence is negative if it contains a negation marker with no
-    compensating double negation.
-    """
+    """Legacy function — kept for reference, NOT used in detect_inversions()."""
     sl = sentence.lower()
     return bool(_AFFIRM_STRONG.search(sl)) and not bool(_NEGATION.search(sl))
 
@@ -259,8 +310,8 @@ def detect_inversions(text_a: str, text_b: str) -> NegationResult:
     inversions: List[InversionDetail] = []
 
     for sa, sb in aligned:
-        pol_a = _is_affirmative(sa)
-        pol_b = _is_affirmative(sb)
+        pol_a = _tiene_negacion(sa)
+        pol_b = _tiene_negacion(sb)
         q_a   = _quantifier_class(sa)
         q_b   = _quantifier_class(sb)
 
@@ -272,8 +323,8 @@ def detect_inversions(text_a: str, text_b: str) -> NegationResult:
                 inversion_type="negation",
                 weight=INVERSION_WEIGHTS["negation"],
                 description=(
-                    f"Polarity: {'affirm' if pol_a else 'negate'}"
-                    f" → {'affirm' if pol_b else 'negate'}"
+                    f"Polarity: {'affirm' if not pol_a else 'negate'}"
+                    f" → {'affirm' if not pol_b else 'negate'}"
                 ),
             ))
 

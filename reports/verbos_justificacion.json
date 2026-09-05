@@ -1,0 +1,476 @@
+[
+  {
+    "verbo": "abre",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "piloto narrative"
+  },
+  {
+    "verbo": "abrió",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "piloto narrative"
+  },
+  {
+    "verbo": "afirma",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "afirmó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "analiza",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "analizó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "autoriza",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "piloto legal"
+  },
+  {
+    "verbo": "autorizó",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "piloto legal"
+  },
+  {
+    "verbo": "calcula",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "calculó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "comenzó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "comienza",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "confirma",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "confirmó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "considera",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "consideró",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "consigue",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "consiguió",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "consume",
+    "en_piloto": false,
+    "en_benchmark": 5,
+    "origen": "piloto biomed"
+  },
+  {
+    "verbo": "consumió",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "piloto biomed"
+  },
+  {
+    "verbo": "decide",
+    "en_piloto": false,
+    "en_benchmark": 16,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "decidió",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "declara",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "declaró",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "denegó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "desactiva",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "piloto narrative"
+  },
+  {
+    "verbo": "desactivó",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "piloto narrative"
+  },
+  {
+    "verbo": "detecta",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "detectó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "documenta",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "documentó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "encontró",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "encuentra",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "entrega",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "entregó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "estudia",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "estudió",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "expresa",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "expresó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "firma",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "firmó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "genera",
+    "en_piloto": false,
+    "en_benchmark": 6,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "generó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "indica",
+    "en_piloto": true,
+    "en_benchmark": 1,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "indicó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "informa",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "informó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "inicia",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "inició",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "logra",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "logró",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "menciona",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "mencionó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "negó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "niega",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "permite",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "permitió",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "presenta",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "presentó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "produce",
+    "en_piloto": false,
+    "en_benchmark": 23,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "produjo",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "prohibió",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "prohíbe",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "realiza",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "realizó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "rechaza",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "rechazó",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "NEGATIVO — no"
+  },
+  {
+    "verbo": "recibe",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "recibió",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "registra",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "registró",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "revisa",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "piloto legal"
+  },
+  {
+    "verbo": "revisó",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "piloto legal"
+  },
+  {
+    "verbo": "señala",
+    "en_piloto": true,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "señaló",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "solicita",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "solicitó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "termina",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  },
+  {
+    "verbo": "terminó",
+    "en_piloto": false,
+    "en_benchmark": 0,
+    "origen": "reporte"
+  }
+]

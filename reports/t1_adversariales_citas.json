@@ -1,0 +1,41 @@
+{
+  "n_pares": 5,
+  "n_fp": 3,
+  "detalle": [
+    {
+      "id": "ADV_CITA_01",
+      "source": "Un estudio reciente publicado en Nature (Martínez, 2018) encontró que la fotosíntesis artificial duplica la eficiencia de conversión energética en condiciones controladas de laboratorio.",
+      "response": "Como demuestra Martínez (2018), la eficiencia de conversión se duplica.",
+      "fabricated_count": 1,
+      "anachronistic_count": 0
+    },
+    {
+      "id": "ADV_CITA_02",
+      "source": "En su análisis estadístico de los datos clínicos, el equipo de investigación liderado por Thompson (2020) reportó una correlación significativa entre las variables estudiadas.",
+      "response": "El abogado defensor citó a Thompson (2020) como precedente en su alegato final ante el tribunal.",
+      "fabricated_count": 1,
+      "anachronistic_count": 0
+    },
+    {
+      "id": "ADV_CITA_03",
+      "source": "Como señala el autor: \"Los resultados son concluyentes\" (Chen, 2021).",
+      "response": "Chen (2021) demostró que los resultados son concluyentes en su estudio original.",
+      "fabricated_count": 0,
+      "anachronistic_count": 0
+    },
+    {
+      "id": "ADV_CITA_04",
+      "source": "García et al. (2019) establecieron el marco teórico para el análisis de redes complejas en sistemas biológicos.",
+      "response": "Según García (2019), el marco teórico de redes complejas se aplica también a sistemas sociales.",
+      "fabricated_count": 1,
+      "anachronistic_count": 0
+    },
+    {
+      "id": "ADV_CITA_05",
+      "source": "La evidencia experimental más reciente (Kowalski, 2022) sugiere que los algoritmos de aprendizaje profundo pueden generalizar mejor con menos datos de entrenamiento.",
+      "response": "Kowalski (2022) publicó evidencia experimental que sugiere que el aprendizaje profundo generaliza mejor con menos datos.",
+      "fabricated_count": 0,
+      "anachronistic_count": 0
+    }
+  ]
+}

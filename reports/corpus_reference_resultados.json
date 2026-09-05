@@ -1,0 +1,635 @@
+[
+  {
+    "id": "SAS_REFERENCE_scientific_same_author_diff_year_00_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_year_diff_author_00_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.65,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_control_00_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_author_diff_year_01_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_year_diff_author_01_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.634615,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_control_01_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_author_diff_year_02_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_year_diff_author_02_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.65,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_control_02_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_author_diff_year_03_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_year_diff_author_03_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.642857,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_control_03_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_author_diff_year_04_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_same_year_diff_author_04_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.65,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_control_04_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_author_diff_year_05_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_year_diff_author_05_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.625,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_control_05_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_author_diff_year_06_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_year_diff_author_06_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.634615,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_control_06_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_author_diff_year_07_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_year_diff_author_07_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.613636,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_control_07_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_author_diff_year_08_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.178242,
+    "zona": "F-S"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_year_diff_author_08_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.65,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_control_08_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_author_diff_year_09_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_history_same_year_diff_author_09_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.625,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_control_09_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_author_diff_year_10_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_year_diff_author_10_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.634615,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_control_10_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_author_diff_year_11_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_year_diff_author_11_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.625,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_control_11_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_author_diff_year_12_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_year_diff_author_12_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.613636,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_control_12_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_author_diff_year_13_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_year_diff_author_13_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.625,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_control_13_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_author_diff_year_14_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_same_year_diff_author_14_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.625,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_control_14_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_author_diff_year_15_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_year_diff_author_15_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.634615,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_control_15_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_author_diff_year_16_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_year_diff_author_16_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.613636,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_control_16_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_author_diff_year_17_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_year_diff_author_17_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.634615,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_control_17_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_author_diff_year_18_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_year_diff_author_18_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.642857,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_control_18_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_author_diff_year_19_0",
+    "variant": "same_author_diff_year",
+    "ref_fired": true,
+    "fired_names": [
+      "source_target_guard",
+      "reference_penalty"
+    ],
+    "isi_final": 0.316875,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_same_year_diff_author_19_1",
+    "variant": "same_year_diff_author",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.6,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_control_19_2",
+    "variant": "control",
+    "ref_fired": false,
+    "fired_names": [],
+    "isi_final": 1.0,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_history_anachronistic_pure_00",
+    "variant": "anachronistic_pure",
+    "ref_fired": true,
+    "fired_names": [
+      "lexical_baseline_score",
+      "reference_penalty"
+    ],
+    "isi_final": 0.5,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_technology_anachronistic_pure_01",
+    "variant": "anachronistic_pure",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.642857,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_anachronistic_pure_02",
+    "variant": "anachronistic_pure",
+    "ref_fired": true,
+    "fired_names": [
+      "lexical_baseline_score",
+      "reference_penalty"
+    ],
+    "isi_final": 0.538462,
+    "zona": "B"
+  },
+  {
+    "id": "SAS_REFERENCE_scientific_anachronistic_mixed_03",
+    "variant": "anachronistic_mixed",
+    "ref_fired": true,
+    "fired_names": [
+      "reference_penalty"
+    ],
+    "isi_final": 0.583333,
+    "zona": "A"
+  },
+  {
+    "id": "SAS_REFERENCE_journalism_anachronistic_mixed_04",
+    "variant": "anachronistic_mixed",
+    "ref_fired": true,
+    "fired_names": [
+      "lexical_baseline_score",
+      "reference_penalty"
+    ],
+    "isi_final": 0.346154,
+    "zona": "B"
+  }
+]

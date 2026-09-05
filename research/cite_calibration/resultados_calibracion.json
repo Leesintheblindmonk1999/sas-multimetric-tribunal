@@ -1,0 +1,7768 @@
+{
+  "resumen": {
+    "n": 686,
+    "tp": 299,
+    "fn": 44,
+    "fp": 0,
+    "tn": 343,
+    "recall": 0.8717,
+    "precision": 1.0,
+    "f1": 0.9315
+  },
+  "detalle": [
+    {
+      "id": "CAL_R1-0055",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0059",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0085",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0029",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0142",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0011",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0032",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0038",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0002",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0009",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0155",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0063",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0131",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0186",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0031",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0129",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0094",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0013",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0189",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0009",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0071",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0192",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0125",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0132",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0163",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0089",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0156",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0126",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0118",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0141",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0069",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0154",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0184",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0092",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0024",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0091",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0132",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0177",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0092",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0047",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0171",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0007",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0117",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0054",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0122",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0082",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0066",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0148",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0012",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0158",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0157",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0058",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0157",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0120",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0177",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0150",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0061",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0069",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0075",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0139",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0040",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0132",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0053",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0133",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0036",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0118",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0017",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0054",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0003",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0053",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0064",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0145",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0165",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0050",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0047",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0077",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0123",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0158",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0106",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0052",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0156",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0114",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0092",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0161",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0160",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0119",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0011",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0023",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0008",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0166",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0041",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0094",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0056",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0138",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0145",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0081",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0131",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0068",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0146",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0200",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0088",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0030",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0182",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0200",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.323077,
+      "zona": "B",
+      "fired": [
+        "lexical_baseline_score",
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0187",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0102",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0027",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0014",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0086",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0103",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0033",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0064",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0121",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0070",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0033",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0057",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0110",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0044",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0041",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0015",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0064",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0167",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0007",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0009",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0041",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0109",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0149",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0184",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0110",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0097",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0050",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0099",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0141",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0005",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0155",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0004",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0123",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0129",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0005",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0185",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0192",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0109",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0069",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.5,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0054",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0068",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0116",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0090",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0027",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0045",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0015",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0085",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0162",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0139",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0125",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0055",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0169",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0111",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0175",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0153",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0186",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4375,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0075",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0083",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0093",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0020",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0010",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0110",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0096",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0057",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0096",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0037",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0142",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0038",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0119",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0065",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0058",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0027",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0071",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0031",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0052",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0197",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0058",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0128",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0112",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.342857,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0151",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0072",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0082",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0020",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0071",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0086",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0010",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0079",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0128",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0152",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0073",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0063",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0062",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0028",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0180",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0132",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0119",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0108",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0040",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0158",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0032",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0120",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0028",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0035",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0034",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0137",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0190",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0042",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0033",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0179",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.323077,
+      "zona": "B",
+      "fired": [
+        "lexical_baseline_score",
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0128",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0136",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0119",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0040",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0185",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4375,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0191",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0118",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0081",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0159",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0118",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0122",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0153",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0005",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0045",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0073",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0079",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0105",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0142",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0171",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0188",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0090",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0093",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0065",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0134",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0017",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0061",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0062",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0090",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0131",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0096",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0124",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0180",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0137",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0098",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0163",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0124",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0027",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.461538,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0160",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0050",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0087",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0165",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0155",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0087",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0129",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0145",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0126",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0017",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0170",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0042",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0030",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0022",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0061",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0113",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0161",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0083",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0098",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0133",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0135",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0198",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0161",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0073",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0180",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0026",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0007",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0109",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0186",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0196",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0110",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0011",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0076",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0196",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0063",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0055",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0081",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0002",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0088",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0038",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0138",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0181",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0045",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0102",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0177",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0098",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0033",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0158",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0172",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0182",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0030",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0006",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0085",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0018",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0132",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0146",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0131",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0113",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0176",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0023",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0193",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0144",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.461538,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0042",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0151",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0172",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0022",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0134",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0054",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0021",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0174",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0157",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0060",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0035",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0114",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0043",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0089",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0074",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0049",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0072",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0159",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0138",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0134",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0107",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0115",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0040",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0143",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0022",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0093",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0032",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0097",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0041",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0147",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0166",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0116",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0161",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0155",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0050",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0109",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0200",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0078",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0114",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0039",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0029",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0129",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0053",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0113",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0166",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0076",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0125",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0180",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0061",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0095",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0059",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0174",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0073",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0115",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0067",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0182",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0096",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.461538,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0107",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0174",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.461538,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0084",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0077",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0016",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0078",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0138",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0063",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0091",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0175",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0162",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0178",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0034",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0056",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0168",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0060",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0012",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0156",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0056",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0049",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0097",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.48,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0077",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0039",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0134",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0096",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0140",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0171",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0064",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0164",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0088",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0048",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0080",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0099",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0167",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0104",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0083",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0174",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0160",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0014",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0130",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0137",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0044",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0004",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0080",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0105",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0013",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0137",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0072",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0134",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0095",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0167",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.323077,
+      "zona": "B",
+      "fired": [
+        "lexical_baseline_score",
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0139",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0179",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0076",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0069",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0037",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0144",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0170",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0097",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0142",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0049",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0106",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0110",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0011",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0086",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0111",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0030",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0164",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0112",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0021",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0147",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0019",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0143",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.323077,
+      "zona": "B",
+      "fired": [
+        "lexical_baseline_score",
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0036",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0023",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0051",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0055",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0034",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0051",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0044",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0093",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0025",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0126",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0112",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0084",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0010",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0040",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0193",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0197",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.2625,
+      "zona": "B",
+      "fired": [
+        "lexical_baseline_score",
+        "flow_penalty",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0139",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0110",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0066",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0044",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0046",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0013",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0020",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0070",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0023",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0087",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0006",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0103",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0031",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0137",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0151",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0146",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0165",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0091",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0102",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0048",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0163",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0008",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0043",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0038",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0176",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0144",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0122",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0158",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0019",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0018",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0130",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0106",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0130",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0074",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0067",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0153",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.342857,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0075",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0150",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0199",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0120",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0021",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0056",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0169",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0154",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0017",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0133",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0080",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0189",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0022",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0107",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0153",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0046",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0147",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0160",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0052",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0145",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0023",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0046",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0067",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0173",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0094",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.48,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0059",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0159",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0140",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0151",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0032",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0124",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0194",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.181731,
+      "zona": "F-S",
+      "fired": [
+        "lexical_baseline_score",
+        "negation_penalty",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0151",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0065",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0122",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0082",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0047",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0088",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0108",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0039",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0079",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0148",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0074",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0163",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0173",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0150",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0043",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0168",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0038",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0034",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0009",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0125",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0176",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0062",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0107",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0028",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0005",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0132",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0028",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0149",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.461538,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0135",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0074",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0081",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0099",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0146",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0004",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0026",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0087",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0014",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0136",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0143",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0005",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0185",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0107",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0013",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0080",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0128",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0080",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0133",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0149",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0117",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0113",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0111",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0134",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0006",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0117",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0137",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0003",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0060",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0018",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0026",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0116",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0140",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0113",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0064",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0088",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.3,
+      "zona": "B",
+      "fired": [
+        "flow_penalty",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0069",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0092",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0104",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0084",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0146",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0011",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0037",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0162",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0140",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0122",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0131",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0112",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0154",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0119",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0162",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0179",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0156",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0160",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0016",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0060",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0001",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0100",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0025",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0105",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0101",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0141",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0058",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0017",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0192",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0198",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0037",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0116",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0169",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0194",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0036",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0024",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0019",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0181",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0079",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0101",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0190",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0012",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0196",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0076",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0122",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0079",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0045",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0009",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0002",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0166",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4375,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0001",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0115",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0117",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0147",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0129",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0123",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0014",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0142",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0195",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0165",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.369231,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0115",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0111",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0103",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0032",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0199",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.323077,
+      "zona": "B",
+      "fired": [
+        "lexical_baseline_score",
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0144",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0073",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0154",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0068",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0008",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0049",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0062",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0157",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H4-0103",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0150",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0118",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R2-0121",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0056",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0171",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.35,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0117",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0100",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.436364,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0184",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.4375,
+      "zona": "B",
+      "fired": [
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H2-0047",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R3-0037",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H2-0066",
+      "mutation_type": "same_year_diff_author",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.381818,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R1-0127",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0161",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R1-0159",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0155",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0036",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0053",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_R2-0172",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H4-0177",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_H3-0102",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    },
+    {
+      "id": "CAL_R3-0024",
+      "mutation_type": "control",
+      "es_positivo": false,
+      "reference_penalty_fired": false,
+      "reference_penalty_valor": 1.0,
+      "isi_final": 1.0,
+      "zona": "A",
+      "fired": []
+    },
+    {
+      "id": "CAL_H3-0127",
+      "mutation_type": "same_author_diff_year",
+      "es_positivo": true,
+      "reference_penalty_fired": true,
+      "reference_penalty_valor": 0.75,
+      "isi_final": 0.316875,
+      "zona": "B",
+      "fired": [
+        "source_target_guard",
+        "reference_penalty"
+      ]
+    }
+  ]
+}

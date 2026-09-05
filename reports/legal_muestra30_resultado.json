@@ -1,0 +1,161 @@
+{
+  "n_ids": 30,
+  "mismo_caso": [
+    {
+      "id": "44603",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "154077",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "47727",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Viacom International Inc. v. Yo"
+    }
+  ],
+  "distinto_caso": [
+    {
+      "id": "227897",
+      "a": "What is a precedent that is cited in the majority opinion of the case National Union Fire Insurance of Pittsburgh, Pa. v. Ae",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "229473",
+      "a": "Which federal district court decided the case Candelore v. Cl",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "218447",
+      "a": "Scheck v. Bu",
+      "b": "What is the citation for the case Roller v. Ho"
+    },
+    {
+      "id": "36427",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Esteva v. Ho"
+    },
+    {
+      "id": "36864",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case United States v. Gu"
+    },
+    {
+      "id": "225913",
+      "a": "Scheck v. Bu",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "123305",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in Finney v. Ro"
+    },
+    {
+      "id": "186523",
+      "a": "Provide a verbatim quotation from the majority opinion in the case Farmers Reservoir & Irrigation Co. v. Mc",
+      "b": "Did the court in Beyer v. Le"
+    },
+    {
+      "id": "91579",
+      "a": "Plessy v. Fe",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "149314",
+      "a": "Which court decided the case Adair v. Un",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "117943",
+      "a": "Brown v. Bo",
+      "b": "Is the case Porter v. Br"
+    },
+    {
+      "id": "52910",
+      "a": "Which federal circuit court decided the case Black v. Ca",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "66003",
+      "a": "Is the case Quinn v. Ca",
+      "b": "What is a precedent that is cited in the majority opinion of the case United States Ex Rel. Bauder v. Uh"
+    },
+    {
+      "id": "238264",
+      "a": "Scheck v. Bu",
+      "b": "Hackley v. Pa"
+    },
+    {
+      "id": "7779",
+      "a": "Did the court in Rhone Poulenc Rorer Pharmaceuticals Inc. v. Ne",
+      "b": "Did the court in Cna Financial Corp. v. Do"
+    },
+    {
+      "id": "229752",
+      "a": "Which federal district court decided the case Secakuku v. Na",
+      "b": "Brown v. Bo"
+    },
+    {
+      "id": "158475",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case United States v. Li"
+    },
+    {
+      "id": "36134",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "What is the citation for the circuit court case Usery v. Lo"
+    },
+    {
+      "id": "2075",
+      "a": "Did the court in United States v. Oc",
+      "b": "Did the court in Lim Wun v. Na"
+    },
+    {
+      "id": "136805",
+      "a": "Which court decided the case Georgia Railroad & Banking Co. v. Re",
+      "b": "Who wrote the majority opinion in Nakell v. At"
+    },
+    {
+      "id": "2634",
+      "a": "Did the court in Scott v. Un",
+      "b": "Did the court in Carolina Power & Light Co. v. Fe"
+    },
+    {
+      "id": "84822",
+      "a": "Did the court in Paramino Lumber Co. et al. v. Ma",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "161655",
+      "a": "Viacom International Inc. v. Yo",
+      "b": "Provide a verbatim quotation from the majority opinion in the case Burton v. Zi"
+    },
+    {
+      "id": "137512",
+      "a": "Which court decided the case Mead v. Ba",
+      "b": "Who wrote the majority opinion in McCaughn v. Ca"
+    },
+    {
+      "id": "106605",
+      "a": "Is the case Valentine, Police Commissioner of New York City, et al. v. Un",
+      "b": "Viacom International Inc. v. Yo"
+    },
+    {
+      "id": "125392",
+      "a": "Brown v. Bo",
+      "b": "Who wrote the majority opinion in United States v. Mi"
+    },
+    {
+      "id": "109921",
+      "a": "Is the case Samuel Davis, Plaintiff in Error, v. Th",
+      "b": "Viacom International Inc. v. Yo"
+    }
+  ],
+  "solo_a": [],
+  "solo_b": [],
+  "sin_caso": [],
+  "errores": []
+}

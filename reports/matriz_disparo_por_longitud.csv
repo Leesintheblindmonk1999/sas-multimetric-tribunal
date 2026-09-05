@@ -1,0 +1,14 @@
+suite,longitud,n,lexical_baseline_score,source_target_guard,cre_isi,flow_penalty,negation_penalty,arithmetic_penalty,reference_penalty
+codehalu,2+ oraciones,200,98.0,65.5,82.0,94.5,92.5,7.0,0.0
+halubench,2+ oraciones,200,100.0,86.0,90.0,99.5,59.0,0.0,0.0
+halueval_dialogue,1 oracion,56,100.0,67.9,0.0,5.4,37.5,0.0,0.0
+halueval_dialogue,2+ oraciones,144,100.0,70.8,31.9,54.9,61.8,0.0,0.0
+halueval_general,1 oracion,21,100.0,4.8,0.0,61.9,23.8,0.0,0.0
+halueval_general,2+ oraciones,179,100.0,5.0,67.0,96.1,41.9,1.1,0.0
+halueval_qa,1 oracion,191,100.0,29.8,0.0,3.7,28.8,0.0,0.0
+halueval_qa,2+ oraciones,9,100.0,22.2,11.1,22.2,33.3,0.0,0.0
+halueval_summarization,1 oracion,12,100.0,16.7,0.0,91.7,41.7,0.0,0.0
+halueval_summarization,2+ oraciones,188,100.0,24.5,76.1,97.9,76.6,0.0,0.0
+legal_hallucinations,2+ oraciones,200,95.5,99.0,92.0,86.5,49.0,0.0,3.0
+truthfulqa,1 oracion,198,93.9,5.6,0.0,0.0,31.8,0.0,0.0
+truthfulqa,2+ oraciones,2,50.0,0.0,0.0,0.0,50.0,0.0,0.0
