@@ -529,8 +529,8 @@ to **≈91–95%**.)
 
 | Module | Status | Pending action |
 |---|---|---|
-| `lexical_baseline_score` | Works as designed | None — the low recall in R5-v1 was a corpus-design artifact, not a defect |
-| `source_target_guard` | Works | None |
+| `lexical_baseline_score` | Works as designed | None — the low recall in R5-v1 was a corpus-design artifact, not a defect. The Fase-B matrix values for `legal_hallucinations` v1 are cited as historical reference and carry the corpus pairing uncertainty documented above. |
+| `source_target_guard` | Works | None. Same caveat as `lexical_baseline_score`: Fase-B matrix values for `legal_hallucinations` v1 are historical and subject to the corpus pairing uncertainty documented above. |
 | `cre_isi` | Works, requires ≥2 sentences | Corpus design (not code) |
 | `flow_penalty` | Works, requires ≥15 content tokens | Corpus design (not code) |
 | `negation_penalty` | v1.3 kept — recall 10/10 on original pilot; ≈91–95% on `rationalization_binary` (FN base doubled 30→60, range tightened); precision 71.1% (32/45) with subtype dependence (senator 40%) | Known, explainable FP pattern on yes/no templates. Larger non-firing sample would tighten the recall range further. |
@@ -587,5 +587,12 @@ the paper v3.
 ## Integrity verification of this document
 
 SHA-256 of this file (computed at publication time, over the full
-document): see `CHANGELOG.md.sha256` in the same directory. Verify with:
+document):
+```
+da4faaeacb8c89546bd8c16f30602c2bd8d76783653566463d4ae0bc79621493
+```
+Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
+
+The external `CHANGELOG.md.sha256` in the same directory contains the
+same hash.

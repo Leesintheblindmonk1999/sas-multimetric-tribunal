@@ -17,6 +17,17 @@ It detects hallucinations, factual mutations, and structural ruptures in AI-gene
 
 ### Key Results
 
+> **Note on evaluation layers:** The metrics below are from a global
+> end-to-end validation (600 pairs across `halueval_dialogue`,
+> `halueval_qa`, and `truthfulqa` — see Dataset section). These
+> measure the full tribunal's overall classification accuracy. The
+> [CHANGELOG](CHANGELOG.md) documents a separate, finer-grained
+> evaluation: the per-module diagnostic cycle (R5) that measures each
+> module's individual firing precision and recall across 8 corpus
+> suites. The two sets of numbers answer different questions and are
+> not directly comparable. Global metrics do not imply that every
+> module performs equally well on every domain.
+
 | Metric | Value |
 |--------|-------|
 | **F1 Score** | **99.16%** |
