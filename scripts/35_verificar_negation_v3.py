@@ -87,7 +87,7 @@ def _cargar_pares(suite, max_pairs=200, seed=42):
     sd = BENCH_DIR / suite
     if not sd.exists(): return []
     cand = []
-    for cf in sd.glob("*_A_clean.txt"):
+    for cf in sorted(sd.glob("*_A_clean.txt")):
         hf = cf.with_name(cf.name.replace("_A_clean.txt", "_B_hallucination.txt"))
         if not hf.exists(): continue
         try:

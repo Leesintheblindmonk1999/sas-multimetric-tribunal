@@ -53,7 +53,7 @@ def _cargar_pares(suite, max_pairs=200, seed=42):
     sd = Path(r"C:\ProgramData\benchmark_corpus") / suite
     if not sd.exists(): return []
     cand = []
-    for cf in sd.glob("*_A_clean.txt"):
+    for cf in sorted(sd.glob("*_A_clean.txt")):
         hf = cf.with_name(cf.name.replace("_A_clean.txt", "_B_hallucination.txt"))
         if not hf.exists(): continue
         try: sz = cf.stat().st_size + hf.stat().st_size

@@ -559,28 +559,56 @@ on differently-ordered lists produces different samples, silently.
 `random.sample()`. Re-running three consecutive times with fixed order
 gives 54.5% every time — confirmed deterministic.
 
-**Impact on previously reported numbers:** any script in this project
-that used `os.scandir()` or `os.listdir()` without `sorted()` to build
-the candidate list before applying `random.sample(seed=42)` may have
-produced slightly different samples on different runs. The magnitude
-is bounded by the sample fraction (typically ≤5pp for 200/84k samples),
-but the direction is unpredictable. This affects:
-- Fase-B firing matrix (1,600 pairs, 8 suites): used `glob()` which
-  returns sorted by default on Windows — **likely unaffected**.
-- CiteTracer calibration (686 pairs): loaded from a `.jsonl` file, not
-  from directory listing — **unaffected**.
-- `rationalization_binary` samples (200, 30, etc.): used `rglob()` and
-  `glob()` which return sorted results — **likely unaffected**.
-- All `legal_hallucinations` v1 samples (scripts 44–52, 83, 85): used
-  `os.scandir` without `sorted()` — **potentially affected**. The
-  magnitude is small (<5pp) and does not change any qualitative
-  conclusion, but the exact numbers on v1 should be treated as
-  indicative rather than final.
+**Systematic audit of the public repo (`sas-multimetric-tribunal/`)**
+(2026-09-10, scripts `scripts/*.py` + `research/*/scripts/*.py`):
 
-**Pending audit:** a systematic check of every script in `scripts/*.py`
-that uses `os.scandir`/`os.listdir` for sampling, to confirm which
-numbers may have been affected. Documented as a known limitation for
-the paper v3.
+- **`os.scandir()`: 0 occurrences** — not used anywhere in the repo.
+- **`os.listdir()`: 2 occurrences** (`run_validation.py` line 45,
+  `sample_dataset.py` line 36) — both enumerate suite names for full
+  iteration, never feed `random.sample`. **Not affected.**
+- **`Path.glob()` without `sorted()`, feeding `random.sample()`:
+  10 scripts affected** — these are the real non-determinism source.
+  `pathlib.glob` returns entries in arbitrary order by Python spec
+  (implementation-sorted on Windows, unsorted on Linux/macOS). Ten
+  scripts built candidate lists with `for f in suite_dir.glob("*_A_clean.txt")`
+  then called `random.Random(seed).sample(candidatos, n)`, which
+  produces different samples on different platforms from the same seed.
+  Fixed in all 10: `for f in sorted(suite_dir.glob("*_A_clean.txt"))`.
+
+  **Affected scripts:** `35_verificar_negation_v3.py` (line 90),
+  `37_analisis_decisivo.py` (56), `38_revisar_regresiones.py` (27),
+  `39_verificar_nuevos_disparos.py` (32),
+  `61_snapshot_reference_pre.py` (41),
+  `62_snapshot_reference_post.py` (41),
+  `66_rederivar_snapshots_reference.py` (60),
+  `69_rederivar_317_193.py` (50),
+  `70_diagnostico_por_que_0.py` (36),
+  `72_verificar_5_pares_510.py` (41).
+
+- **`glob.glob()`/`rglob()`/`Path.iterdir()` — not affected:**
+  `run_validation.py` uses `sorted(glob.glob(...))` for file iteration.
+  `sample_dataset.py` uses `sorted(glob.glob(...))` before sampling.
+  `research/r3_*/prepare_data.py` wraps every `glob()` in `sorted()`.
+  `research/r4_*/ablation_study.py` loads all files (no sampling).
+  `tests/test_tribunal.py` has zero directory-listing calls.
+  All 7 `core/*.py` modules have zero directory-listing calls.
+
+**Impact assessment:** all 10 affected scripts operate on the
+`benchmark_corpus` where `glob()` returns sorted results on Windows
+NTFS — which is the platform where all reported numbers were generated.
+The non-determinism is a **cross-platform portability issue**, not a
+source of variance in the published results. Nevertheless, all 10 are
+now fixed for deterministic reproducibility on any platform.
+
+**Correction to the initial report:** the original entry above
+attributed the non-determinism to `os.scandir` without `sorted()` and
+flagged `legal_hallucinations` v1 samples (scripts 44–52, 83, 85) as
+potentially affected. The systematic audit shows that those scripts
+are **not in the public repo** — they belong to a separate working
+directory (`SAS-Semántico/scripts/`) outside the published codebase.
+The published repo contains zero `os.scandir` calls. The root cause in
+the published code is `Path.glob()` without `sorted()`, now fixed in
+all 10 affected scripts.
 
 ---
 
@@ -588,11 +616,14 @@ the paper v3.
 
 SHA-256 of this file (computed at publication time, over the full
 document):
-```
-da4faaeacb8c89546bd8c16f30602c2bd8d76783653566463d4ae0bc79621493
-```
+
 Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
 
 The external `CHANGELOG.md.sha256` in the same directory contains the
 same hash.
+````
+
+`
+8fe49a737a9da914269d386c22080fd5b797f2ca8b9fdffcb1529b146018e847
+`

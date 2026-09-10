@@ -33,7 +33,7 @@ def cargar_pares_suite(suite, max_pairs=200, seed=42):
     if not suite_dir.exists():
         return []
     candidatos = []
-    for clean_file in suite_dir.glob("*_A_clean.txt"):
+    for clean_file in sorted(suite_dir.glob("*_A_clean.txt")):
         hall_file = clean_file.with_name(clean_file.name.replace("_A_clean.txt", "_B_hallucination.txt"))
         if not hall_file.exists():
             continue
