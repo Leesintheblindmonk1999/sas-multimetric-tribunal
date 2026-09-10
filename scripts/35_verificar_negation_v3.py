@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/35_verificar_negation_v3.py — Protocolo completo v1.3"""
 import importlib.util
 import json
@@ -12,7 +12,7 @@ PILOT = BASE / "research" / "r5_module_pilot" / "outputs" / "corpus_pilot_A_raw.
 CORPUS_1600 = BASE / "reports" / "regresion_1600_despues_negation.json"
 NEG_PATH = BASE / "SAS" / "SAS" / "core" / "negation_probe.py"
 TRIBUNAL = BASE / "SAS" / "SAS" / "core" / "tribunal_multimetrico.py"
-BENCH_DIR = BASE / "benchmark_corpus"
+BENCH_DIR = Path(r"C:\ProgramData\benchmark_corpus")
 
 def cargar_negation():
     spec = importlib.util.spec_from_file_location("core.negation_probe", NEG_PATH)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/62_snapshot_reference_post.py — Snapshot post-fix del regex de citas (v1.3)
 
 Compara contra el snapshot pre-fix (t1_snapshot_reference_v12.json):
@@ -17,7 +17,7 @@ RC_PATH = BASE / "SAS" / "SAS" / "core" / "reference_check.py"
 ADV_PATH = BASE / "reports" / "t1_adversariales_citas.json"
 CAL_PATH = BASE / "research" / "cite_calibration" / "corpus" / "corpus_calibracion.jsonl"
 PRE = BASE / "reports" / "t1_snapshot_reference_v12.json"
-CORPUS_DIR = BASE / "benchmark_corpus"
+CORPUS_DIR = Path(r"C:\ProgramData\benchmark_corpus")
 MAX_CHARS_PAIR = 25_000
 SUITES = [
     "codehalu", "halubench", "halueval_dialogue", "halueval_general",

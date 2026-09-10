@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Diagnóstico: ¿por qué detect_inversions() da 0 inversiones en los 510 True→False?
 
 Examina algunos de los 193 "regresiones" del análisis original (script 37) y
@@ -13,7 +13,7 @@ from pathlib import Path
 BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
 NEG_PATH = BASE / "SAS" / "SAS" / "core" / "negation_probe.py"
 ANALISIS = BASE / "reports" / "analisis_decisivo_negation_v3.json"
-CORPUS_DIR = BASE / "benchmark_corpus"
+CORPUS_DIR = Path(r"C:\ProgramData\benchmark_corpus")
 SUITES = [
     "codehalu", "halubench", "halueval_dialogue", "halueval_general",
     "halueval_qa", "halueval_summarization", "legal_hallucinations", "truthfulqa",

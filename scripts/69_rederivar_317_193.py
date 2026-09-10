@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/69_rederivar_317_193.py — TAREA 3: re-derivación del split 317/193 con detect_inversions() real
 
 Llama DIRECTAMENTE a detect_inversions() de negation_probe.py v1.3 sobre los
@@ -26,7 +26,7 @@ BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
 ANTES = BASE / "reports" / "regresion_1600_despues_v2.json"
 DESPUES = BASE / "reports" / "regresion_1600_negation_v3.json"
 NEG_PATH = BASE / "SAS" / "SAS" / "core" / "negation_probe.py"
-CORPUS_DIR = BASE / "benchmark_corpus"
+CORPUS_DIR = Path(r"C:\ProgramData\benchmark_corpus")
 MAX_CHARS_PAIR = 25_000
 SUITES = [
     "codehalu", "halubench", "halueval_dialogue", "halueval_general",

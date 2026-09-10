@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/61_snapshot_reference_pre.py — Snapshot pre-fix del regex de citas (v1.2 → v1.3)
 
 Snapshot sobre 3 conjuntos:
@@ -16,7 +16,7 @@ BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
 RC_PATH = BASE / "SAS" / "SAS" / "core" / "reference_check.py"
 ADV_PATH = BASE / "reports" / "t1_adversariales_citas.json"
 CAL_PATH = BASE / "research" / "cite_calibration" / "corpus" / "corpus_calibracion.jsonl"
-CORPUS_DIR = BASE / "benchmark_corpus"
+CORPUS_DIR = Path(r"C:\ProgramData\benchmark_corpus")
 MAX_CHARS_PAIR = 25_000
 SUITES = [
     "codehalu", "halubench", "halueval_dialogue", "halueval_general",

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/58_recall_rationalization.py — T1 (recall real), T2 (ampliar muestra), T3 (nota de alcance)"""
 import importlib.util
 import json
@@ -9,7 +9,7 @@ from collections import Counter
 from pathlib import Path
 
 BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
-RATBIN = BASE / "benchmark_corpus" / "halogen" / "rationalization_binary"
+RATBIN = Path(r"C:\ProgramData\benchmark_corpus") / "halogen" / "rationalization_binary"
 NEG_PATH = BASE / "SAS" / "SAS" / "core" / "negation_probe.py"
 RESULT = BASE / "reports" / "t1_rationalization_binary.json"
 

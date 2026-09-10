@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/39_verificar_nuevos_disparos.py — ¿Los 104 False→True son negaciones genuinas?"""
 import json
 import re
@@ -26,7 +26,7 @@ mapa_despues = {d["pid"]: d for d in despues}
 
 import random as _rnd
 def _cargar_pares(suite, max_pairs=200, seed=42):
-    sd = BASE / "benchmark_corpus" / suite
+    sd = Path(r"C:\ProgramData\benchmark_corpus") / suite
     if not sd.exists(): return []
     cand = []
     for cf in sd.glob("*_A_clean.txt"):

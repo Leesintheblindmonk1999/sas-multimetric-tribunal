@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/72_verificar_5_pares_510.py — PARTE 2: verificación del split 0/510 con 5 pares al azar (seed=42)
 
 Para cada uno de los 5 pares True→False muestreados:
@@ -18,7 +18,7 @@ BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
 NEG_PATH = BASE / "SAS" / "SAS" / "core" / "negation_probe.py"
 ANTES = BASE / "reports" / "regresion_1600_despues_v2.json"
 DESPUES = BASE / "reports" / "regresion_1600_negation_v3.json"
-CORPUS_DIR = BASE / "benchmark_corpus"
+CORPUS_DIR = Path(r"C:\ProgramData\benchmark_corpus")
 SUITES = [
     "codehalu", "halubench", "halueval_dialogue", "halueval_general",
     "halueval_qa", "halueval_summarization", "legal_hallucinations", "truthfulqa",

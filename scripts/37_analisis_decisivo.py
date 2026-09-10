@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/37_analisis_decisivo.py — Análisis decisivo de los 510 True→False
 
 Para cada par que dejó de disparar negation (v1.1 → v1.3):
@@ -40,7 +40,7 @@ sys.path.insert(0, str(BASE / "scripts"))
 import random as _rnd
 
 def _leer(suite, base):
-    sd = BASE / "benchmark_corpus" / suite
+    sd = Path(r"C:\ProgramData\benchmark_corpus") / suite
     cf = sd / f"{base}_A_clean.txt"
     hf = sd / f"{base}_B_hallucination.txt"
     try:
@@ -50,7 +50,7 @@ def _leer(suite, base):
 
 # Recomponer la muestra (seed 42, filtro 25k) para tener los textos
 def _cargar_pares(suite, max_pairs=200, seed=42):
-    sd = BASE / "benchmark_corpus" / suite
+    sd = Path(r"C:\ProgramData\benchmark_corpus") / suite
     if not sd.exists(): return []
     cand = []
     for cf in sd.glob("*_A_clean.txt"):

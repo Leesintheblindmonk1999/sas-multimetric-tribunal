@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/38_revisar_regresiones.py — ¿Las 193 regresiones son negaciones semánticas reales?"""
 import json
 import re
@@ -21,7 +21,7 @@ NEGACION = re.compile(
 # Cargar textos
 import random as _rnd
 def _cargar_pares(suite, max_pairs=200, seed=42):
-    sd = BASE / "benchmark_corpus" / suite
+    sd = Path(r"C:\ProgramData\benchmark_corpus") / suite
     if not sd.exists(): return []
     cand = []
     for cf in sd.glob("*_A_clean.txt"):

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """scripts/57_clasificar_62_disparos.py — Clasifica los 62 pares que dispararon negation en rationalization_binary"""
 import importlib.util
 import json
@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
-RATBIN = BASE / "benchmark_corpus" / "halogen" / "rationalization_binary"
+RATBIN = Path(r"C:\ProgramData\benchmark_corpus") / "halogen" / "rationalization_binary"
 NEG_PATH = BASE / "SAS" / "SAS" / "core" / "negation_probe.py"
 RESULT = BASE / "reports" / "t1_rationalization_binary.json"
 
