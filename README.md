@@ -17,10 +17,12 @@ It detects hallucinations, factual mutations, and structural ruptures in AI-gene
 
 ### Key Results
 
-> **Note on evaluation layers:** The metrics below are from a global
-> end-to-end validation (600 pairs across `halueval_dialogue`,
-> `halueval_qa`, and `truthfulqa` — see Dataset section). These
-> measure the full tribunal's overall classification accuracy. The
+> **Note on evaluation layers:** The metrics below are from two global
+> end-to-end validations: an initial 600-pair validation (300 control +
+> 300 hallucination across `halueval_dialogue`, `halueval_qa`, and
+> `truthfulqa`) and an expanded 1,800-pair validation (600 per suite,
+> A→A sanity check + A→B hallucination condition). These measure the
+> full tribunal's overall classification accuracy. The
 > [CHANGELOG](CHANGELOG.md) documents a separate, finer-grained
 > evaluation: the per-module diagnostic cycle (R5) that measures each
 > module's individual firing precision and recall across 8 corpus
@@ -28,21 +30,21 @@ It detects hallucinations, factual mutations, and structural ruptures in AI-gene
 > not directly comparable. Global metrics do not imply that every
 > module performs equally well on every domain.
 
-| Metric | Value |
-|--------|-------|
-| **F1 Score** | **99.16%** |
-| **Precision** | **100.00%** (0 false positives) |
-| **Recall** | **98.33%** |
-| **Accuracy** | **99.17%** |
-| **ISI Separation** | **0.8323** |
-| **Pairs Evaluated** | 600 (300 control + 300 hallucination) |
+| Metric | Value (600 pairs) | Value (1,800 pairs) |
+|--------|-------------------|---------------------|
+| **F1 Score** | **99.16%** | **99.02%** |
+| **Precision** | **100.00%** (0 false positives) | **100.00%** (0 false positives) |
+| **Recall** | **98.33%** | **98.06%** |
+| **Accuracy** | **99.17%** | **99.03%** |
+| **ISI Separation** | **0.8323** | **0.8323** |
+| **Pairs Evaluated** | 600 (300 control + 300 hallucination) | 1,800 (600 per suite, A→A + A→B) |
 
 ### Thresholds
 
 | Threshold | Value | Meaning |
 |-----------|-------|---------|
 | **κD** | **0.56** | Structural coherence (TAD EX-2026-18792778) |
-| **κR** | **0.15** | Structural collapse (experimentally validated) |
+| **κR** | **0.15** | Structural collapse (selected via entropy maximization of the zone distribution) |
 
 ---
 
