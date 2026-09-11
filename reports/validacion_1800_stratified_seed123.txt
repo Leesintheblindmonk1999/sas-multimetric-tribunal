@@ -1,0 +1,33 @@
+========================================================================
+VALIDACIÓN ESTRATIFICADA 1,800+1,800 — CORE ACTUAL
+========================================================================
+Fecha: 2026-09-11
+Estructura: 1,800 alucinación + 1,800 control (600 por suite × 3 suites)
+Seed: 123
+κD=0.56, κR=0.15
+Core: tribunal v1.0.1 + negation v1.3 + reference v1.3
+
+F1: 99.02%
+Precision: 100.00%
+Recall: 98.06%
+Accuracy: 99.03%
+TP=1765 FP=0 FN=35 TN=1800
+
+Zonas control:
+  COHERENTE: 1800 (100.0%)
+Zonas alucinación:
+  COLAPSO_ESTRUCTURAL: 936 (52.0%)
+  RUPTURA_RECUPERABLE: 829 (46.1%)
+  COHERENTE: 35 (1.9%)
+
+Firing frequency (alucinación):
+  lexical_baseline_score: 1757 (97.6%)
+  source_target_guard: 643 (35.7%)
+  flow_penalty: 272 (15.1%)
+  negation_penalty: 239 (13.3%)
+  cre_isi: 169 (9.4%)
+
+Por suite (alucinación):
+  halueval_dialogue: TP=600 FN=0 recall=100.0%
+  halueval_qa: TP=599 FN=1 recall=99.8%
+  truthfulqa: TP=566 FN=34 recall=94.3%

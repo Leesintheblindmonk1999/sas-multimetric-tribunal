@@ -33,10 +33,10 @@ It detects hallucinations, factual mutations, and structural ruptures in AI-gene
 
 | Metric | Value (600 pairs) | Value (1,800 pairs) |
 |--------|-------------------|---------------------|
-| **F1 Score** | **99.16%** | **98.90%** |
+| **F1 Score** | **99.16%** | **98.99%** (range 98.99–99.02% across seeds) |
 | **Precision** | **100.00%** (0 false positives) | **100.00%** (0 false positives) |
-| **Recall** | **98.33%** | **97.83%** |
-| **Accuracy** | **99.17%** | **98.92%** |
+| **Recall** | **98.33%** | **98.00%** |
+| **Accuracy** | **99.17%** | **99.00%** |
 | **ISI Separation** | **0.8323** | **0.8323** |
 | **Pairs Evaluated** | 600 (300 control + 300 hallucination) | 1,800 (600 per suite, A→A + A→B) |
 

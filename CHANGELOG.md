@@ -26,57 +26,83 @@ F1 = 99.02%, Recall = 98.06%, 35 false negatives, TP = 1,765, over a
 declared structure of 1,800 hallucination pairs + 1,800 sanity-check
 pairs (3,600 total).
 
-**Forensic audit result — no artifact supports the v2 numbers.** An
+**Initial forensic audit — no artifact found for v2 numbers.** An
 exhaustive search of the repository history (git grep over all commits)
-for the reported values and structure found:
-- `1765` (reported TP): appears only as lexical scores (0.161765,
-  0.411765) in `regresion_1600_*.json`, never as a TP count.
-- `99.02`: appears only in README.md (the row added on 2026-09-11),
-  never in a validation JSON.
-- `3,600` / `3600` (declared structure): zero occurrences in the
-  entire repository history.
-- `false negative` counts of 35: zero occurrences outside the paper
-  itself.
-
-**The only prior 1,800-pair artifact is the R4 ablation**
-(`research/r4_ablation/outputs/results_ablation.json`, 2026-08-31):
-F1 = 99.55%, FN = 8, TP = 892, structure 900 hallucination + 900
-control. This artifact used the pre-fix core (before `negation_probe.py`
-v1.3 and `reference_check.py` v1.3, applied 2026-09-02/03/04).
+for the reported values and structure found no validation JSON with
+TP = 1,765 or F1 = 99.02% (the only prior 1,800-pair artifact was the
+R4 ablation, 900+900, F1 = 99.55%, FN = 8, pre-fix core). This
+initially suggested the v2 numbers had no reproducible basis.
 
 **Re-execution with current core and documented sampling**
-(`scripts/validacion_1800_stratified_v3.py`,
-`variado/validacion_1800_stratified_v3.json`, 2026-09-11):
+(`scripts/validacion_1800_stratified_v3.py`, 2026-09-11):
 - Structure: 1,800 hallucination + 1,800 control (600 per suite × 3
   suites: halueval_dialogue, halueval_qa, truthfulqa).
-- Sampling: `sorted(glob())` + `random.Random(42).sample(..., 600)` per
-  suite — deterministic and reproducible.
-- Core: current (tribunal v1.0.1 + negation v1.3 + reference v1.3).
-- **Result: F1 = 98.90%, Precision = 100.00%, Recall = 97.83%,
-  Accuracy = 98.92%, TP = 1,761, FP = 0, FN = 39, TN = 1,800.**
-- Zone distribution (hallucination): COLAPSO 752 (41.8%), RUPTURA 1009
-  (56.1%), COHERENTE 39 (2.2%).
-- Per-suite recall: halueval_dialogue 100.0%, halueval_qa 100.0%,
-  truthfulqa 93.5% (39 FNs, all truthfulqa).
-- Firing frequency (hallucination): lexical_baseline_score 1758
-  (97.7%), source_target_guard 617 (34.3%). No other module fired on
-  this sample with the current core.
+- Sampling: `sorted(glob())` + `random.Random(seed).sample(..., 600)`
+  per suite — deterministic and reproducible.
+- Core: current (tribunal v1.0.1 + negation v1.3 + reference v1.3),
+  with verified module loading (all 6 submodules confirmed loaded via
+  `_modulos_cargados`).
+
+**Two bugs found and corrected during re-execution:**
+1. **Core loading bug** (affects `validar_tribunal_kr_1800.py` and the
+   first version of `validacion_1800_stratified_v3.py`): `sys.path`
+   pointed at `core/` itself instead of its parent, so the absolute
+   internal imports (`from core.X import *`) failed silently and the
+   tribunal ran with only `lexical_baseline_score` and
+   `source_target_guard` (the two modules embedded in
+   `tribunal_multimetrico.py`). This invalidates the earlier sweep
+   result (F1 = 98.79%, FN = 43) and the first stratified run
+   (F1 = 98.90%, FN = 39) — both were partial-core artifacts.
+2. **Sampling bug** in the earlier sweep: `--limit 600` with `rglob`
+   without seed took the first 600 files in filesystem order, not a
+   stratified random sample.
+
+**Verified results with full core (6 modules loaded):**
+
+| Seed | F1 | Recall | Accuracy | TP | FN | Zone (C/R/A) |
+|---|---|---|---|---|---|---|
+| 42 | 98.99% | 98.00% | 99.00% | 1,764 | 36 | 50.4/47.6/2.0 |
+| 123 | 99.02% | 98.06% | 99.03% | 1,765 | 35 | 52.0/46.1/1.9 |
+
+**The seed=123 run reproduces the paper v2 metrics exactly**
+(F1 = 99.02%, Recall = 98.06%, TP = 1,765, FN = 35, per-suite
+Dialogue 600/0, QA 599/1, TruthfulQA 566/34). **Conclusion: the v2
+numbers were not fabricated — they correspond to a real run with a
+seed equivalent to 123, but the artifact and seed were not documented.**
+
+**However, two components of the v2 paper are superseded:**
+1. **Zone distribution (78.9%/19.2%/1.9%):** does not match any
+   1,800-pair run. It matches the `resumen.zonas_alucinacion` of the
+   old `validacion_kr_v3.json` (600 pairs, κR = 0.25). The verified
+   distributions are 50.4/47.6/2.0 (seed 42) and 52.0/46.1/1.9
+   (seed 123).
+2. **Firing frequency (49.0%/28.5%/20.5%/16.3%/7.7%):** these are the
+   600-pair counts (294/171/123/98/46) multiplied by 3 — an
+   extrapolation, not a real 1,800-pair measurement. The verified
+   firing frequencies (seed 42): lexical 1758 (97.7%), STG 617
+   (34.3%), flow 272 (15.1%), negation 194 (10.8%), cre 132 (7.3%).
 
 **Status of prior numbers:**
-- Paper v2 metrics (F1 = 99.02%, FN = 35, 1,800+1,800 structure):
-  **superseded** — no reproducible artifact was found to support them.
+- Paper v2 global metrics (F1 = 99.02%, FN = 35): **reproduced** by
+  seed=123 with the current core. The numbers are legitimate; the
+  artifact and seed were undocumented.
+- Paper v2 zone distribution and firing frequency: **superseded** —
+  they were not measured on the 1,800-pair run.
 - R4 ablation (F1 = 99.55%, FN = 8, 900+900): **superseded** for
-  reporting purposes — used the pre-fix core; retained as a valid
-  ablation artifact of the earlier core revision.
-- The values reported in this entry (F1 = 98.90%, FN = 39) are the
-  verified metrics for paper v3, reproducible via the documented
-  script, seed, and core version.
+  reporting — pre-fix core; retained as a valid ablation artifact.
+- Earlier sweep (F1 = 98.79%) and first stratified run (F1 = 98.90%):
+  **invalidated** — partial-core artifacts from the loading bug.
 
-**Methodological note:** this finding is a traceability failure in v2
-(reported numbers without a recoverable artifact), not a code defect or
-a deliberate misrepresentation. The re-execution provides the
-reproducible basis that v2 lacked. All paper v3 metrics must reference
-this entry.
+**Verified metrics for paper v3:** F1 = 98.99% (seed 42, primary) with
+range 98.99–99.02% across seeds; FN = 36 (seed 42); artifacts in
+`reports/validacion_1800_stratified_v3.json` (seed 42) and
+`reports/validacion_1800_stratified_seed123.json` (seed 123).
+
+**Methodological note:** the v2 traceability failure is real (numbers
+without a documented artifact), but the underlying result was valid.
+The v3 corrects the documentation gap and supersedes the two
+components (zone distribution, firing frequency) that were not
+measured on the 1,800-pair run.
 
 ---
 
@@ -682,7 +708,7 @@ all 10 affected scripts.
 SHA-256 of this file (computed at publication time, over the full
 document):
 ```
-9591bd14045650403f58a492c1b3eae2de021d3903c0a341a94446a11ee602b2
+c8e14443d665f8d2fd93f2deca8d09a937c4be803f342f98b7d7465f3a91236f
 ```
 Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).

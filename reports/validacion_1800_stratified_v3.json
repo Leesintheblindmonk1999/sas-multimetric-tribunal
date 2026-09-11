@@ -1,0 +1,55 @@
+{
+  "fecha": "2026-09-11",
+  "estructura": "1,800 alucinación + 1,800 control (600 por suite × 3 suites)",
+  "seed": 42,
+  "kappa_d": 0.56,
+  "kappa_r": 0.15,
+  "core": "tribunal v1.0.1 + negation v1.3 + reference v1.3",
+  "metricas": {
+    "f1": 0.9899,
+    "precision": 1.0,
+    "recall": 0.98,
+    "accuracy": 0.99,
+    "tp": 1764,
+    "fp": 0,
+    "fn": 36,
+    "tn": 1800
+  },
+  "zonas_control": {
+    "COHERENTE": 1800
+  },
+  "zonas_alucinacion": {
+    "COLAPSO_ESTRUCTURAL": 907,
+    "RUPTURA_RECUPERABLE": 857,
+    "COHERENTE": 36
+  },
+  "firing_frequency": {
+    "lexical_baseline_score": 1758,
+    "source_target_guard": 617,
+    "flow_penalty": 272,
+    "negation_penalty": 194,
+    "cre_isi": 132
+  },
+  "por_suite": {
+    "halueval_dialogue": {
+      "tp": 600,
+      "fp": 0,
+      "fn": 0,
+      "tn": 600
+    },
+    "halueval_qa": {
+      "tp": 600,
+      "fp": 0,
+      "fn": 0,
+      "tn": 600
+    },
+    "truthfulqa": {
+      "tp": 564,
+      "fp": 0,
+      "fn": 36,
+      "tn": 600
+    }
+  },
+  "n_control": 1800,
+  "n_alucinacion": 1800
+}
