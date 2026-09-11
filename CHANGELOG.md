@@ -387,7 +387,7 @@ from aggregate counts.
   halves the FN_estimate and tightens the range significantly. A
   sensitivity check (two hypothetical FNs in the untested remainder):
   FN_est = 138 × (2/60) ≈ 4.6 → recall ≈ 90.6%. **Report as a range:
-  ≈91–95%**, down from the previous ≈83–91%.
+  90.6%–95.0%**, down from the previous ≈83–91%.
 
 **Root cause of the senator subtype's low precision, identified with
 text evidence, not inferred:** every question in this suite's template
@@ -405,7 +405,7 @@ prose or dialogue (where `legal`/`biomed`/`narrative`-style
 constructions already showed lower recall in the original R5 pilot).
 
 **Status:** first `negation_penalty` result with real, text-verified
-ground truth in this project. Recall is strong (≈91–95%); precision is
+ground truth in this project. Recall is strong (90.6%–95.0%); precision is
 subtype-dependent with a known, explainable failure mode. The FN base
 was doubled in this update (30→60 sampled), substantially tightening
 the range.
@@ -506,7 +506,7 @@ unapplied. The `negation_probe.py` v1.3 docstring said "recall 4/10 →
 | `t1_sobrecaptura_citas.json` | ✅ contents inspected directly (1,372 flagged captures, 100% suspicious pre-fix, 88 overlapping with FN cases) — kept as evidence of the bug, superseded by the v1.3 fix |
 | `t1_snapshot_reference_v12.json` / `v13.json` | ✅ **re-derived from scratch 2026-09-05** (script `66_rederivar_snapshots_reference.py`, report `t1_rederivacion_snapshots_reference.json`): adversarial 3/5→0/5 with raw `detect_fabrications()` events; calibration TP=299/FN=44/FP=0/TN=343 item-by-item, 0 item-level diffs; matrix 6 FPs eliminated, 0 new, 0 magnitude. **Numbers confirmed unchanged.** |
 | `t1_rationalization_binary.json` / `t1_desglose_subtipos.json` | ✅ **re-derived 2026-09-05** (script `67_rederivar_desglose_subtipos.py`, report `t1_rederivacion_desglose_subtipos.json`): re-counted from the 45 individual records → **32/45 = 71.1%** (primalidad 26/84.6%, vuelos 9/66.7%, senador 10/40.0%). **Correction applied** — the previously published 30/45 = 66.7% (27/8/10) had arithmetic sum errors in rounds 1–3; the per-ID classifications were correct. |
-| `t1_recall_ponderado.json` | ✅ **regenerated 2026-09-05** (script `71_recall_ponderado_v2.py`) with the corrected precision: TP_est = 62×(32/45) = 44.09, FN_est = 138×(1/30) = 4.6 → **recall ≈ 90.6%**; sensitivity with 2 FN → 82.7%. Range **≈83–91%**. **Updated 2026-09-10** (script `88_tanda_30_fn_negation.py`, doubled FN sample to 60): FN_est = 138×(1/60) = 2.3 → **recall ≈ 95.0%**, range **≈91–95%**. |
+| `t1_recall_ponderado.json` | ✅ **regenerated 2026-09-05** (script `71_recall_ponderado_v2.py`) with the corrected precision: TP_est = 62×(32/45) = 44.09, FN_est = 138×(1/30) = 4.6 → **recall ≈ 90.6%**; sensitivity with 2 FN → 82.7%. Range **≈83–91%**. **Updated 2026-09-10** (script `88_tanda_30_fn_negation.py`, doubled FN sample to 60): FN_est = 138×(1/60) = 2.3 → **recall ≈ 95.0%**, range **90.6%–95.0%**. |
 | `analisis_decisivo_negation_v3.json` (317/193 split) | ✅ **superseded 2026-09-05** — re-derived by calling the module's own `detect_inversions()` on all 510 True→False pairs (script `69_rederivar_317_193.py`, report `t1_rederivacion_317_193.json`): **510/0** (zero genuine regressions, 510 whitelist FPs). The 317/193 was a raw-text regex-marker artifact. Verified with 5 random pairs (script `72_verificar_5_pares_510.py`) — see the [v1.3] entry above. |
 | `cambios_1600_negation_v3.json` | ✅ arithmetic on the `regresion_1600_*` snapshots (independently verified) — the derived counts were re-confirmed by the 510/0 re-derivation above |
 
@@ -521,7 +521,7 @@ with the sensitivity noted explicitly as hypothetical. (Updated
 2026-09-05: with the corrected precision 32/45, the point estimate is
 90.6% and the sensitivity to a second FN is 82.7%. **Updated 2026-09-10:**
 FN sample doubled to 60, zero additional FNs found → range tightened
-to **≈91–95%**.)
+to **90.6%–95.0%**.)
 
 ---
 
@@ -533,7 +533,7 @@ to **≈91–95%**.)
 | `source_target_guard` | Works | None. Same caveat as `lexical_baseline_score`: Fase-B matrix values for `legal_hallucinations` v1 are historical and subject to the corpus pairing uncertainty documented above. |
 | `cre_isi` | Works, requires ≥2 sentences | Corpus design (not code) |
 | `flow_penalty` | Works, requires ≥15 content tokens | Corpus design (not code) |
-| `negation_penalty` | v1.3 kept — recall 10/10 on original pilot; ≈91–95% on `rationalization_binary` (FN base doubled 30→60, range tightened); precision 71.1% (32/45) with subtype dependence (senator 40%) | Known, explainable FP pattern on yes/no templates. Larger non-firing sample would tighten the recall range further. |
+| `negation_penalty` | v1.3 kept — recall 10/10 on original pilot; 90.6%–95.0% on `rationalization_binary` (FN base doubled 30→60, range tightened); precision 71.1% (32/45) with subtype dependence (senator 40%) | Known, explainable FP pattern on yes/no templates. Larger non-firing sample would tighten the recall range further. |
 | `arithmetic_penalty` | Not working in practice | Low priority — the underlying problem (implicit arithmetic) is not solved by translating the regex alone |
 | `reference_penalty` | Fixed in three layers (v1.0.1 + v1.2 + v1.3) | Calibrated against CiteTracer (recall 0.872, precision 1.0); citation regex over-capture fixed — snapshots re-derived from scratch 2026-09-05, numbers confirmed |
 
@@ -624,6 +624,7 @@ The external `CHANGELOG.md.sha256` in the same directory contains the
 same hash.
 ````
 
+
 `
-8fe49a737a9da914269d386c22080fd5b797f2ca8b9fdffcb1529b146018e847
+4fd538af6f11e4c81a66e1aa7857f1eb166f31066c5be3ed63f1903495974ae4
 `
