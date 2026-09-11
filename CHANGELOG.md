@@ -70,7 +70,7 @@ Dialogue 600/0, QA 599/1, TruthfulQA 566/34). **Conclusion: the v2
 numbers were not fabricated — they correspond to a real run with a
 seed equivalent to 123, but the artifact and seed were not documented.**
 
-**However, two components of the v2 paper are superseded:**
+**However, three components of the v2 paper are superseded:**
 1. **Zone distribution (78.9%/19.2%/1.9%):** does not match any
    1,800-pair run. It matches the `resumen.zonas_alucinacion` of the
    old `validacion_kr_v3.json` (600 pairs, κR = 0.25). The verified
@@ -81,13 +81,21 @@ seed equivalent to 123, but the artifact and seed were not documented.**
    extrapolation, not a real 1,800-pair measurement. The verified
    firing frequencies (seed 42): lexical 1758 (97.7%), STG 617
    (34.3%), flow 272 (15.1%), negation 194 (10.8%), cre 132 (7.3%).
+3. **ISI mean (hallucination) and ISI separation:** reported in v2 as
+   0.1677/0.8323 (from the 600-pair validation) with the claim that
+   they were stable at n=1,800. Recalculation on the 1,800-pair sample
+   (`scripts/calcular_isi_1800.py`,
+   `reports/isi_1800_stratified_v3.json`) gives **0.1860/0.8140**. The
+   v2 claim of stability was incorrect; v3 reports the recomputed
+   values.
 
 **Status of prior numbers:**
 - Paper v2 global metrics (F1 = 99.02%, FN = 35): **reproduced** by
   seed=123 with the current core. The numbers are legitimate; the
   artifact and seed were undocumented.
-- Paper v2 zone distribution and firing frequency: **superseded** —
-  they were not measured on the 1,800-pair run.
+- Paper v2 zone distribution, firing frequency, and ISI stability
+  claim: **superseded** — they were not measured on the 1,800-pair
+  run.
 - R4 ablation (F1 = 99.55%, FN = 8, 900+900): **superseded** for
   reporting — pre-fix core; retained as a valid ablation artifact.
 - Earlier sweep (F1 = 98.79%) and first stratified run (F1 = 98.90%):
@@ -708,7 +716,7 @@ all 10 affected scripts.
 SHA-256 of this file (computed at publication time, over the full
 document):
 ```
-c8e14443d665f8d2fd93f2deca8d09a937c4be803f342f98b7d7465f3a91236f
+5e4723a97b22de1e83bad157b9483b6d6cdabeed2921a135b9b6f3f1ff40d682
 ```
 Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
