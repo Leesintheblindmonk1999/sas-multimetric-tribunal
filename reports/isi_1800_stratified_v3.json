@@ -1,0 +1,9 @@
+{
+  "fecha": "2026-09-11",
+  "seed": 42,
+  "n_control": 1800,
+  "n_alucinacion": 1800,
+  "isi_mean_control": 1.0,
+  "isi_mean_alucinacion": 0.185989,
+  "isi_separation": 0.814011
+}
