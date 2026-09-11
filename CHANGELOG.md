@@ -15,6 +15,71 @@ this changelog modified either threshold.
 
 ---
 
+## [audit] — 2026-09-11 — Forensic verification of v2 validation metrics
+
+**Found by:** systematic re-audit of the 1,800-pair validation metrics
+before submission of paper v3, triggered by a discrepancy between the
+reported validation structure and the available artifacts.
+
+**Background:** paper v2 (Qeios, 2026-08-22) reported global metrics
+F1 = 99.02%, Recall = 98.06%, 35 false negatives, TP = 1,765, over a
+declared structure of 1,800 hallucination pairs + 1,800 sanity-check
+pairs (3,600 total).
+
+**Forensic audit result — no artifact supports the v2 numbers.** An
+exhaustive search of the repository history (git grep over all commits)
+for the reported values and structure found:
+- `1765` (reported TP): appears only as lexical scores (0.161765,
+  0.411765) in `regresion_1600_*.json`, never as a TP count.
+- `99.02`: appears only in README.md (the row added on 2026-09-11),
+  never in a validation JSON.
+- `3,600` / `3600` (declared structure): zero occurrences in the
+  entire repository history.
+- `false negative` counts of 35: zero occurrences outside the paper
+  itself.
+
+**The only prior 1,800-pair artifact is the R4 ablation**
+(`research/r4_ablation/outputs/results_ablation.json`, 2026-08-31):
+F1 = 99.55%, FN = 8, TP = 892, structure 900 hallucination + 900
+control. This artifact used the pre-fix core (before `negation_probe.py`
+v1.3 and `reference_check.py` v1.3, applied 2026-09-02/03/04).
+
+**Re-execution with current core and documented sampling**
+(`scripts/validacion_1800_stratified_v3.py`,
+`variado/validacion_1800_stratified_v3.json`, 2026-09-11):
+- Structure: 1,800 hallucination + 1,800 control (600 per suite × 3
+  suites: halueval_dialogue, halueval_qa, truthfulqa).
+- Sampling: `sorted(glob())` + `random.Random(42).sample(..., 600)` per
+  suite — deterministic and reproducible.
+- Core: current (tribunal v1.0.1 + negation v1.3 + reference v1.3).
+- **Result: F1 = 98.90%, Precision = 100.00%, Recall = 97.83%,
+  Accuracy = 98.92%, TP = 1,761, FP = 0, FN = 39, TN = 1,800.**
+- Zone distribution (hallucination): COLAPSO 752 (41.8%), RUPTURA 1009
+  (56.1%), COHERENTE 39 (2.2%).
+- Per-suite recall: halueval_dialogue 100.0%, halueval_qa 100.0%,
+  truthfulqa 93.5% (39 FNs, all truthfulqa).
+- Firing frequency (hallucination): lexical_baseline_score 1758
+  (97.7%), source_target_guard 617 (34.3%). No other module fired on
+  this sample with the current core.
+
+**Status of prior numbers:**
+- Paper v2 metrics (F1 = 99.02%, FN = 35, 1,800+1,800 structure):
+  **superseded** — no reproducible artifact was found to support them.
+- R4 ablation (F1 = 99.55%, FN = 8, 900+900): **superseded** for
+  reporting purposes — used the pre-fix core; retained as a valid
+  ablation artifact of the earlier core revision.
+- The values reported in this entry (F1 = 98.90%, FN = 39) are the
+  verified metrics for paper v3, reproducible via the documented
+  script, seed, and core version.
+
+**Methodological note:** this finding is a traceability failure in v2
+(reported numbers without a recoverable artifact), not a code defect or
+a deliberate misrepresentation. The re-execution provides the
+reproducible basis that v2 lacked. All paper v3 metrics must reference
+this entry.
+
+---
+
 ## [R5-v1] — 2026-08-27 — Controlled pilot Subset A (70 items)
 
 First per-module validation pilot: 5 domains × 7 modules × 2 variants,
@@ -617,7 +682,7 @@ all 10 affected scripts.
 SHA-256 of this file (computed at publication time, over the full
 document):
 ```
-62a5a02d5fc86425e284aef06b7cd434394eb5df6905a74bf0f4ae0a7099ff49
+9591bd14045650403f58a492c1b3eae2de021d3903c0a341a94446a11ee602b2
 ```
 Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
