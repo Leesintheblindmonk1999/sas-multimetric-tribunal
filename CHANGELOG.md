@@ -617,10 +617,13 @@ all 10 affected scripts.
 SHA-256 of this file (computed at publication time, over the full
 document):
 ```
-bca50e0adeac81a239ae367c5e51fae2157e80275564818c027f835821edb043
+62a5a02d5fc86425e284aef06b7cd434394eb5df6905a74bf0f4ae0a7099ff49
 ```
 Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
 
-The external `CHANGELOG.md.sha256` in the same directory contains the
-same hash.
+The inline hash above is computed over the document body excluding
+this hash line, allowing independent verification that the content
+has not been altered. The external `CHANGELOG.md.sha256` in the same
+directory contains the SHA-256 of the complete file (including this
+hash line), which is the canonical verification hash.
