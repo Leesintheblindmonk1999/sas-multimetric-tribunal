@@ -4,9 +4,9 @@
 Corrección aprobada de la Tarea 2:
   - Precisión consolidada: 32/45 = 71.1% (era 30/45 = 66.7% — error de suma)
   - TP_estimado = 62 × (32/45)
-  - FN_estimado = 138 × (1/30)  [sin cambios — no depende de la precisión]
+  - FN_estimado = 138 × (1/60)  [FN sample duplicado de 30 a 60, script 88]
   - recall = TP_estimado / (TP_estimado + FN_estimado)
-  - Rango de sensibilidad con 2 FN hipotéticos: FN_est = 138 × (2/30)
+  - Rango de sensibilidad con 2 FN hipotéticos: FN_est = 138 × (2/60)
 
 Regenera reports/t1_recall_ponderado.json sobreescribiendo el viejo.
 """
@@ -21,7 +21,7 @@ BASE = Path(r"c:\Users\conno\Downloads\SAS-Semántico")
 TP_MUESTRA = 32
 N_TP_MUESTRA = 45
 FN_MUESTRA = 1
-N_FN_MUESTRA = 30
+N_FN_MUESTRA = 60  # duplicado de 30 a 60 (script 88_tanda_30_fn_negation.py)
 N_DISPARARON = 62
 N_NO_DISPARARON = 138
 
@@ -38,11 +38,11 @@ print("=" * 70)
 print("RECALL PONDERADO — precisión corregida 32/45")
 print("=" * 70)
 print(f"TP_estimado = 62 × (32/45) = {TP_estimado:.4f}")
-print(f"FN_estimado = 138 × (1/30) = {FN_estimado:.4f}")
+print(f"FN_estimado = 138 × (1/60) = {FN_estimado:.4f}")
 print(f"recall = {TP_estimado:.4f} / ({TP_estimado:.4f} + {FN_estimado:.4f}) = {recall:.4f} = {100*recall:.1f}%")
 print()
 print(f"Sensibilidad (2 FN hipotéticos):")
-print(f"  FN_est = 138 × (2/30) = {FN_estimado_2:.4f}")
+print(f"  FN_est = 138 × (2/60) = {FN_estimado_2:.4f}")
 print(f"  recall = {TP_estimado:.4f} / ({TP_estimado:.4f} + {FN_estimado_2:.4f}) = {recall_2fn:.4f} = {100*recall_2fn:.1f}%")
 print(f"  Rango: {100*min(recall, recall_2fn):.1f}%–{100*max(recall, recall_2fn):.1f}%")
 

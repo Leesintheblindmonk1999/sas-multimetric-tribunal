@@ -32,7 +32,7 @@ print(f"Dispararon: {len(dispararon)} | No dispararon: {len(no_dispararon)}")
 TP_MUESTRA = 18
 N_TP_MUESTRA = 25
 FN_MUESTRA = 1
-N_FN_MUESTRA = 30
+N_FN_MUESTRA = 60  # duplicado de 30 a 60 (script 88)
 
 TP_estimado = 62 * (TP_MUESTRA / N_TP_MUESTRA)
 FN_estimado = 138 * (FN_MUESTRA / N_FN_MUESTRA)

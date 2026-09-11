@@ -1,25 +1,25 @@
 {
- "fecha": "2026-09-05",
+ "fecha": "2026-09-11",
  "precision_corregida": "32/45 = 71.1% (nota: reemplaza 30/45 = 66.7%, que tenía errores de suma en tandas 1-3; las clasificaciones individuales por ID estaban bien)",
  "recall_ponderado": {
   "TP_estimado": 44.0889,
+  "FN_estimado": 2.3,
+  "recall": 0.9504,
+  "recall_pct": 95.0
+ },
+ "sensibilidad_2fn": {
   "FN_estimado": 4.6,
   "recall": 0.9055,
   "recall_pct": 90.6
  },
- "sensibilidad_2fn": {
-  "FN_estimado": 9.2,
-  "recall": 0.8274,
-  "recall_pct": 82.7
- },
- "rango": "82.7%–90.6%",
+ "rango": "90.6%–95.0%",
  "inputs": {
   "n_dispararon": 62,
   "n_no_dispararon": 138,
   "tp_muestra": 32,
   "n_tp_muestra": 45,
   "fn_muestra": 1,
-  "n_fn_muestra": 30
+  "n_fn_muestra": 60
  },
  "desglose_subtipos": {
   "primalidad": {
