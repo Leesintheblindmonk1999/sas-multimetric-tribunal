@@ -616,16 +616,12 @@ all 10 affected scripts.
 
 SHA-256 of this file (computed at publication time, over the full
 document):
-
+````
 Verify with:
 `sha256sum -c CHANGELOG.md.sha256` (or `Get-FileHash` on Windows).
 
 The external `CHANGELOG.md.sha256` in the same directory contains the
 same hash.
-````
-
-
-
 `
-afb7f953cad93cd43ac7d124fbf5c29cd3fcb86c2dcfe7e0800a12c3803e098e
+837f5c5c599f9b3e060454adf323b9ff230ff1f3e2dae78a1751c7e8ee9762ed
 `
