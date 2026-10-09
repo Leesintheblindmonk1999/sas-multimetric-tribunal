@@ -1,0 +1,160 @@
+{
+  "n_pares": 1800,
+  "seed": 42,
+  "kappa_d": 0.56,
+  "grilla": [
+    0.02,
+    0.04,
+    0.05,
+    0.06,
+    0.08,
+    0.1,
+    0.12,
+    0.15,
+    0.18,
+    0.2,
+    0.22,
+    0.25,
+    0.28,
+    0.3,
+    0.32,
+    0.35,
+    0.38,
+    0.4
+  ],
+  "resultados": [
+    {
+      "kappa_r": 0.02,
+      "fs_pct": 3.5,
+      "b_pct": 94.5,
+      "a_pct": 2.0,
+      "entropia_bits": 0.3593
+    },
+    {
+      "kappa_r": 0.04,
+      "fs_pct": 7.11,
+      "b_pct": 90.89,
+      "a_pct": 2.0,
+      "entropia_bits": 0.5093
+    },
+    {
+      "kappa_r": 0.05,
+      "fs_pct": 9.5,
+      "b_pct": 88.5,
+      "a_pct": 2.0,
+      "entropia_bits": 0.5915
+    },
+    {
+      "kappa_r": 0.06,
+      "fs_pct": 14.39,
+      "b_pct": 83.61,
+      "a_pct": 2.0,
+      "entropia_bits": 0.7312
+    },
+    {
+      "kappa_r": 0.08,
+      "fs_pct": 22.0,
+      "b_pct": 76.0,
+      "a_pct": 2.0,
+      "entropia_bits": 0.8944
+    },
+    {
+      "kappa_r": 0.1,
+      "fs_pct": 31.61,
+      "b_pct": 66.39,
+      "a_pct": 2.0,
+      "entropia_bits": 1.0304
+    },
+    {
+      "kappa_r": 0.12,
+      "fs_pct": 40.5,
+      "b_pct": 57.5,
+      "a_pct": 2.0,
+      "entropia_bits": 1.1001
+    },
+    {
+      "kappa_r": 0.15,
+      "fs_pct": 50.39,
+      "b_pct": 47.61,
+      "a_pct": 2.0,
+      "entropia_bits": 1.1209
+    },
+    {
+      "kappa_r": 0.18,
+      "fs_pct": 60.0,
+      "b_pct": 38.0,
+      "a_pct": 2.0,
+      "entropia_bits": 1.0855
+    },
+    {
+      "kappa_r": 0.2,
+      "fs_pct": 64.72,
+      "b_pct": 33.28,
+      "a_pct": 2.0,
+      "entropia_bits": 1.0474
+    },
+    {
+      "kappa_r": 0.22,
+      "fs_pct": 69.94,
+      "b_pct": 28.06,
+      "a_pct": 2.0,
+      "entropia_bits": 0.988
+    },
+    {
+      "kappa_r": 0.25,
+      "fs_pct": 74.94,
+      "b_pct": 23.06,
+      "a_pct": 2.0,
+      "entropia_bits": 0.9128
+    },
+    {
+      "kappa_r": 0.28,
+      "fs_pct": 79.0,
+      "b_pct": 19.0,
+      "a_pct": 2.0,
+      "entropia_bits": 0.8368
+    },
+    {
+      "kappa_r": 0.3,
+      "fs_pct": 81.17,
+      "b_pct": 16.83,
+      "a_pct": 2.0,
+      "entropia_bits": 0.7899
+    },
+    {
+      "kappa_r": 0.32,
+      "fs_pct": 83.67,
+      "b_pct": 14.33,
+      "a_pct": 2.0,
+      "entropia_bits": 0.7298
+    },
+    {
+      "kappa_r": 0.35,
+      "fs_pct": 85.78,
+      "b_pct": 12.22,
+      "a_pct": 2.0,
+      "entropia_bits": 0.6734
+    },
+    {
+      "kappa_r": 0.38,
+      "fs_pct": 88.89,
+      "b_pct": 9.11,
+      "a_pct": 2.0,
+      "entropia_bits": 0.5788
+    },
+    {
+      "kappa_r": 0.4,
+      "fs_pct": 90.0,
+      "b_pct": 8.0,
+      "a_pct": 2.0,
+      "entropia_bits": 0.5412
+    }
+  ],
+  "maximo": {
+    "kappa_r": 0.15,
+    "fs_pct": 50.39,
+    "b_pct": 47.61,
+    "a_pct": 2.0,
+    "entropia_bits": 1.1209
+  }
+}
