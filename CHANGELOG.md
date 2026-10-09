@@ -857,7 +857,7 @@ justifica.
 
 ### Commit y tag
 - Tag: v5.0.0
-- Commit: 96c55b5
+- Commit: fa41283
 
 ### Manifiesto de hashes del suplemento v5
 - ablation_averaging_vs_multiplicative.json: D14C7F9B95E5BB08C77CE12F0779F9B6B3490355361B4A1D48A56A1F8D2585C3
