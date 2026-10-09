@@ -1,7 +1,7 @@
-# CHANGELOG — SAS Multimetric Tribunal
+﻿# CHANGELOG â€” SAS Multimetric Tribunal
 
 Registry: TAD EX-2026-18792778
-Author: Gonzalo Emir Durante — Project Manifold 0.56
+Author: Gonzalo Emir Durante â€” Project Manifold 0.56
 License: Durante Invariance License v1.0
 
 This changelog documents the diagnosis and correction cycle of the
@@ -10,12 +10,12 @@ initial finding to final verification. Each entry states who/what found
 it, what was changed (or explicitly not changed), and how it was
 verified.
 
-κD = 0.56 and κR remained fixed throughout this cycle — no finding in
+ÎºD = 0.56 and ÎºR remained fixed throughout this cycle â€” no finding in
 this changelog modified either threshold.
 
 ---
 
-## [audit] — 2026-09-11 — Forensic verification of v2 validation metrics
+## [audit] â€” 2026-09-11 â€” Forensic verification of v2 validation metrics
 
 **Found by:** systematic re-audit of the 1,800-pair validation metrics
 before submission of paper v3, triggered by a discrepancy between the
@@ -26,7 +26,7 @@ F1 = 99.02%, Recall = 98.06%, 35 false negatives, TP = 1,765, over a
 declared structure of 1,800 hallucination pairs + 1,800 sanity-check
 pairs (3,600 total).
 
-**Initial forensic audit — no artifact found for v2 numbers.** An
+**Initial forensic audit â€” no artifact found for v2 numbers.** An
 exhaustive search of the repository history (git grep over all commits)
 for the reported values and structure found no validation JSON with
 TP = 1,765 or F1 = 99.02% (the only prior 1,800-pair artifact was the
@@ -35,10 +35,10 @@ initially suggested the v2 numbers had no reproducible basis.
 
 **Re-execution with current core and documented sampling**
 (`scripts/validacion_1800_stratified_v3.py`, 2026-09-11):
-- Structure: 1,800 hallucination + 1,800 control (600 per suite × 3
+- Structure: 1,800 hallucination + 1,800 control (600 per suite Ã— 3
   suites: halueval_dialogue, halueval_qa, truthfulqa).
 - Sampling: `sorted(glob())` + `random.Random(seed).sample(..., 600)`
-  per suite — deterministic and reproducible.
+  per suite â€” deterministic and reproducible.
 - Core: current (tribunal v1.0.1 + negation v1.3 + reference v1.3),
   with verified module loading (all 6 submodules confirmed loaded via
   `_modulos_cargados`).
@@ -52,7 +52,7 @@ initially suggested the v2 numbers had no reproducible basis.
    `source_target_guard` (the two modules embedded in
    `tribunal_multimetrico.py`). This invalidates the earlier sweep
    result (F1 = 98.79%, FN = 43) and the first stratified run
-   (F1 = 98.90%, FN = 39) — both were partial-core artifacts.
+   (F1 = 98.90%, FN = 39) â€” both were partial-core artifacts.
 2. **Sampling bug** in the earlier sweep: `--limit 600` with `rglob`
    without seed took the first 600 files in filesystem order, not a
    stratified random sample.
@@ -67,17 +67,17 @@ initially suggested the v2 numbers had no reproducible basis.
 **The seed=123 run reproduces the paper v2 metrics exactly**
 (F1 = 99.02%, Recall = 98.06%, TP = 1,765, FN = 35, per-suite
 Dialogue 600/0, QA 599/1, TruthfulQA 566/34). **Conclusion: the v2
-numbers were not fabricated — they correspond to a real run with a
+numbers were not fabricated â€” they correspond to a real run with a
 seed equivalent to 123, but the artifact and seed were not documented.**
 
 **However, three components of the v2 paper are superseded:**
 1. **Zone distribution (78.9%/19.2%/1.9%):** does not match any
    1,800-pair run. It matches the `resumen.zonas_alucinacion` of the
-   old `validacion_kr_v3.json` (600 pairs, κR = 0.25). The verified
+   old `validacion_kr_v3.json` (600 pairs, ÎºR = 0.25). The verified
    distributions are 50.4/47.6/2.0 (seed 42) and 52.0/46.1/1.9
    (seed 123).
 2. **Firing frequency (49.0%/28.5%/20.5%/16.3%/7.7%):** these are the
-   600-pair counts (294/171/123/98/46) multiplied by 3 — an
+   600-pair counts (294/171/123/98/46) multiplied by 3 â€” an
    extrapolation, not a real 1,800-pair measurement. The verified
    firing frequencies (seed 42): lexical 1758 (97.7%), STG 617
    (34.3%), flow 272 (15.1%), negation 194 (10.8%), cre 132 (7.3%).
@@ -94,15 +94,15 @@ seed equivalent to 123, but the artifact and seed were not documented.**
   seed=123 with the current core. The numbers are legitimate; the
   artifact and seed were undocumented.
 - Paper v2 zone distribution, firing frequency, and ISI stability
-  claim: **superseded** — they were not measured on the 1,800-pair
+  claim: **superseded** â€” they were not measured on the 1,800-pair
   run.
 - R4 ablation (F1 = 99.55%, FN = 8, 900+900): **superseded** for
-  reporting — pre-fix core; retained as a valid ablation artifact.
+  reporting â€” pre-fix core; retained as a valid ablation artifact.
 - Earlier sweep (F1 = 98.79%) and first stratified run (F1 = 98.90%):
-  **invalidated** — partial-core artifacts from the loading bug.
+  **invalidated** â€” partial-core artifacts from the loading bug.
 
 **Verified metrics for paper v3:** F1 = 98.99% (seed 42, primary) with
-range 98.99–99.02% across seeds; FN = 36 (seed 42); artifacts in
+range 98.99â€“99.02% across seeds; FN = 36 (seed 42); artifacts in
 `reports/validacion_1800_stratified_v3.json` (seed 42) and
 `reports/validacion_1800_stratified_seed123.json` (seed 123).
 
@@ -114,9 +114,9 @@ measured on the 1,800-pair run.
 
 ---
 
-## [R5-v1] — 2026-08-27 — Controlled pilot Subset A (70 items)
+## [R5-v1] â€” 2026-08-27 â€” Controlled pilot Subset A (70 items)
 
-First per-module validation pilot: 5 domains × 7 modules × 2 variants,
+First per-module validation pilot: 5 domains Ã— 7 modules Ã— 2 variants,
 single-sentence perturbations designed to activate exactly one module
 per item.
 
@@ -138,7 +138,7 @@ global recall 21.4% (15/70). Four modules at exactly 0.000: `cre_isi`,
 
 ---
 
-## [R5-diag] — 2026-08-29/30 — Root-cause diagnosis by direct execution
+## [R5-diag] â€” 2026-08-29/30 â€” Root-cause diagnosis by direct execution
 
 Instead of inferring the cause from reading the code, the 6 submodules
 (`core/*.py`) were imported and executed directly against the pilot
@@ -149,42 +149,42 @@ corpus. Findings below, each confirmed by execution, not by inspection:
 | `arithmetic_penalty` | Detection regex is 100% English (`plus`, `twice`, `% of`...). Zero Spanish coverage. |
 | `reference_penalty` | v1.1 only penalizes citations that MODIFY a citation already present in A. Citations added only in B (no counterpart in A) are excluded by design. |
 | `cre_isi` | Explicit guard `if n < 2 (sentences in B): return classification="INSUFFICIENT_DATA"`. Confirmed by execution: `n_nodes=1` in 100% of pilot items. |
-| `flow_penalty` | Engine A (entropy) requires ≥15 content tokens per segment; Engine B (causal adjacency) requires ≥2 sentences — with 1 sentence, the adjacency matrix is zero by construction. |
-| `negation_penalty` (recall 40%) | A closed whitelist of ~25 "affirmative" verbs (`indica`, `aumentó`, `fue/fueron`...) decides whether the source sentence counts as affirmative. Verbs like `revisó`, `autorizó`, `consumió` are not on the list → there is never a polarity to invert. |
+| `flow_penalty` | Engine A (entropy) requires â‰¥15 content tokens per segment; Engine B (causal adjacency) requires â‰¥2 sentences â€” with 1 sentence, the adjacency matrix is zero by construction. |
+| `negation_penalty` (recall 40%) | A closed whitelist of ~25 "affirmative" verbs (`indica`, `aumentÃ³`, `fue/fueron`...) decides whether the source sentence counts as affirmative. Verbs like `revisÃ³`, `autorizÃ³`, `consumiÃ³` are not on the list â†’ there is never a polarity to invert. |
 | `lexical_baseline_score` (recall 10%) | Not a bug: the module fires on LOW Jaccard overlap; a faithful paraphrase naturally keeps Jaccard high. We were measuring the opposite of what the module measures. |
 
 ---
 
-## [R5-matrix] — 2026-08-31 — Module × domain firing matrix (1,600 pairs)
+## [R5-matrix] â€” 2026-08-31 â€” Module Ã— domain firing matrix (1,600 pairs)
 
 Sample of 200 pairs per suite (seed=42) across 8 suites of the
 `benchmark_corpus/` (596k pairs total), with length metadata (sentence
 count, content-token count, apparent language) per item.
 
-**Length hypothesis — confirmed, with an important nuance:**
+**Length hypothesis â€” confirmed, with an important nuance:**
 - `cre_isi`: 0.0% firing rate in absolutely every "1 sentence" row,
   across the 5 suites that had them. Fully consistent with the `n<2`
   guard.
 - `flow_penalty`: the simple hypothesis "needs 2+ sentences" was
-  **incomplete** — `halueval_general` (61.9%) and
+  **incomplete** â€” `halueval_general` (61.9%) and
   `halueval_summarization` (91.7%) fire with a single sentence. A finer
   cut against content-token count (`flow_penalty_vs_tokens.csv`)
   confirmed a near-binary step at tokens=15, matching exactly the
-  Engine A `MIN_SEGMENT_WORDS` threshold — firing depends on token
+  Engine A `MIN_SEGMENT_WORDS` threshold â€” firing depends on token
   density, not sentence count.
 - `arithmetic_penalty`: the 596k corpus is already 92-99.5% English
   (`pct_texto_ingles`), and recall still sits at 0-7%. The cause is not
-  (only) language — the detector only recognizes explicit arithmetic
+  (only) language â€” the detector only recognizes explicit arithmetic
   ("A plus B is C"), and real numeric hallucinations rarely take that
   syntactic form.
 
 **Operational conclusion:** `cre_isi` and `flow_penalty` are not
-broken — they are calibrated for multi-sentence documents. The pending
+broken â€” they are calibrated for multi-sentence documents. The pending
 action is corpus design, not code.
 
 ---
 
-## [v1.0.1] — 2026-09-02 — `tribunal_multimetrico.py`: anachronistic firing-decision fix
+## [v1.0.1] â€” 2026-09-02 â€” `tribunal_multimetrico.py`: anachronistic firing-decision fix
 
 **Found by:** controlled `reference_penalty` corpus (65 pairs: 20
 `same_author_diff_year`, 20 `same_year_diff_author`, 20 control, 5
@@ -211,17 +211,17 @@ level, even though `reference_check.py` detected it correctly.
 
 **Limitation found during that same verification** (see next entry):
 the `isi_final` of the 3 pure pairs did NOT change even though `fired`
-flipped to `True` — a signal that the fix was necessary but not
+flipped to `True` â€” a signal that the fix was necessary but not
 sufficient.
 
 ---
 
-## [v1.2] — 2026-09-02 — `reference_check.py`: anachronistic severity fix
+## [v1.2] â€” 2026-09-02 â€” `reference_check.py`: anachronistic severity fix
 
-**Found by:** cross-audit of the v1.0.1 fix — `isi_final` of the 3 pure
+**Found by:** cross-audit of the v1.0.1 fix â€” `isi_final` of the 3 pure
 anachronistic pairs was recomputed before/after the decision fix, and
-came out identical (`0.500000 → 0.500000`, `0.642857 → 0.642857`,
-`0.538462 → 0.538462`). Root cause: `penalty` in
+came out identical (`0.500000 â†’ 0.500000`, `0.642857 â†’ 0.642857`,
+`0.538462 â†’ 0.538462`). Root cause: `penalty` in
 `detect_fabrications()` was computed solely from `n_fab`
 (fabricated_count); a pure anachronism (`n_fab=0`) always returned
 `penalty=1.0` regardless of `anachronistic_count`. The v1.0.1 fix
@@ -244,19 +244,19 @@ corrected the firing decision but not the penalty magnitude.
 separately in `ReferenceResult` (for evidence/XAI purposes); only what
 feeds into `penalty` changes.
 
-**Verification — independently recomputed, not just taken from the
-run report** (`isi_final = isi_hard × penalty`, recomputed item by item
+**Verification â€” independently recomputed, not just taken from the
+run report** (`isi_final = isi_hard Ã— penalty`, recomputed item by item
 from the raw JSON files):
 
-| Pair | isi_hard | penalty before → after | isi_final before → after |
+| Pair | isi_hard | penalty before â†’ after | isi_final before â†’ after |
 |---|---|---|---|
-| pure_00 | 0.500000 | 1.00 → 0.75 | 0.500000 → 0.375000 |
-| pure_01 | 0.642857 | 1.00 → 0.75 | 0.642857 → 0.482143 |
-| pure_02 | 0.538462 | 1.00 → 0.75 | 0.538462 → 0.403846 |
-| mixed_03 | 0.777778 | 0.75 → 0.5625 | 0.583333 → 0.437500 |
-| mixed_04 | 0.461538 | 0.75 → 0.5625 | 0.346154 → 0.259615 |
+| pure_00 | 0.500000 | 1.00 â†’ 0.75 | 0.500000 â†’ 0.375000 |
+| pure_01 | 0.642857 | 1.00 â†’ 0.75 | 0.642857 â†’ 0.482143 |
+| pure_02 | 0.538462 | 1.00 â†’ 0.75 | 0.538462 â†’ 0.403846 |
+| mixed_03 | 0.777778 | 0.75 â†’ 0.5625 | 0.583333 â†’ 0.437500 |
+| mixed_04 | 0.461538 | 0.75 â†’ 0.5625 | 0.346154 â†’ 0.259615 |
 
-All 5 post-fix `isi_final` values match `isi_hard × penalty` recomputed
+All 5 post-fix `isi_final` values match `isi_hard Ã— penalty` recomputed
 independently (not merely compared against the delivered table).
 
 - 60 non-anachronistic pairs: 0 differences (`n_total == n_fab` when
@@ -271,43 +271,43 @@ corpus (not just the synthetic 65-pair corpus used for diagnosis).
 
 ---
 
-## [attempted, reverted] — 2026-09-02 — `negation_probe.py`: verb-whitelist expansion (v1.2-attempt)
+## [attempted, reverted] â€” 2026-09-02 â€” `negation_probe.py`: verb-whitelist expansion (v1.2-attempt)
 
 **Attempted fix:** expand `_AFFIRM_STRONG` with ~60 additional
 report/action verbs justified by real usage frequency in the pilot and
 benchmark corpus (e.g. `produce`, `decide`, `consume`, `genera`),
-explicitly excluding verbs with inherent negative charge (`rechazó`,
-`negó`, `niega`, `prohibió`, `denegó`).
+explicitly excluding verbs with inherent negative charge (`rechazÃ³`,
+`negÃ³`, `niega`, `prohibiÃ³`, `denegÃ³`).
 
 **Result, measured with full protocol:**
-- Piloto recall: 4/10 → 10/10.
+- Piloto recall: 4/10 â†’ 10/10.
 - 1,600-pair matrix: only 1 new firing, no mass contamination.
-- **6 new false positives that flip the final tribunal zone** (A→B or
-  B→F-S) on valid-paraphrase pairs (`truth_factual: true`) — e.g.
-  `biomed_cre_isi_00`: source uses the newly-whitelisted `consumió`,
-  response uses the still-excluded `rechazó`; both used to read as
+- **6 new false positives that flip the final tribunal zone** (Aâ†’B or
+  Bâ†’F-S) on valid-paraphrase pairs (`truth_factual: true`) â€” e.g.
+  `biomed_cre_isi_00`: source uses the newly-whitelisted `consumiÃ³`,
+  response uses the still-excluded `rechazÃ³`; both used to read as
   "not affirmative" (no mismatch, no false firing); after the
   expansion, the asymmetry between a listed and an unlisted verb
   produces a spurious polarity mismatch with no real negation present.
 
 **Decision: REVERTED.** The whitelist was restored to its original
-state (`revisó`/`autorizó`/`consumió` confirmed absent again). Gaining
+state (`revisÃ³`/`autorizÃ³`/`consumiÃ³` confirmed absent again). Gaining
 recall at the cost of zone-changing false positives on valid content
 violates the project's stated precedent (specificity over recall).
 
 **Root-cause correction:** the failed attempt's own changelog entry
 initially attributed the 6 FPs to sentence-alignment issues in
 `detect_inversions()`. Cross-audit of the same 6 examples showed this
-was incorrect — all 6 are single-sentence pairs with no alignment
+was incorrect â€” all 6 are single-sentence pairs with no alignment
 ambiguity possible. The real mechanism: `_is_affirmative()` conflates
-"is the verb in a closed list" with "is there negation" — any
+"is the verb in a closed list" with "is there negation" â€” any
 asymmetry in verb-list coverage between the compared sentences
 produces a spurious mismatch, independent of real negation. This
 reframing directly motivated the v1.3 redesign below.
 
 ---
 
-## [v1.3] — 2026-09-03 — `negation_probe.py`: marker-based negation comparison
+## [v1.3] â€” 2026-09-03 â€” `negation_probe.py`: marker-based negation comparison
 
 **Found by:** cross-audit of the reverted whitelist attempt above.
 
@@ -326,32 +326,32 @@ case another signal needs them later. Quantifier comparison
 
 **Verification (same protocol, with explicit willingness to revert
 again if needed):**
-- Piloto recall: 4/10 → 10/10 — same gain as the reverted attempt.
+- Piloto recall: 4/10 â†’ 10/10 â€” same gain as the reverted attempt.
 - **The same 6 historical false positives** (checked against the exact
   same pairs, not a new sample): 0/6 fire. The verb-coverage asymmetry
   mechanism is eliminated by construction, since verb identity no
   longer enters the comparison.
-- 1,600-pair matrix: 510 items flipped `True→False`, 104 flipped
-  `False→True`. Full breakdown, not just the counts:
+- 1,600-pair matrix: 510 items flipped `Trueâ†’False`, 104 flipped
+  `Falseâ†’True`. Full breakdown, not just the counts:
   - Of the 510: re-derived 2026-09-05 by calling the module's own
     `detect_inversions()` on every one of the 510 pairs (not the
-    regex-marker heuristic used originally) → **510/0: zero genuine
+    regex-marker heuristic used originally) â†’ **510/0: zero genuine
     regressions, 510 whitelist false positives now correctly silent.**
     The original 317/193 split was an artifact of comparing raw-text
     negation markers (any "no" anywhere in A vs B) instead of the
     module's aligned-sentence criterion. Verified with 5 random pairs
     (seed=42, script `72_verificar_5_pares_510.py`): in every case the
     texts are topically unrelated, `_align_sentences()` pairs
-    low-similarity sentences (sim 0.10–0.42) or fails to pair ones
+    low-similarity sentences (sim 0.10â€“0.42) or fails to pair ones
     with real negation, and no aligned pair carries an undetected
     inversion. Example: `halueval_dialogue/7527` aligns A5 ("Didn't
     they win the 2009 UEFA Champions League Final?") with B1 ("And
     didn't they win some kind of culinary competition in 2009?") at
-    sim=0.417 — **both carry the same "didn't" negation marker**, so
+    sim=0.417 â€” **both carry the same "didn't" negation marker**, so
     there is no polarity inversion; the module correctly stays silent.
   - Of the 104: 81 have real negation asymmetry in the text; 23 are
     borderline but correct (sentence alignment correctly pairing
-    opposite-polarity sentences, e.g. "I like it" ↔ "No, I haven't
+    opposite-polarity sentences, e.g. "I like it" â†” "No, I haven't
     watched it").
 - Core unit tests unaffected (no core changes outside
   `negation_probe.py`).
@@ -361,7 +361,7 @@ and the reverted expansion attempt on every axis measured.
 
 ---
 
-## [corpus-integrity] — 2026-09-02/03 — `legal_hallucinations`: A/B pairing is not query-matched
+## [corpus-integrity] â€” 2026-09-02/03 â€” `legal_hallucinations`: A/B pairing is not query-matched
 
 **Found by:** manual text inspection of 2 "regression" pairs flagged
 during v1.3 verification (`183879`, `207465`), triggered by noticing
@@ -381,34 +381,34 @@ else:
     control_idx += 1
 ```
 Two independent counters number clean and hallucinated rows in
-parallel — `0000_A_clean.txt` and `0000_B_hallucination.txt` are
+parallel â€” `0000_A_clean.txt` and `0000_B_hallucination.txt` are
 whichever rows happened to land first in each category, not the same
 underlying query.
 
 **Measured impact, with an initial false alarm corrected along the
 way:** a first check on 99 IDs (all drawn from `negation_penalty`
-firing-change lists) showed 92% mismatched cases — but that sample was
+firing-change lists) showed 92% mismatched cases â€” but that sample was
 biased (pairs pre-filtered for negation-marker asymmetry are more
 likely to be topically unrelated). A clean random sample (30 IDs, seed
 123, drawn from the independent Fase-B matrix sample) confirmed the
-same order of magnitude: 90% mismatched. Not a sampling artifact — a
+same order of magnitude: 90% mismatched. Not a sampling artifact â€” a
 real, large-scale corpus construction defect.
 
 **Contamination check on already-reported results:**
 - Firing matrix (Fase B): the `legal_hallucinations` row (`lexical
   95.5%, STG 99.0%, cre 92.0%, flow 86.5%`, etc.) does not measure
-  hallucination detection — it largely measures how different two
+  hallucination detection â€” it largely measures how different two
   unrelated legal texts are. Treat as invalid.
 - `negation_penalty` v1.3 recall figures: `legal_hallucinations`
   represents 12.5% of the 1,600-pair matrix, 8.9% of the 191-pair
   comparison set, 7.3%/19% of the two chequeo-4 samples (halogen
   subfolders were also found mixed into the largest of these,
-  unaudited — see below). Recomputing recall/precision **excluding**
-  `legal_hallucinations` moved every figure by ≤0.8 points — the
+  unaudited â€” see below). Recomputing recall/precision **excluding**
+  `legal_hallucinations` moved every figure by â‰¤0.8 points â€” the
   contamination is proportional to population weight, not
   disproportionate. **v1.3's validated numbers stand.**
 - 1,800-pair R1-D ablation (F1 = 99.55%): independently re-verified
-  from `pares_ablation.json` by direct `suite` field count —
+  from `pares_ablation.json` by direct `suite` field count â€”
   30,000 `halu_eval_dialogue` + 30,000 `halu_eval_qa` + 2,370
   `truthfulqa` = 62,370, zero `legal_hallucinations`, zero `halogen`.
   Clean.
@@ -416,7 +416,7 @@ real, large-scale corpus construction defect.
 **Recovery path (not yet executed):** the source CSV
 (`reglab/legal_hallucinations` via HuggingFace, 745,606 rows) has a
 `query` column. 84,780 of 186,011 unique queries have both a
-`hallucination=True` and `hallucination=False` row — those are
+`hallucination=True` and `hallucination=False` row â€” those are
 correctly reconstructable as matched pairs. The remaining ~66% of
 hallucinated rows have no clean counterpart for the same query in this
 dataset and cannot be paired without new work beyond re-indexing.
@@ -428,19 +428,19 @@ suite for module validation must either use the reconstructed
 
 ---
 
-## [validation, real ground truth] — 2026-09-03 — `negation_penalty` on `halogen/rationalization_binary`
+## [validation, real ground truth] â€” 2026-09-03 â€” `negation_penalty` on `halogen/rationalization_binary`
 
 **Why this suite:** `negation_probe.py`'s own docstring names
-`rationalization_binary` as its target domain (`recall 10.7% → target
+`rationalization_binary` as its target domain (`recall 10.7% â†’ target
 >60%`). This subfolder of `halogen` (~21,000 pairs, never previously
 run through the Fase-B firing matrix) was the first opportunity to
 measure `negation_penalty` against a domain it was explicitly designed
 for, with a verifiably correct A/B pairing (10 random pairs checked:
-same question, e.g. same senator, same flight route, same number —
+same question, e.g. same senator, same flight route, same number â€”
 unlike `legal_hallucinations`).
 
 **No explicit type-of-hallucination label exists** in this suite (or
-in `halueval_*`/`truthfulqa`/`legal_hallucinations`) — only `codehalu`
+in `halueval_*`/`truthfulqa`/`legal_hallucinations`) â€” only `codehalu`
 carries type labels, and those are code-hallucination types, not
 negation. Recall/precision below are therefore computed against
 manually-verified text, not a corpus-native label.
@@ -448,7 +448,7 @@ manually-verified text, not a corpus-native label.
 **Method:** 200 pairs sampled (seed=42). 62 fired. Manual text
 classification in three rounds (10 + 15 + 20 = 45 of the 62 fired
 pairs; 30 of the 138 non-fired pairs), real vs. spurious negation
-judged from the actual source/response text each time — not inferred
+judged from the actual source/response text each time â€” not inferred
 from aggregate counts.
 
 **Results:**
@@ -464,7 +464,7 @@ from aggregate counts.
 
   **Correction note (2026-09-05):** the precision figures originally
   reported in this entry (30/45 = 66.7%, with subtype n of 27/8/10)
-  contained arithmetic sum errors across the three labeled rounds —
+  contained arithmetic sum errors across the three labeled rounds â€”
   the individual per-ID classifications were correct, but rounds
   1 (7 primos + 3 vuelos, not 8+2), 2 (11a/4b, not 10a/5b) and 3
   (13a/7b, not 12a/8b) were mis-totaled. Re-counting from the 45
@@ -475,18 +475,18 @@ from aggregate counts.
 
 - **Recall**, weighted by population using the final consolidated
   precision (not the first sub-round in isolation): TP_est =
-  62 × (32/45) ≈ 44.09. Direct evidence on the non-firing side:
+  62 Ã— (32/45) â‰ˆ 44.09. Direct evidence on the non-firing side:
   **1 confirmed false negative in 60 sampled non-firings**
-  (FN_est = 138 × (1/60) ≈ 2.3). **Point estimate: recall ≈ 95.0%.**
+  (FN_est = 138 Ã— (1/60) â‰ˆ 2.3). **Point estimate: recall â‰ˆ 95.0%.**
 
   Updated 2026-09-10: the non-firing sample was doubled from 30 to 60
   (scripts `88_tanda_30_fn_negation.py`). The second batch of 30
-  contained **zero new false negatives** — all 30 were correct
+  contained **zero new false negatives** â€” all 30 were correct
   non-firings (affirmative responses with no real negation). This
   halves the FN_estimate and tightens the range significantly. A
   sensitivity check (two hypothetical FNs in the untested remainder):
-  FN_est = 138 × (2/60) ≈ 4.6 → recall ≈ 90.6%. **Report as a range:
-  90.6%–95.0%**, down from the previous ≈83–91%.
+  FN_est = 138 Ã— (2/60) â‰ˆ 4.6 â†’ recall â‰ˆ 90.6%. **Report as a range:
+  90.6%â€“95.0%**, down from the previous â‰ˆ83â€“91%.
 
 **Root cause of the senator subtype's low precision, identified with
 text evidence, not inferred:** every question in this suite's template
@@ -504,14 +504,14 @@ prose or dialogue (where `legal`/`biomed`/`narrative`-style
 constructions already showed lower recall in the original R5 pilot).
 
 **Status:** first `negation_penalty` result with real, text-verified
-ground truth in this project. Recall is strong (90.6%–95.0%); precision is
+ground truth in this project. Recall is strong (90.6%â€“95.0%); precision is
 subtype-dependent with a known, explainable failure mode. The FN base
-was doubled in this update (30→60 sampled), substantially tightening
+was doubled in this update (30â†’60 sampled), substantially tightening
 the range.
 
 ---
 
-## [v1.3] — 2026-09-04 — `reference_check.py`: citation regex over-capture fix
+## [v1.3] â€” 2026-09-04 â€” `reference_check.py`: citation regex over-capture fix
 
 **Found by:** 5 adversarial citation pairs (same real citation in A and
 B with different surrounding context). 3/5 produced a false
@@ -520,34 +520,34 @@ B with different surrounding context). 3/5 produced a false
 **Problem:** the 4th `_CITATION_PATTERNS` entry ("Author (Year)" with no
 parenthesis/comma delimiter) used `{2,40}` to capture the author name,
 which over-captured surrounding lexical context as part of the name:
-- "work on reinforcement learning a. raffin" → author "work on
+- "work on reinforcement learning a. raffin" â†’ author "work on
   reinforcement learning a. raffin"
-- Legal case numbers: "676 F.3d 19 (2012)" → author "676 F.3d 19"
+- Legal case numbers: "676 F.3d 19 (2012)" â†’ author "676 F.3d 19"
 
 When A and B share a year but the over-captured "author" differs, a
 false `same_year_diff_author` fires. In the 1,600-pair matrix, 6 items
-(all `legal_hallucinations`) fired this way — capturing legal case
+(all `legal_hallucinations`) fired this way â€” capturing legal case
 numbers as authors.
 
 **Change:** the "Author (Year)" pattern now requires proper-name
-sequences — capitalized-initial words (same criterion as
-`source_target_guard`), 1–4 words, with surname particles
+sequences â€” capitalized-initial words (same criterion as
+`source_target_guard`), 1â€“4 words, with surname particles
 (de/van/von/du/la/del/den/der), hyphenated compounds, and optional
 "et al.". The letter class was widened to Unicode Latin extended
 (`[^\W\d_]` = any letter) to cover German/Turkish diacritics present
-in CiteTracer (Müller, Alikaşifoğlu). Common words at the start
-(Según, Como, The, In, ...) are excluded so lexical context is not
+in CiteTracer (MÃ¼ller, AlikaÅŸifoÄŸlu). Common words at the start
+(SegÃºn, Como, The, In, ...) are excluded so lexical context is not
 captured as part of the name. The other 3 patterns (delimited by
 parenthesis or comma) were not touched.
 
-**Verification (snapshots `t1_snapshot_reference_v12.json` →
+**Verification (snapshots `t1_snapshot_reference_v12.json` â†’
 `t1_snapshot_reference_v13.json`):**
-- 5 adversarial pairs: 3 FPs eliminated (fab=1 → 0), 2 correct pairs
-  unchanged (fab=0 → 0). **0/5 fire post-fix.**
-- CiteTracer calibration (686 pairs): TP=299 → 299, FN=44 → 44,
-  FP=0 → 0, TN=343 → 343. Recall 0.8717, precision 1.0 — **unchanged**.
-  (Two TPs were temporarily lost during development — Müller and
-  Alikaşifoğlu failed the `[a-záéíóúñ]` class — and were recovered by
+- 5 adversarial pairs: 3 FPs eliminated (fab=1 â†’ 0), 2 correct pairs
+  unchanged (fab=0 â†’ 0). **0/5 fire post-fix.**
+- CiteTracer calibration (686 pairs): TP=299 â†’ 299, FN=44 â†’ 44,
+  FP=0 â†’ 0, TN=343 â†’ 343. Recall 0.8717, precision 1.0 â€” **unchanged**.
+  (Two TPs were temporarily lost during development â€” MÃ¼ller and
+  AlikaÅŸifoÄŸlu failed the `[a-zÃ¡Ã©Ã­Ã³ÃºÃ±]` class â€” and were recovered by
   widening to `[^\W\d_]`; final state has zero TP loss.)
 - 1,600-pair matrix: 6 FPs eliminated (all `legal_hallucinations`,
   legal case numbers captured as authors), 0 new firings, 0 magnitude
@@ -564,12 +564,12 @@ until a future audit pass checks them from raw data.
 **Status:** `reference_penalty` citation extraction now matches the
 proper-name criterion used elsewhere in the tribunal. The
 `legal_hallucinations` suite remains unusable for validation (see
-corpus-integrity entry) — the 6 eliminated firings were on mismatched
+corpus-integrity entry) â€” the 6 eliminated firings were on mismatched
 pairs.
 
 ---
 
-## [audit-close] — 2026-09-04 — negation v1.3 vs original pilot Subset A + version audit
+## [audit-close] â€” 2026-09-04 â€” negation v1.3 vs original pilot Subset A + version audit
 
 **1. The one missing negation measurement is now closed, independently
 verified against the raw output file.** The original R5 pilot Subset A
@@ -577,9 +577,9 @@ verified against the raw output file.** The original R5 pilot Subset A
 never re-measured after the v1.3 redesign to negation markers. Re-run
 now (`scripts/63_negation_vs_piloto_A.py`,
 `reports/t1_negation_vs_piloto_A.json`): **recall 10/10 = 100%**,
-confirmed item-by-item from the raw file — every pair fires with
+confirmed item-by-item from the raw file â€” every pair fires with
 `inversion_count=1, penalty=0.45`. This matches the 10/10 achieved by
-the reverted v1.2 whitelist attempt — but without the 6 zone-changing
+the reverted v1.2 whitelist attempt â€” but without the 6 zone-changing
 false positives that killed v1.2. The v1.3 docstring placeholder
 ("?/10") is now filled with the real number.
 
@@ -587,40 +587,40 @@ false positives that killed v1.2. The v1.3 docstring placeholder
 
 | File | Docstring version | CHANGELOG entry | Match |
 |---|---|---|---|
-| `tribunal_multimetrico.py` | v1.0.1 | [v1.0.1] 2026-09-02 | ✅ |
-| `reference_check.py` | v1.3 | [v1.3] 2026-09-04 (this entry) | ✅ |
-| `negation_probe.py` | v1.3 | [v1.3] 2026-09-03 | ✅ |
+| `tribunal_multimetrico.py` | v1.0.1 | [v1.0.1] 2026-09-02 | âœ… |
+| `reference_check.py` | v1.3 | [v1.3] 2026-09-04 (this entry) | âœ… |
+| `negation_probe.py` | v1.3 | [v1.3] 2026-09-03 | âœ… |
 
 No applied change is undocumented, and no documented change is
-unapplied. The `negation_probe.py` v1.3 docstring said "recall 4/10 →
-?/10 (ver script 35)" — the placeholder is now replaced with the real
+unapplied. The `negation_probe.py` v1.3 docstring said "recall 4/10 â†’
+?/10 (ver script 35)" â€” the placeholder is now replaced with the real
 10/10 measurement.
 
 **3. Snapshots/reports generated this cycle, verification status
-(updated 2026-09-05 — all previously-flagged items re-derived):**
+(updated 2026-09-05 â€” all previously-flagged items re-derived):**
 
 | Report | Independently verified? |
 |---|---|
-| `t1_negation_vs_piloto_A.json` | ✅ recomputed from raw pilot corpus |
-| `t1_sobrecaptura_citas.json` | ✅ contents inspected directly (1,372 flagged captures, 100% suspicious pre-fix, 88 overlapping with FN cases) — kept as evidence of the bug, superseded by the v1.3 fix |
-| `t1_snapshot_reference_v12.json` / `v13.json` | ✅ **re-derived from scratch 2026-09-05** (script `66_rederivar_snapshots_reference.py`, report `t1_rederivacion_snapshots_reference.json`): adversarial 3/5→0/5 with raw `detect_fabrications()` events; calibration TP=299/FN=44/FP=0/TN=343 item-by-item, 0 item-level diffs; matrix 6 FPs eliminated, 0 new, 0 magnitude. **Numbers confirmed unchanged.** |
-| `t1_rationalization_binary.json` / `t1_desglose_subtipos.json` | ✅ **re-derived 2026-09-05** (script `67_rederivar_desglose_subtipos.py`, report `t1_rederivacion_desglose_subtipos.json`): re-counted from the 45 individual records → **32/45 = 71.1%** (primalidad 26/84.6%, vuelos 9/66.7%, senador 10/40.0%). **Correction applied** — the previously published 30/45 = 66.7% (27/8/10) had arithmetic sum errors in rounds 1–3; the per-ID classifications were correct. |
-| `t1_recall_ponderado.json` | ✅ **regenerated 2026-09-05** (script `71_recall_ponderado_v2.py`) with the corrected precision: TP_est = 62×(32/45) = 44.09, FN_est = 138×(1/30) = 4.6 → **recall ≈ 90.6%**; sensitivity with 2 FN → 82.7%. Range **≈83–91%**. **Updated 2026-09-10** (script `88_tanda_30_fn_negation.py`, doubled FN sample to 60): FN_est = 138×(1/60) = 2.3 → **recall ≈ 95.0%**, range **90.6%–95.0%**. |
-| `analisis_decisivo_negation_v3.json` (317/193 split) | ✅ **superseded 2026-09-05** — re-derived by calling the module's own `detect_inversions()` on all 510 True→False pairs (script `69_rederivar_317_193.py`, report `t1_rederivacion_317_193.json`): **510/0** (zero genuine regressions, 510 whitelist FPs). The 317/193 was a raw-text regex-marker artifact. Verified with 5 random pairs (script `72_verificar_5_pares_510.py`) — see the [v1.3] entry above. |
-| `cambios_1600_negation_v3.json` | ✅ arithmetic on the `regresion_1600_*` snapshots (independently verified) — the derived counts were re-confirmed by the 510/0 re-derivation above |
+| `t1_negation_vs_piloto_A.json` | âœ… recomputed from raw pilot corpus |
+| `t1_sobrecaptura_citas.json` | âœ… contents inspected directly (1,372 flagged captures, 100% suspicious pre-fix, 88 overlapping with FN cases) â€” kept as evidence of the bug, superseded by the v1.3 fix |
+| `t1_snapshot_reference_v12.json` / `v13.json` | âœ… **re-derived from scratch 2026-09-05** (script `66_rederivar_snapshots_reference.py`, report `t1_rederivacion_snapshots_reference.json`): adversarial 3/5â†’0/5 with raw `detect_fabrications()` events; calibration TP=299/FN=44/FP=0/TN=343 item-by-item, 0 item-level diffs; matrix 6 FPs eliminated, 0 new, 0 magnitude. **Numbers confirmed unchanged.** |
+| `t1_rationalization_binary.json` / `t1_desglose_subtipos.json` | âœ… **re-derived 2026-09-05** (script `67_rederivar_desglose_subtipos.py`, report `t1_rederivacion_desglose_subtipos.json`): re-counted from the 45 individual records â†’ **32/45 = 71.1%** (primalidad 26/84.6%, vuelos 9/66.7%, senador 10/40.0%). **Correction applied** â€” the previously published 30/45 = 66.7% (27/8/10) had arithmetic sum errors in rounds 1â€“3; the per-ID classifications were correct. |
+| `t1_recall_ponderado.json` | âœ… **regenerated 2026-09-05** (script `71_recall_ponderado_v2.py`) with the corrected precision: TP_est = 62Ã—(32/45) = 44.09, FN_est = 138Ã—(1/30) = 4.6 â†’ **recall â‰ˆ 90.6%**; sensitivity with 2 FN â†’ 82.7%. Range **â‰ˆ83â€“91%**. **Updated 2026-09-10** (script `88_tanda_30_fn_negation.py`, doubled FN sample to 60): FN_est = 138Ã—(1/60) = 2.3 â†’ **recall â‰ˆ 95.0%**, range **90.6%â€“95.0%**. |
+| `analisis_decisivo_negation_v3.json` (317/193 split) | âœ… **superseded 2026-09-05** â€” re-derived by calling the module's own `detect_inversions()` on all 510 Trueâ†’False pairs (script `69_rederivar_317_193.py`, report `t1_rederivacion_317_193.json`): **510/0** (zero genuine regressions, 510 whitelist FPs). The 317/193 was a raw-text regex-marker artifact. Verified with 5 random pairs (script `72_verificar_5_pares_510.py`) â€” see the [v1.3] entry above. |
+| `cambios_1600_negation_v3.json` | âœ… arithmetic on the `regresion_1600_*` snapshots (independently verified) â€” the derived counts were re-confirmed by the 510/0 re-derivation above |
 
 **Correction to an earlier internal report:** a draft of this entry
 stated that "a second false negative was found in a larger follow-up
-sample," lowering the recall estimate to 82.9%. This is inaccurate — no
+sample," lowering the recall estimate to 82.9%. This is inaccurate â€” no
 second batch of non-firing pairs was actually sampled. The 82.9% figure
 was a **sensitivity illustration** ("if one more FN existed, recall
 would drop to..."), not an empirical result. Corrected above to report
-recall as a range (≈83–91%) grounded in the one FN actually observed,
+recall as a range (â‰ˆ83â€“91%) grounded in the one FN actually observed,
 with the sensitivity noted explicitly as hypothetical. (Updated
 2026-09-05: with the corrected precision 32/45, the point estimate is
 90.6% and the sensitivity to a second FN is 82.7%. **Updated 2026-09-10:**
-FN sample doubled to 60, zero additional FNs found → range tightened
-to **90.6%–95.0%**.)
+FN sample doubled to 60, zero additional FNs found â†’ range tightened
+to **90.6%â€“95.0%**.)
 
 ---
 
@@ -628,13 +628,13 @@ to **90.6%–95.0%**.)
 
 | Module | Status | Pending action |
 |---|---|---|
-| `lexical_baseline_score` | Works as designed | None — the low recall in R5-v1 was a corpus-design artifact, not a defect. The Fase-B matrix values for `legal_hallucinations` v1 are cited as historical reference and carry the corpus pairing uncertainty documented above. |
+| `lexical_baseline_score` | Works as designed | None â€” the low recall in R5-v1 was a corpus-design artifact, not a defect. The Fase-B matrix values for `legal_hallucinations` v1 are cited as historical reference and carry the corpus pairing uncertainty documented above. |
 | `source_target_guard` | Works | None. Same caveat as `lexical_baseline_score`: Fase-B matrix values for `legal_hallucinations` v1 are historical and subject to the corpus pairing uncertainty documented above. |
-| `cre_isi` | Works, requires ≥2 sentences | Corpus design (not code) |
-| `flow_penalty` | Works, requires ≥15 content tokens | Corpus design (not code) |
-| `negation_penalty` | v1.3 kept — recall 10/10 on original pilot; 90.6%–95.0% on `rationalization_binary` (FN base doubled 30→60, range tightened); precision 71.1% (32/45) with subtype dependence (senator 40%) | Known, explainable FP pattern on yes/no templates. Larger non-firing sample would tighten the recall range further. |
-| `arithmetic_penalty` | Not working in practice | Low priority — the underlying problem (implicit arithmetic) is not solved by translating the regex alone |
-| `reference_penalty` | Fixed in three layers (v1.0.1 + v1.2 + v1.3) | Calibrated against CiteTracer (recall 0.872, precision 1.0); citation regex over-capture fixed — snapshots re-derived from scratch 2026-09-05, numbers confirmed |
+| `cre_isi` | Works, requires â‰¥2 sentences | Corpus design (not code) |
+| `flow_penalty` | Works, requires â‰¥15 content tokens | Corpus design (not code) |
+| `negation_penalty` | v1.3 kept â€” recall 10/10 on original pilot; 90.6%â€“95.0% on `rationalization_binary` (FN base doubled 30â†’60, range tightened); precision 71.1% (32/45) with subtype dependence (senator 40%) | Known, explainable FP pattern on yes/no templates. Larger non-firing sample would tighten the recall range further. |
+| `arithmetic_penalty` | Not working in practice | Low priority â€” the underlying problem (implicit arithmetic) is not solved by translating the regex alone |
+| `reference_penalty` | Fixed in three layers (v1.0.1 + v1.2 + v1.3) | Calibrated against CiteTracer (recall 0.872, precision 1.0); citation regex over-capture fixed â€” snapshots re-derived from scratch 2026-09-05, numbers confirmed |
 
 **Corpus caveat that applies across the table above:** `legal_hallucinations`
 (497k of the 596k-pair `benchmark_corpus`) has a confirmed A/B pairing
@@ -645,7 +645,7 @@ unaudited.
 
 ---
 
-## [methodological] — 2026-09-10 — `os.scandir` without `sorted()` is a non-determinism source
+## [methodological] â€” 2026-09-10 â€” `os.scandir` without `sorted()` is a non-determinism source
 
 **Found by:** Claude cross-auditing the clean legal v1/v2 comparison. The
 first run of `negation_penalty` on `legal_hallucinations` v1 gave 49.0%;
@@ -654,19 +654,19 @@ traced to `os.scandir()` returning directory entries in filesystem order,
 which is not guaranteed to be stable across runs. `random.sample(seed=42)`
 on differently-ordered lists produces different samples, silently.
 
-**Fix applied in scripts 86–87:** all samples now use `sorted()` before
+**Fix applied in scripts 86â€“87:** all samples now use `sorted()` before
 `random.sample()`. Re-running three consecutive times with fixed order
-gives 54.5% every time — confirmed deterministic.
+gives 54.5% every time â€” confirmed deterministic.
 
 **Systematic audit of the public repo (`sas-multimetric-tribunal/`)**
 (2026-09-10, scripts `scripts/*.py` + `research/*/scripts/*.py`):
 
-- **`os.scandir()`: 0 occurrences** — not used anywhere in the repo.
+- **`os.scandir()`: 0 occurrences** â€” not used anywhere in the repo.
 - **`os.listdir()`: 2 occurrences** (`run_validation.py` line 45,
-  `sample_dataset.py` line 36) — both enumerate suite names for full
+  `sample_dataset.py` line 36) â€” both enumerate suite names for full
   iteration, never feed `random.sample`. **Not affected.**
 - **`Path.glob()` without `sorted()`, feeding `random.sample()`:
-  10 scripts affected** — these are the real non-determinism source.
+  10 scripts affected** â€” these are the real non-determinism source.
   `pathlib.glob` returns entries in arbitrary order by Python spec
   (implementation-sorted on Windows, unsorted on Linux/macOS). Ten
   scripts built candidate lists with `for f in suite_dir.glob("*_A_clean.txt")`
@@ -684,7 +684,7 @@ gives 54.5% every time — confirmed deterministic.
   `70_diagnostico_por_que_0.py` (36),
   `72_verificar_5_pares_510.py` (41).
 
-- **`glob.glob()`/`rglob()`/`Path.iterdir()` — not affected:**
+- **`glob.glob()`/`rglob()`/`Path.iterdir()` â€” not affected:**
   `run_validation.py` uses `sorted(glob.glob(...))` for file iteration.
   `sample_dataset.py` uses `sorted(glob.glob(...))` before sampling.
   `research/r3_*/prepare_data.py` wraps every `glob()` in `sorted()`.
@@ -694,17 +694,17 @@ gives 54.5% every time — confirmed deterministic.
 
 **Impact assessment:** all 10 affected scripts operate on the
 `benchmark_corpus` where `glob()` returns sorted results on Windows
-NTFS — which is the platform where all reported numbers were generated.
+NTFS â€” which is the platform where all reported numbers were generated.
 The non-determinism is a **cross-platform portability issue**, not a
 source of variance in the published results. Nevertheless, all 10 are
 now fixed for deterministic reproducibility on any platform.
 
 **Correction to the initial report:** the original entry above
 attributed the non-determinism to `os.scandir` without `sorted()` and
-flagged `legal_hallucinations` v1 samples (scripts 44–52, 83, 85) as
+flagged `legal_hallucinations` v1 samples (scripts 44â€“52, 83, 85) as
 potentially affected. The systematic audit shows that those scripts
-are **not in the public repo** — they belong to a separate working
-directory (`SAS-Semántico/scripts/`) outside the published codebase.
+are **not in the public repo** â€” they belong to a separate working
+directory (`SAS-SemÃ¡ntico/scripts/`) outside the published codebase.
 The published repo contains zero `os.scandir` calls. The root cause in
 the published code is `Path.glob()` without `sorted()`, now fixed in
 all 10 affected scripts.
@@ -728,10 +728,10 @@ directory contains the SHA-256 of the complete file (including this
 hash line), which is the canonical verification hash.
 
 
-## [v5.0.0] � 2026-10-09 � Four retirements, N1, guard comparison, per-module analysis
+## [v5.0.0] ï¿½ 2026-10-09 ï¿½ Four retirements, N1, guard comparison, per-module analysis
 
 Paper v5 retira cuatro claims cuantitativos de v4. Cada retirada queda
-documentada con archivo afectado, motivo y secci�n del paper donde se
+documentada con archivo afectado, motivo y secciï¿½n del paper donde se
 justifica.
 
 ### Retiros (v4 ? v5)
@@ -740,44 +740,44 @@ justifica.
 - Archivos retirados: results_ac_pilot.jsonl, baselines_triviales_r3.json
 - Motivo: en 125/127 pares el texto parafraseado no es una respuesta sino
   parseo en prepare_data.py. Solo 2 pares contienen respuesta real.
-- Referencia: paper v5, �4.1 y Ap�ndice A.
+- Referencia: paper v5, ï¿½4.1 y Apï¿½ndice A.
 - SHA-256 pre-retiro: file not retained at time of v5 commit; pre-retiro hash unavailable
 
 **2. 87.97-point gap withdrawn.**
 - Motivo: el umbral ?D=0.56 fue calibrado para el esquema multiplicativo
-  y aplicado al promedio ponderado. Bajo calibraci�n por esquema sobre
-  negativos A?A', ambos esquemas convergen a F1 � 0.69 (0.687 vs 0.695)
+  y aplicado al promedio ponderado. Bajo calibraciï¿½n por esquema sobre
+  negativos A?A', ambos esquemas convergen a F1 ï¿½ 0.69 (0.687 vs 0.695)
   y el multiplicativo es peor por AUROC (0.514 vs 0.632).
-- Referencia: paper v5, �3.6.
+- Referencia: paper v5, ï¿½3.6.
 - Artefacto: recalibrar_umbral.py
 
 **3. cre_isi measured as source-property.**
-- Motivo: cre_isi da el mismo score por ID sea el response id�ntico al
+- Motivo: cre_isi da el mismo score por ID sea el response idï¿½ntico al
   source o completamente distinto (delta mediano 0.0000). Fires en 971
-  de 1,800 pares byte-id�nticos y 1,081 de 1,800 format-matched. No mide
-  la relaci�n source-response.
-- Referencia: paper v5, �5.1.
+  de 1,800 pares byte-idï¿½nticos y 1,081 de 1,800 format-matched. No mide
+  la relaciï¿½n source-response.
+- Referencia: paper v5, ï¿½5.1.
 - Artefacto: n1_control.py
 
 **4. Guard extensibility claim withdrawn.**
 - Motivo: guard + Jaccard = guard + Tribunal sobre los mismos pares
   (?F1 = 0.0018, ?AUROC = 0.0000).
-- Referencia: paper v5, �7.
+- Referencia: paper v5, ï¿½7.
 - Artefacto: guard_jaccard.py
 
 ### Correcciones factuales
-- ROUGE-L < 0.50: 97.11% F1 ? 97.06% F1 (Tabla 4, �2.5)
-- �tem 3.2 reemplazado (paraphrase sensitivity ? format confound)
-- �tems 3.11�3.15 agregados al �ndice de limitaciones
+- ROUGE-L < 0.50: 97.11% F1 ? 97.06% F1 (Tabla 4, ï¿½2.5)
+- ï¿½tem 3.2 reemplazado (paraphrase sensitivity ? format confound)
+- ï¿½tems 3.11ï¿½3.15 agregados al ï¿½ndice de limitaciones
 
 ### Adiciones
-- �2 The Audit Methodology (protocolo de 6 pasos)
-- �4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
-- �5 Per-Module Analysis (cre_isi)
-- �3.6 Multiplicative-vs-Averaging, Recalibrated
-- �7 The Guard Comparison
-- �9 Reproducibility (runtime, commit, manifiesto de hashes)
-- Licencia dual (GPL-3.0 + comercial) para c�digo; CC BY-NC 4.0 para
+- ï¿½2 The Audit Methodology (protocolo de 6 pasos)
+- ï¿½4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
+- ï¿½5 Per-Module Analysis (cre_isi)
+- ï¿½3.6 Multiplicative-vs-Averaging, Recalibrated
+- ï¿½7 The Guard Comparison
+- ï¿½9 Reproducibility (runtime, commit, manifiesto de hashes)
+- Licencia dual (GPL-3.0 + comercial) para cï¿½digo; CC BY-NC 4.0 para
   manuscrito
 
 ### Commit y tag
@@ -790,74 +790,75 @@ justifica.
 - baselines_triviales.json: BFB99A5128C1EEA60524AEE6751962CF36BCCB457652E7B576B0791C92B27AF4
 - guard_jaccard.py: 0810D0AD270A665CCFC69BA8D23CA7910064188C108D22188757A665CC7E2B4B
 - isi_por_par_1800_seed42.json: 23EF5EE57301258B64AEF3F18D3ADFF4D65C5E176C5F72FF15700F0054D50E9D
-- Manifest_hashes.txt: B8B05F4A46DDD9CE9E548AD8F6BC26666F4FB49EC8D24E2F8D076F3344363889
 - n1_control.py: 270D9B13D2E9505604DA2C92E309D69E63CE1E022BDD6D22DC821968F7ED3E2D
 - pairs_conditions_1800_seed42.json: 267B7ABBF241A75CEB4E6FBB3D073F9257BBCD9C09144A751864551CA94FA603
-- paper_v5.tex: 5D5B127E80A4D7DD34AB0EC4C1561EC414387035A1B2454C4051A60E4398328F
+- paper_v5.tex: F3627BFAA36EA5BA83A3A877A84F68A6E9497EE27DBD6C87F65B239B2FB96BD7
+- paper_v5.pdf: C94226195F8B5DF29964192884D1321AB9689C2AAD7C008D32008177533C6E7E
 - recalibrar_umbral.py: 30286D7DFCFFE65BCE5FE12D87B30A92936279705A52AA4D47BE1152ACE3D750
 - sweep_kr_extendido_1800.json: F4933957C72556EF83A5C9668E2BB9853F41F848617DF87EA90A40F18D6B17E7
 - tribunal_multimetrico.py: D6A8AB5CFEFF09B408FF945FF9F294BCA031DA2CCEEA7CEBC0CECEA4BDA154D0
 - validacion_1800_stratified_v3.py: 65415C53C7032B529664A5A9C2CB51CB5CD9D5093B252D0C38EBA884484AB939
+- verificar_cre.py: 68820E0F394D0A2F9DDA1C3DBCB75547D0C8E05FA117AEA027301C5C0D73EEEA
 
 
 
-## [v5.0.0] — 2026-10-09 — Four retirements, N1, guard comparison, per-module analysis
+## [v5.0.0] â€” 2026-10-09 â€” Four retirements, N1, guard comparison, per-module analysis
 
 Paper v5 retira cuatro claims cuantitativos de v4. Cada retirada queda
-documentada con archivo afectado, motivo y sección del paper donde se
+documentada con archivo afectado, motivo y secciÃ³n del paper donde se
 justifica.
 
-### Retiros (v4 → v5)
+### Retiros (v4 â†’ v5)
 
 **1. R3 withdrawn.**
 - Archivos retirados: results_ac_pilot.jsonl, baselines_triviales_r3.json
 - Motivo: en 125/127 pares el texto parafraseado no es una respuesta sino
   una etiqueta ("Dialogue:") o el texto de la pregunta, por error de
   parseo en prepare_data.py. Solo 2 pares contienen respuesta real.
-- Referencia: paper v5, §4.1 y Apéndice A.
+- Referencia: paper v5, Â§4.1 y ApÃ©ndice A.
 - SHA-256 pre-retiro: file not retained at time of v5 commit; pre-retiro hash unavailable
 
 **2. 87.97-point gap withdrawn.**
-- Motivo: el umbral κD=0.56 fue calibrado para el esquema multiplicativo
-  y aplicado al promedio ponderado. Bajo calibración por esquema sobre
-  negativos A→A', ambos esquemas convergen a F1 ≈ 0.69 (0.687 vs 0.695)
+- Motivo: el umbral ÎºD=0.56 fue calibrado para el esquema multiplicativo
+  y aplicado al promedio ponderado. Bajo calibraciÃ³n por esquema sobre
+  negativos Aâ†’A', ambos esquemas convergen a F1 â‰ˆ 0.69 (0.687 vs 0.695)
   y el multiplicativo es peor por AUROC (0.514 vs 0.632).
-- Referencia: paper v5, §3.6.
+- Referencia: paper v5, Â§3.6.
 - Artefacto: recalibrar_umbral.py
 
 **3. cre_isi measured as source-property.**
-- Motivo: cre_isi da el mismo score por ID sea el response idéntico al
+- Motivo: cre_isi da el mismo score por ID sea el response idÃ©ntico al
   source o completamente distinto (delta mediano 0.0000). Fires en 971
-  de 1,800 pares byte-idénticos y 1,081 de 1,800 format-matched. No mide
-  la relación source-response.
-- Referencia: paper v5, §5.1.
+  de 1,800 pares byte-idÃ©nticos y 1,081 de 1,800 format-matched. No mide
+  la relaciÃ³n source-response.
+- Referencia: paper v5, Â§5.1.
 - Artefacto: n1_control.py
 
 **4. Guard extensibility claim withdrawn.**
-- Motivo: guard + Jaccard ≡ guard + Tribunal sobre los mismos pares
-  (ΔF1 = 0.0018, ΔAUROC = 0.0000).
-- Referencia: paper v5, §7.
+- Motivo: guard + Jaccard â‰¡ guard + Tribunal sobre los mismos pares
+  (Î”F1 = 0.0018, Î”AUROC = 0.0000).
+- Referencia: paper v5, Â§7.
 - Artefacto: guard_jaccard.py
 
 ### Correcciones factuales
-- ROUGE-L < 0.50: 97.11% F1 → 97.06% F1 (Tabla 4, §2.5)
-- Cross-reference §2.6: "Item 3.9" → "Item 3.10"
-- Ítem 3.2 reemplazado (paraphrase sensitivity → format confound)
-- Ítems 3.11–3.15 agregados al índice de limitaciones
+- ROUGE-L < 0.50: 97.11% F1 â†’ 97.06% F1 (Tabla 4, Â§2.5)
+- Cross-reference Â§2.6: "Item 3.9" â†’ "Item 3.10"
+- Ãtem 3.2 reemplazado (paraphrase sensitivity â†’ format confound)
+- Ãtems 3.11â€“3.15 agregados al Ã­ndice de limitaciones
 
 ### Adiciones
-- §2 The Audit Methodology (protocolo de 6 pasos)
-- §4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
-- §5 Per-Module Analysis (cre_isi)
-- §3.6 Multiplicative-vs-Averaging, Recalibrated
-- §7 The Guard Comparison
-- §9 Reproducibility (runtime, commit, manifiesto de hashes)
-- Licencia dual (GPL-3.0 + comercial) para código; CC BY-NC 4.0 para
+- Â§2 The Audit Methodology (protocolo de 6 pasos)
+- Â§4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
+- Â§5 Per-Module Analysis (cre_isi)
+- Â§3.6 Multiplicative-vs-Averaging, Recalibrated
+- Â§7 The Guard Comparison
+- Â§9 Reproducibility (runtime, commit, manifiesto de hashes)
+- Licencia dual (GPL-3.0 + comercial) para cÃ³digo; CC BY-NC 4.0 para
   manuscrito
 
 ### Commit y tag
 - Tag: v5.0.0 (apunta al commit de este changelog)
-- Nota: el hash del commit que contiene esta línea es el que
+- Nota: el hash del commit que contiene esta lÃ­nea es el que
   `git rev-parse v5.0.0` devuelva al momento de la consulta.
 
 ### Manifiesto de hashes del suplemento v5
@@ -866,11 +867,12 @@ justifica.
 - baselines_triviales.json: BFB99A5128C1EEA60524AEE6751962CF36BCCB457652E7B576B0791C92B27AF4
 - guard_jaccard.py: 0810D0AD270A665CCFC69BA8D23CA7910064188C108D22188757A665CC7E2B4B
 - isi_por_par_1800_seed42.json: 23EF5EE57301258B64AEF3F18D3ADFF4D65C5E176C5F72FF15700F0054D50E9D
-- Manifest_hashes.txt: B8B05F4A46DDD9CE9E548AD8F6BC26666F4FB49EC8D24E2F8D076F3344363889
 - n1_control.py: 270D9B13D2E9505604DA2C92E309D69E63CE1E022BDD6D22DC821968F7ED3E2D
 - pairs_conditions_1800_seed42.json: 267B7ABBF241A75CEB4E6FBB3D073F9257BBCD9C09144A751864551CA94FA603
-- paper_v5.tex: 5D5B127E80A4D7DD34AB0EC4C1561EC414387035A1B2454C4051A60E4398328F
+- paper_v5.tex: F3627BFAA36EA5BA83A3A877A84F68A6E9497EE27DBD6C87F65B239B2FB96BD7
+- paper_v5.pdf: C94226195F8B5DF29964192884D1321AB9689C2AAD7C008D32008177533C6E7E
 - recalibrar_umbral.py: 30286D7DFCFFE65BCE5FE12D87B30A92936279705A52AA4D47BE1152ACE3D750
 - sweep_kr_extendido_1800.json: F4933957C72556EF83A5C9668E2BB9853F41F848617DF87EA90A40F18D6B17E7
 - tribunal_multimetrico.py: D6A8AB5CFEFF09B408FF945FF9F294BCA031DA2CCEEA7CEBC0CECEA4BDA154D0
 - validacion_1800_stratified_v3.py: 65415C53C7032B529664A5A9C2CB51CB5CD9D5093B252D0C38EBA884484AB939
+- verificar_cre.py: 68820E0F394D0A2F9DDA1C3DBCB75547D0C8E05FA117AEA027301C5C0D73EEEA
