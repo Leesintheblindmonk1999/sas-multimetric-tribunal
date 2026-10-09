@@ -726,3 +726,150 @@ this hash line, allowing independent verification that the content
 has not been altered. The external `CHANGELOG.md.sha256` in the same
 directory contains the SHA-256 of the complete file (including this
 hash line), which is the canonical verification hash.
+
+
+## [v5.0.0] — 2026-10-09 — Four retirements, N1, guard comparison, per-module analysis
+
+Paper v5 retira cuatro claims cuantitativos de v4. Cada retirada queda
+documentada con archivo afectado, motivo y sección del paper donde se
+justifica.
+
+### Retiros (v4 ? v5)
+
+**1. R3 withdrawn.**
+- Archivos retirados: results_ac_pilot.jsonl, baselines_triviales_r3.json
+- Motivo: en 125/127 pares el texto parafraseado no es una respuesta sino
+  parseo en prepare_data.py. Solo 2 pares contienen respuesta real.
+- Referencia: paper v5, §4.1 y Apéndice A.
+- SHA-256 pre-retiro: file not retained at time of v5 commit; pre-retiro hash unavailable
+
+**2. 87.97-point gap withdrawn.**
+- Motivo: el umbral ?D=0.56 fue calibrado para el esquema multiplicativo
+  y aplicado al promedio ponderado. Bajo calibración por esquema sobre
+  negativos A?A', ambos esquemas convergen a F1 ˜ 0.69 (0.687 vs 0.695)
+  y el multiplicativo es peor por AUROC (0.514 vs 0.632).
+- Referencia: paper v5, §3.6.
+- Artefacto: recalibrar_umbral.py
+
+**3. cre_isi measured as source-property.**
+- Motivo: cre_isi da el mismo score por ID sea el response idéntico al
+  source o completamente distinto (delta mediano 0.0000). Fires en 971
+  de 1,800 pares byte-idénticos y 1,081 de 1,800 format-matched. No mide
+  la relación source-response.
+- Referencia: paper v5, §5.1.
+- Artefacto: n1_control.py
+
+**4. Guard extensibility claim withdrawn.**
+- Motivo: guard + Jaccard = guard + Tribunal sobre los mismos pares
+  (?F1 = 0.0018, ?AUROC = 0.0000).
+- Referencia: paper v5, §7.
+- Artefacto: guard_jaccard.py
+
+### Correcciones factuales
+- ROUGE-L < 0.50: 97.11% F1 ? 97.06% F1 (Tabla 4, §2.5)
+- Ítem 3.2 reemplazado (paraphrase sensitivity ? format confound)
+- Ítems 3.11–3.15 agregados al índice de limitaciones
+
+### Adiciones
+- §2 The Audit Methodology (protocolo de 6 pasos)
+- §4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
+- §5 Per-Module Analysis (cre_isi)
+- §3.6 Multiplicative-vs-Averaging, Recalibrated
+- §7 The Guard Comparison
+- §9 Reproducibility (runtime, commit, manifiesto de hashes)
+- Licencia dual (GPL-3.0 + comercial) para código; CC BY-NC 4.0 para
+  manuscrito
+
+### Commit y tag
+- Tag: v5.0.0
+- Commit: <completar al final>
+
+### Manifiesto de hashes del suplemento v5
+- ablation_averaging_vs_multiplicative.json: D14C7F9B95E5BB08C77CE12F0779F9B6B3490355361B4A1D48A56A1F8D2585C3
+- ablation_stg_disabled.json: 49A39B6A8A22D120053525D5A2A00C01A4A6A906E875A13979A2A3691D0675E6
+- baselines_triviales.json: BFB99A5128C1EEA60524AEE6751962CF36BCCB457652E7B576B0791C92B27AF4
+- guard_jaccard.py: 0810D0AD270A665CCFC69BA8D23CA7910064188C108D22188757A665CC7E2B4B
+- isi_por_par_1800_seed42.json: 23EF5EE57301258B64AEF3F18D3ADFF4D65C5E176C5F72FF15700F0054D50E9D
+- Manifest_hashes.txt: B8B05F4A46DDD9CE9E548AD8F6BC26666F4FB49EC8D24E2F8D076F3344363889
+- n1_control.py: 270D9B13D2E9505604DA2C92E309D69E63CE1E022BDD6D22DC821968F7ED3E2D
+- pairs_conditions_1800_seed42.json: 267B7ABBF241A75CEB4E6FBB3D073F9257BBCD9C09144A751864551CA94FA603
+- paper_v5.tex: 5D5B127E80A4D7DD34AB0EC4C1561EC414387035A1B2454C4051A60E4398328F
+- recalibrar_umbral.py: 30286D7DFCFFE65BCE5FE12D87B30A92936279705A52AA4D47BE1152ACE3D750
+- sweep_kr_extendido_1800.json: F4933957C72556EF83A5C9668E2BB9853F41F848617DF87EA90A40F18D6B17E7
+- tribunal_multimetrico.py: D6A8AB5CFEFF09B408FF945FF9F294BCA031DA2CCEEA7CEBC0CECEA4BDA154D0
+- validacion_1800_stratified_v3.py: 65415C53C7032B529664A5A9C2CB51CB5CD9D5093B252D0C38EBA884484AB939
+
+
+
+## [v5.0.0] â€” 2026-10-09 â€” Four retirements, N1, guard comparison, per-module analysis
+
+Paper v5 retira cuatro claims cuantitativos de v4. Cada retirada queda
+documentada con archivo afectado, motivo y secciÃ³n del paper donde se
+justifica.
+
+### Retiros (v4 â†’ v5)
+
+**1. R3 withdrawn.**
+- Archivos retirados: results_ac_pilot.jsonl, baselines_triviales_r3.json
+- Motivo: en 125/127 pares el texto parafraseado no es una respuesta sino
+  una etiqueta ("Dialogue:") o el texto de la pregunta, por error de
+  parseo en prepare_data.py. Solo 2 pares contienen respuesta real.
+- Referencia: paper v5, Â§4.1 y ApÃ©ndice A.
+- SHA-256 pre-retiro: file not retained at time of v5 commit; pre-retiro hash unavailable
+
+**2. 87.97-point gap withdrawn.**
+- Motivo: el umbral ÎºD=0.56 fue calibrado para el esquema multiplicativo
+  y aplicado al promedio ponderado. Bajo calibraciÃ³n por esquema sobre
+  negativos Aâ†’A', ambos esquemas convergen a F1 â‰ˆ 0.69 (0.687 vs 0.695)
+  y el multiplicativo es peor por AUROC (0.514 vs 0.632).
+- Referencia: paper v5, Â§3.6.
+- Artefacto: recalibrar_umbral.py
+
+**3. cre_isi measured as source-property.**
+- Motivo: cre_isi da el mismo score por ID sea el response idÃ©ntico al
+  source o completamente distinto (delta mediano 0.0000). Fires en 971
+  de 1,800 pares byte-idÃ©nticos y 1,081 de 1,800 format-matched. No mide
+  la relaciÃ³n source-response.
+- Referencia: paper v5, Â§5.1.
+- Artefacto: n1_control.py
+
+**4. Guard extensibility claim withdrawn.**
+- Motivo: guard + Jaccard â‰¡ guard + Tribunal sobre los mismos pares
+  (Î”F1 = 0.0018, Î”AUROC = 0.0000).
+- Referencia: paper v5, Â§7.
+- Artefacto: guard_jaccard.py
+
+### Correcciones factuales
+- ROUGE-L < 0.50: 97.11% F1 â†’ 97.06% F1 (Tabla 4, Â§2.5)
+- Cross-reference Â§2.6: "Item 3.9" â†’ "Item 3.10"
+- Ãtem 3.2 reemplazado (paraphrase sensitivity â†’ format confound)
+- Ãtems 3.11â€“3.15 agregados al Ã­ndice de limitaciones
+
+### Adiciones
+- Â§2 The Audit Methodology (protocolo de 6 pasos)
+- Â§4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
+- Â§5 Per-Module Analysis (cre_isi)
+- Â§3.6 Multiplicative-vs-Averaging, Recalibrated
+- Â§7 The Guard Comparison
+- Â§9 Reproducibility (runtime, commit, manifiesto de hashes)
+- Licencia dual (GPL-3.0 + comercial) para cÃ³digo; CC BY-NC 4.0 para
+  manuscrito
+
+### Commit y tag
+- Tag: v5.0.0
+- Commit: <completar al final>
+
+### Manifiesto de hashes del suplemento v5
+- ablation_averaging_vs_multiplicative.json: D14C7F9B95E5BB08C77CE12F0779F9B6B3490355361B4A1D48A56A1F8D2585C3
+- ablation_stg_disabled.json: 49A39B6A8A22D120053525D5A2A00C01A4A6A906E875A13979A2A3691D0675E6
+- baselines_triviales.json: BFB99A5128C1EEA60524AEE6751962CF36BCCB457652E7B576B0791C92B27AF4
+- guard_jaccard.py: 0810D0AD270A665CCFC69BA8D23CA7910064188C108D22188757A665CC7E2B4B
+- isi_por_par_1800_seed42.json: 23EF5EE57301258B64AEF3F18D3ADFF4D65C5E176C5F72FF15700F0054D50E9D
+- Manifest_hashes.txt: B8B05F4A46DDD9CE9E548AD8F6BC26666F4FB49EC8D24E2F8D076F3344363889
+- n1_control.py: 270D9B13D2E9505604DA2C92E309D69E63CE1E022BDD6D22DC821968F7ED3E2D
+- pairs_conditions_1800_seed42.json: 267B7ABBF241A75CEB4E6FBB3D073F9257BBCD9C09144A751864551CA94FA603
+- paper_v5.tex: 5D5B127E80A4D7DD34AB0EC4C1561EC414387035A1B2454C4051A60E4398328F
+- recalibrar_umbral.py: 30286D7DFCFFE65BCE5FE12D87B30A92936279705A52AA4D47BE1152ACE3D750
+- sweep_kr_extendido_1800.json: F4933957C72556EF83A5C9668E2BB9853F41F848617DF87EA90A40F18D6B17E7
+- tribunal_multimetrico.py: D6A8AB5CFEFF09B408FF945FF9F294BCA031DA2CCEEA7CEBC0CECEA4BDA154D0
+- validacion_1800_stratified_v3.py: 65415C53C7032B529664A5A9C2CB51CB5CD9D5093B252D0C38EBA884484AB939
