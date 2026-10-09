@@ -856,8 +856,9 @@ justifica.
   manuscrito
 
 ### Commit y tag
-- Tag: v5.0.0
-- Commit: fa41283
+- Tag: v5.0.0 (apunta al commit de este changelog)
+- Nota: el hash del commit que contiene esta línea es el que
+  `git rev-parse v5.0.0` devuelva al momento de la consulta.
 
 ### Manifiesto de hashes del suplemento v5
 - ablation_averaging_vs_multiplicative.json: D14C7F9B95E5BB08C77CE12F0779F9B6B3490355361B4A1D48A56A1F8D2585C3
