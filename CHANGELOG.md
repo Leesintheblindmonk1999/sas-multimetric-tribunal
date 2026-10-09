@@ -728,10 +728,10 @@ directory contains the SHA-256 of the complete file (including this
 hash line), which is the canonical verification hash.
 
 
-## [v5.0.0] — 2026-10-09 — Four retirements, N1, guard comparison, per-module analysis
+## [v5.0.0] ï¿½ 2026-10-09 ï¿½ Four retirements, N1, guard comparison, per-module analysis
 
 Paper v5 retira cuatro claims cuantitativos de v4. Cada retirada queda
-documentada con archivo afectado, motivo y sección del paper donde se
+documentada con archivo afectado, motivo y secciï¿½n del paper donde se
 justifica.
 
 ### Retiros (v4 ? v5)
@@ -740,44 +740,44 @@ justifica.
 - Archivos retirados: results_ac_pilot.jsonl, baselines_triviales_r3.json
 - Motivo: en 125/127 pares el texto parafraseado no es una respuesta sino
   parseo en prepare_data.py. Solo 2 pares contienen respuesta real.
-- Referencia: paper v5, §4.1 y Apéndice A.
+- Referencia: paper v5, ï¿½4.1 y Apï¿½ndice A.
 - SHA-256 pre-retiro: file not retained at time of v5 commit; pre-retiro hash unavailable
 
 **2. 87.97-point gap withdrawn.**
 - Motivo: el umbral ?D=0.56 fue calibrado para el esquema multiplicativo
-  y aplicado al promedio ponderado. Bajo calibración por esquema sobre
-  negativos A?A', ambos esquemas convergen a F1 ˜ 0.69 (0.687 vs 0.695)
+  y aplicado al promedio ponderado. Bajo calibraciï¿½n por esquema sobre
+  negativos A?A', ambos esquemas convergen a F1 ï¿½ 0.69 (0.687 vs 0.695)
   y el multiplicativo es peor por AUROC (0.514 vs 0.632).
-- Referencia: paper v5, §3.6.
+- Referencia: paper v5, ï¿½3.6.
 - Artefacto: recalibrar_umbral.py
 
 **3. cre_isi measured as source-property.**
-- Motivo: cre_isi da el mismo score por ID sea el response idéntico al
+- Motivo: cre_isi da el mismo score por ID sea el response idï¿½ntico al
   source o completamente distinto (delta mediano 0.0000). Fires en 971
-  de 1,800 pares byte-idénticos y 1,081 de 1,800 format-matched. No mide
-  la relación source-response.
-- Referencia: paper v5, §5.1.
+  de 1,800 pares byte-idï¿½nticos y 1,081 de 1,800 format-matched. No mide
+  la relaciï¿½n source-response.
+- Referencia: paper v5, ï¿½5.1.
 - Artefacto: n1_control.py
 
 **4. Guard extensibility claim withdrawn.**
 - Motivo: guard + Jaccard = guard + Tribunal sobre los mismos pares
   (?F1 = 0.0018, ?AUROC = 0.0000).
-- Referencia: paper v5, §7.
+- Referencia: paper v5, ï¿½7.
 - Artefacto: guard_jaccard.py
 
 ### Correcciones factuales
-- ROUGE-L < 0.50: 97.11% F1 ? 97.06% F1 (Tabla 4, §2.5)
-- Ítem 3.2 reemplazado (paraphrase sensitivity ? format confound)
-- Ítems 3.11–3.15 agregados al índice de limitaciones
+- ROUGE-L < 0.50: 97.11% F1 ? 97.06% F1 (Tabla 4, ï¿½2.5)
+- ï¿½tem 3.2 reemplazado (paraphrase sensitivity ? format confound)
+- ï¿½tems 3.11ï¿½3.15 agregados al ï¿½ndice de limitaciones
 
 ### Adiciones
-- §2 The Audit Methodology (protocolo de 6 pasos)
-- §4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
-- §5 Per-Module Analysis (cre_isi)
-- §3.6 Multiplicative-vs-Averaging, Recalibrated
-- §7 The Guard Comparison
-- §9 Reproducibility (runtime, commit, manifiesto de hashes)
-- Licencia dual (GPL-3.0 + comercial) para código; CC BY-NC 4.0 para
+- ï¿½2 The Audit Methodology (protocolo de 6 pasos)
+- ï¿½4 N1 (format-controlled negative, 4 condiciones, 7,200 evaluaciones)
+- ï¿½5 Per-Module Analysis (cre_isi)
+- ï¿½3.6 Multiplicative-vs-Averaging, Recalibrated
+- ï¿½7 The Guard Comparison
+- ï¿½9 Reproducibility (runtime, commit, manifiesto de hashes)
+- Licencia dual (GPL-3.0 + comercial) para cï¿½digo; CC BY-NC 4.0 para
   manuscrito
 
 ### Commit y tag
@@ -857,7 +857,7 @@ justifica.
 
 ### Commit y tag
 - Tag: v5.0.0
-- Commit: <completar al final>
+- Commit: e5ed7b1
 
 ### Manifiesto de hashes del suplemento v5
 - ablation_averaging_vs_multiplicative.json: D14C7F9B95E5BB08C77CE12F0779F9B6B3490355361B4A1D48A56A1F8D2585C3
