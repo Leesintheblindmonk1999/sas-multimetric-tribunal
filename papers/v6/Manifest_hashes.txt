@@ -1,0 +1,29 @@
+========================================================================
+  MANIFEST — SAS v6 Supplementary Materials
+  Fecha: 2026-10-12
+  Autor: Gonzalo Emir Durante — Project Manifold 0.56
+  Registry: TAD EX-2026-18792778
+========================================================================
+
+3cd734b39f3376c0dee3d616fe6f4b2992557b070d474284c0e7ede870e7de1a  r3_1_differential.py  (scripts/r3_1_differential.py)
+637e36d9173e09dd9c01b11c08d469ebe09a3514fa8d35c1a98c0b63628dc09a  audit_n1_corpus.py  (scripts/audit_n1_corpus.py)
+95b106b2ced30f85b7e6f69c65ad61985b8a5c03aaf6402b55cb76bb63b0f3bb  tribunal_multimetrico.py  (SAS/SAS/core/tribunal_multimetrico.py)
+a2046ff3acb0704dd090017a99ade43fe671524b22a47032b9fa6d7d790dd59d  audit_n1_guard_v3.json  (reports/audit_n1_guard_v3_20261012_222645.json)
+3c7bce9048018b246934c5a5464edd94e0c0aa52f3f46807fff978d6cd8e8ace  CHANGELOG.md  (CHANGELOG.md)
+270d9b13d2e9505604da2c92e309d69e63ce1e022bdd6d22dc821968f7ed3e2d  n1_control.py  (scripts/n1_control.py)
+74d9ae9e1aee1da3fc8d0fdd288eb7ad9df7191a74ac1471da3fbe83d65ac538  convert_medhallu.py  (scripts/convert_medhallu.py)
+267b7abbf241a75ceb4e6fbb3d073f9257bbcd9c09144a751864551ca94fa603  pairs_conditions_1800_seed42.json  (reports/pairs_conditions_1800_seed42.json)
+24b7c5a64b8ba2edf030c7dc498a2a8b9a56f9a471c164b71bc8933e545b6119  r3_1_signals.py  (scripts/r3_1_signals.py)
+0ebf23613783261a0ad52c804835850b4244ab27c970291d4d39f2db3f6ec7e5  recalibrar_umbral.py  (scripts/recalibrar_umbral.py)
+553f8825dfb22d2b0070679df4c7857df9bfdb34340df5371be4c150283d8c4a  recalibracion_v6.json  (reports/recalibracion_v6.json)
+9c681ed0406e8337d6bbd66d203cac06d73b4759f4a07e026f9cc1a4806d9374  recalibrar_umbral_v6.py  (scripts/recalibrar_umbral_v6.py)
+b2ecc0b1d0df1c52cfcbabe3f776e2f906733bce2ab742e08c360decf1c499cf  audit_n1_guard_v4.json  (reports/audit_n1_guard_v3_20261013_123506.json)
+1cfff172d33110aba8b8e8473701aea82d623b33d673256220e13a79e8097226  sweep_threshold_guard.py  (scripts/sweep_threshold_guard.py)
+2561821c40e9d9b28ba840d2a0c5f26f6f4b295733c2b304c902c96817549688  convert_finqa.py  (scripts/convert_finqa.py)
+2ed6b6009158fde006dbc64d1ff20179f7f75722d0f725968b67f05fd567d5cf  evaluar_finqa_guard.py  (scripts/evaluar_finqa_guard.py)
+7e5a1b8c92fa8385b6a77cc6c43158e5d42c932808bef2c72653ea6015778037  pairs_finqa.jsonl  (reports/pairs_finqa.jsonl)
+2235fc2ce412615b9e95ea075a19cbfcfa1f565b14f97f017924d9f8f41be50d  evaluacion_finqa_guard.json  (reports/evaluacion_finqa_guard.json)
+ef3c9c17342d83c43a9cd8a83df8492d58bd136c71c9a9407cb7d553c84e6000  SAS_v6_Supplements.zip  (papers/SAS_v6_Supplements.zip)
+
+Generado: 2026-10-16T05:06:08Z
+========================================================================

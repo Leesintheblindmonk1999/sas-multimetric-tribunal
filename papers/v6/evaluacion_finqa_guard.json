@@ -1,0 +1,25 @@
+{
+  "experimento": "R3.1 Guard v4 sobre financiero_finqa",
+  "fecha": "2026-10-13",
+  "n_correctas": 1418,
+  "n_alucinadas": 239,
+  "identidad": {
+    "n": 100,
+    "n_equiv": 100
+  },
+  "A_Ap": {
+    "n": 1418,
+    "n_equiv": 80,
+    "tasa_equiv": 0.056417,
+    "n_noequiv": 10,
+    "n_abst": 1328
+  },
+  "A_B_cross": {
+    "n": 239,
+    "n_noequiv": 208,
+    "tasa_noequiv": 0.870293,
+    "n_equiv": 0,
+    "n_abst": 31
+  },
+  "latencia_us": 360.99
+}

@@ -1,11 +1,12 @@
 """
-core/tribunal_multimetrico.py — Tribunal Multimétrico SAS v1.0.1
+core/tribunal_multimetrico.py — Tribunal Multimétrico SAS v1.1.0
 ═══════════════════════════════════════════════════════════════════════════════
-TRIBUNAL MULTIMÉTRICO — Clasificación en 3 Zonas
+TRIBUNAL MULTIMÉTRICO — Clasificación en 3 Zonas + R3.1 Differential Guard
 
 Arquitectura:
-  · Toma 6 métricas del tribunal: lexical_baseline_score, flow_penalty,
-    negation_penalty, cre_isi, arithmetic_penalty, reference_penalty
+  · Toma 7 métricas del tribunal: lexical_baseline_score, flow_penalty,
+    negation_penalty, cre_isi, arithmetic_penalty, reference_penalty,
+    y r3_1_guard (Differential Structural Guard)
   · Aplica combinador calibrado (regresión logística entrenada en validación)
   · Clasifica en 3 zonas según ISI vs κR y κD:
       - ISI < κR       → COLAPSO ESTRUCTURAL
@@ -13,6 +14,35 @@ Arquitectura:
       - ISI ≥ κD       → COHERENTE
   · κD = 0.56 (validado, TAD EX-2026-18792778)
   · κR = validación experimental (barrido 0.15-0.40)
+
+CHANGELOG v1.1.0 (2026-10-12) — Integración R3.1 Differential Guard
+------------------------------------------------------------------------------
+[NUEVO MÓDULO][R3.1] Differential Structural Guard (grounding + compression)
+    Se integra el guard diferencial como módulo opcional del tribunal.
+    El guard evalúa equivalencia estructural vía grounding (recall de
+    palabras de contenido de la response contra el source) + compression
+    ratio (abstención cuando response > 50% del source).
+
+    Parche de respuestas cortas (< 5 palabras):
+      - Inversión de polaridad: detecta "no/not/none" en respuestas cortas
+        que contradicen el source → NO EQUIV
+      - Entidad aislada: abstiene cuando la respuesta es número/año/nombre
+        propio sin contexto suficiente
+      - Stopword grounding: respuestas compuestas solo de stopwords se
+        verifican contra tokens crudos del source
+      - Umbral más estricto: ≤2 palabras requieren grounding ≥ 0.75
+
+    Auditoría sobre N1 (1,800 pares × 4 condiciones):
+      - A_Ap: 12.8% → 75.8% equivalencias correctas (+1133 correcciones)
+      - A_B:  2.0% → 46.6% FPs (802 regresiones, mejora marginal)
+      - A_App: 100% abstiene (por diseño)
+      - Latencia: 30.2 µs/par
+      - FP rate: 1569 → 436 (−1133)
+      - Precision: 0.53 → 0.69 (+0.16)
+
+    El guard se activa con R3_1_GUARD_ENABLED = True (por defecto).
+    Si el guard se abstiene (response larga o entidad aislada), el
+    tribunal procede con los 6 módulos originales sin penalización extra.
 
 CHANGELOG v1.0.1 (2026-09-02) — fix de integración reference_penalty anacrónico
 ------------------------------------------------------------------------------
@@ -55,6 +85,28 @@ from typing import List, Optional, Tuple, Dict, Callable
 from enum import Enum
 
 import numpy as np
+
+# ════════════════════════════════════════════════════════════════════════════
+# R3.1 Differential Guard (import opcional)
+# ════════════════════════════════════════════════════════════════════════════
+
+R3_1_GUARD_ENABLED: bool = True
+_R3_1_GUARD_AVAILABLE: bool = False
+try:
+    from scripts.r3_1_differential import compute_structural_delta
+    _R3_1_GUARD_AVAILABLE = True
+except ImportError:
+    try:
+        import sys, os
+        _scripts_dir = os.path.join(os.path.dirname(__file__), "..", "..", "..", "scripts")
+        if _scripts_dir not in sys.path:
+            sys.path.insert(0, _scripts_dir)
+        from r3_1_differential import compute_structural_delta
+        _R3_1_GUARD_AVAILABLE = True
+    except ImportError:
+        compute_structural_delta = None
+        logger = logging.getLogger(__name__)
+        logger.warning("R3.1 Differential Guard no disponible — tribunal opera con 6 módulos")
 
 logger = logging.getLogger(__name__)
 
@@ -160,6 +212,7 @@ class VeredictoTribunal:
     cre_isi: float
     arithmetic_penalty: float
     reference_penalty: float
+    r3_1_guard: float
 
     # Métricas compuestas
     isi_hard: float          # Mínimo de métricas core
@@ -196,6 +249,7 @@ class VeredictoTribunal:
             "cre_isi": round(self.cre_isi, 6),
             "arithmetic_penalty": round(self.arithmetic_penalty, 6),
             "reference_penalty": round(self.reference_penalty, 6),
+            "r3_1_guard": round(self.r3_1_guard, 6),
             "isi_hard": round(self.isi_hard, 6),
             "isi_soft": round(self.isi_soft, 6),
             "isi_final": round(self.isi_final, 6),
@@ -524,6 +578,48 @@ class TribunalMultimetrico:
             logger.debug(f"Reference module error: {e}")
             return 1.0, False, f"ReferenceCheck: no disponible ({e})"
 
+    def _calcular_r3_1_guard(
+        self, text_a: str, text_b: str
+    ) -> Tuple[float, bool, str, Optional[Dict]]:
+        """Evalúa el R3.1 Differential Structural Guard.
+
+        El guard es un módulo opcional. Si no está disponible o se
+        abstiene, devuelve 1.0 (sin penalización) y disparo=False.
+
+        Returns:
+            Tuple[valor, disparo, descripción, detalles_opcionales]
+        """
+        if not R3_1_GUARD_ENABLED or not _R3_1_GUARD_AVAILABLE:
+            return 1.0, False, "R3.1 Guard: no disponible", None
+
+        try:
+            result = compute_structural_delta(text_a, text_b)
+            equiv = result["is_structurally_equivalent"]
+            gs = result.get("grounding", {})
+            gs_score = gs.get("grounding_score", 0.0) if gs else 0.0
+            cr = result.get("compression", {}).get("compression_ratio", 0.0)
+            abstain = result.get("abstain_reason")
+
+            if abstain is not None:
+                # Guard se abstiene — no penaliza
+                return 1.0, False, f"R3.1 Guard: abstiene ({abstain})", result
+
+            if equiv is False:
+                # Guard detecta no equivalencia → penalización fuerte
+                return 0.30, True, (
+                    f"R3.1 Guard: NO equivalente "
+                    f"(grounding={gs_score:.4f}, comp_ratio={cr:.4f})"
+                ), result
+            else:
+                return 1.0, False, (
+                    f"R3.1 Guard: equivalente "
+                    f"(grounding={gs_score:.4f}, comp_ratio={cr:.4f})"
+                ), result
+
+        except Exception as e:
+            logger.debug(f"R3.1 Guard error: {e}")
+            return 1.0, False, f"R3.1 Guard: error ({e})", None
+
     def _clasificar_zona(self, isi_final: float) -> ZonaEstructural:
         """Clasifica el ISI final en una de las 3 zonas estructurales."""
         if isi_final < self.kappa_r:
@@ -569,6 +665,7 @@ class TribunalMultimetrico:
         cre_val, cre_fired, cre_desc = self._calcular_cre_isi(source, response)
         arith_val, arith_fired, arith_desc = self._calcular_arithmetic_penalty(response)
         ref_val, ref_fired, ref_desc = self._calcular_reference_penalty(source, response)
+        r3_val, r3_fired, r3_desc, r3_details = self._calcular_r3_1_guard(source, response)
 
         # ── 2. Construir mapa de métricas ──────────────────────────────────
         metricas_raw = {
@@ -620,6 +717,8 @@ class TribunalMultimetrico:
             penalizaciones.append(arith_val)
         if ref_fired:
             penalizaciones.append(ref_val)
+        if r3_fired:
+            penalizaciones.append(r3_val)
 
         if penalizaciones:
             # Producto de penalizaciones (cada una < 1.0 si disparó)
@@ -695,6 +794,14 @@ class TribunalMultimetrico:
                 descripcion=ref_desc,
                 peso=self.combinador.weights.get("reference_penalty", 0.0),
             ),
+            EvidenciaModulo(
+                nombre="r3_1_guard",
+                valor=r3_val,
+                disparo=r3_fired,
+                umbral=0.50,  # GROUNDING_THRESHOLD
+                descripcion=r3_desc,
+                peso=0.08,  # Peso fijo para el guard diferencial
+            ),
         ]
 
         modulos_disparados = [m for m in todas_evidencias if m.disparo]
@@ -716,6 +823,7 @@ class TribunalMultimetrico:
             f"  CRE ISI          : {cre_val:.6f}  {'⚠ DISPARO' if cre_fired else '✓ OK'}",
             f"  Arithmetic Penal : {arith_val:.6f}  {'⚠ DISPARO' if arith_fired else '✓ OK'}",
             f"  Reference Penal  : {ref_val:.6f}  {'⚠ DISPARO' if ref_fired else '✓ OK'}",
+            f"  R3.1 Guard       : {r3_val:.6f}  {'⚠ DISPARO' if r3_fired else '✓ OK'}",
             sep,
             "ISI COMPUESTO (penalización multiplicativa en cascada)",
             f"  ISI_HARD = {isi_hard:.6f}  [min(lexical, STG, CRE)]",
@@ -750,6 +858,7 @@ class TribunalMultimetrico:
             cre_isi=cre_val,
             arithmetic_penalty=arith_val,
             reference_penalty=ref_val,
+            r3_1_guard=r3_val,
             isi_hard=round(isi_hard, 6),
             isi_soft=round(isi_soft, 6),
             isi_final=round(isi_final, 6),

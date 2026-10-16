@@ -1,0 +1,58 @@
+{
+  "version": "v6",
+  "fecha": "2026-10-13",
+  "multiplicativo": {
+    "fijo_kd056": {
+      "tp": 1764,
+      "fn": 36,
+      "fp": 1569,
+      "tn": 231,
+      "precision": 0.529253,
+      "recall": 0.98,
+      "f1": 0.687317,
+      "umbral": 0.56
+    },
+    "optimizado": {
+      "tp": 1762,
+      "fn": 38,
+      "fp": 1561,
+      "tn": 239,
+      "precision": 0.530244,
+      "recall": 0.978889,
+      "f1": 0.687878,
+      "umbral": 0.55
+    },
+    "auc": 0.513607
+  },
+  "promedio": {
+    "fijo_kd056": {
+      "tp": 105,
+      "fn": 1695,
+      "fp": 0,
+      "tn": 1800,
+      "precision": 1.0,
+      "recall": 0.058333,
+      "f1": 0.110236,
+      "umbral": 0.56
+    },
+    "optimizado": {
+      "tp": 1735,
+      "fn": 65,
+      "fp": 1461,
+      "tn": 339,
+      "precision": 0.542866,
+      "recall": 0.963889,
+      "f1": 0.694556,
+      "umbral": 0.83
+    },
+    "auc": 0.632281
+  },
+  "gap_v4_original": 87.97,
+  "delta_f1_opt_vs_opt": -0.006678,
+  "longitud_isi": {
+    "corr_b": 0.599612,
+    "corr_ap": 0.869597,
+    "n": 1800
+  },
+  "sha256": "fbca9776416302adece2fdfb2a9c6c40f1aaf00e27def19ad96557ebb388961f"
+}
