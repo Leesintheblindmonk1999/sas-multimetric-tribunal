@@ -1,6 +1,6 @@
 # SAS Multimetric Tribunal
 
-**Structural Coherence Auditing for AI-Generated Text — 3-Zone Classification**
+**Structural Coherence Auditing for AI-Generated Text — 3-Zone Classification + R3.1 Differential Guard**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19702379.svg)](https://doi.org/10.5281/zenodo.19702379)
 [![SAS Standard](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19702379-blue)](https://doi.org/10.5281/zenodo.19702379)
@@ -11,34 +11,20 @@
 
 ## Overview
 
-The **SAS Multimetric Tribunal** is an open-source structural auditing system that classifies (source, response) text pairs into **3 structural zones** using 7 detection modules with **cascading multiplicative penalty**.
+The **SAS Multimetric Tribunal** is an open-source structural auditing system that classifies (source, response) text pairs into **3 structural zones** using 7 detection modules with **cascading multiplicative penalty**, plus an optional **R3.1 Differential Guard** for short-response and grounding verification.
 
 It detects hallucinations, factual mutations, and structural ruptures in AI-generated text — **without GPU, without external LLM APIs, and without training data**.
 
-### Key Results
+### Key Results (v6 — Current)
 
-> **Note on evaluation layers:** The metrics below are from two global
-> end-to-end validations: an initial 600-pair validation (300 control +
-> 300 hallucination across `halueval_dialogue`, `halueval_qa`, and
-> `truthfulqa`) and an expanded 1,800-pair validation (1,800
-> hallucination + 1,800 sanity-check, 600 per suite, stratified sample
-> seed=42, current tribunal core). These measure the full tribunal's
-> overall classification accuracy. The
-> [CHANGELOG](CHANGELOG.md) documents a separate, finer-grained
-> evaluation: the per-module diagnostic cycle (R5) that measures each
-> module's individual firing precision and recall across 8 corpus
-> suites. The two sets of numbers answer different questions and are
-> not directly comparable. Global metrics do not imply that every
-> module performs equally well on every domain.
-
-| Metric | Value (600 pairs) | Value (1,800 pairs) |
-|--------|-------------------|---------------------|
-| **F1 Score** | **99.16%** | **98.99%** (range 98.99–99.02% across seeds) |
-| **Precision** | **100.00%** (0 false positives) | **100.00%** (0 false positives) |
-| **Recall** | **98.33%** | **98.00%** |
-| **Accuracy** | **99.17%** | **99.00%** |
-| **ISI Separation** | **0.8323** | **0.8323** |
-| **Pairs Evaluated** | 600 (300 control + 300 hallucination) | 1,800 (600 per suite, A→A + A→B) |
+| Metric | Core Tribunal (1,800 pairs) | + R3.1 Guard (N1 audit) | FinQA Cross-Query |
+|--------|-----------------------------|------------------------|-------------------|
+| **F1 Score** | **98.99%** | **0.833** (A_Ap 75.8% equiv, A_B 11.3% equiv) | **87.0%** detection |
+| **Precision** | **100.00%** (0 false positives) | — | — |
+| **Recall** | **98.00%** | — | — |
+| **Accuracy** | **99.00%** | — | — |
+| **ISI Separation** | **0.8323** | — | — |
+| **Corpora** | halueval_dialogue, halueval_qa, truthfulqa | N1 (1,800 × 4 conditions) | financiero_finqa (1,657 pairs) |
 
 ### Thresholds
 
@@ -46,6 +32,7 @@ It detects hallucinations, factual mutations, and structural ruptures in AI-gene
 |-----------|-------|---------|
 | **κD** | **0.56** | Structural coherence (TAD EX-2026-18792778) |
 | **κR** | **0.15** | Structural collapse (selected via entropy maximization of the zone distribution) |
+| **R3.1 Grounding** | **0.95** | Optimal grounding threshold (sweep 0.50→0.95, total error 1,371→237) |
 
 ---
 
@@ -66,7 +53,7 @@ ISI_HARD  = min(lexical_baseline, source_target_guard, cre_isi)
 ISI_FINAL = ISI_HARD × Π(penalties from fired modules)
 ```
 
-### 7 Detection Modules
+### 7 Core Detection Modules
 
 | # | Module | Function | Weight |
 |---|--------|----------|--------|
@@ -78,9 +65,56 @@ ISI_FINAL = ISI_HARD × Π(penalties from fired modules)
 | 6 | `arithmetic_penalty` | Arithmetic errors | 0.04 |
 | 7 | `reference_penalty` | Reference fabrication | 0.04 |
 
+### R3.1 Differential Guard (Optional 8th Module)
+
+| Component | Function |
+|-----------|----------|
+| **Grounding** | Recall of response content words against source |
+| **Compression Ratio** | Abstains when response >50% shorter than source |
+| **Short-Response Heuristics** | Polarity inversion, isolated entity, stopword grounding |
+
+The guard is integrated into `tribunal_multimetrico.py` v1.1.0 via `R3_1_GUARD_ENABLED` flag. Source: `scripts/r3_1_differential.py`.
+
 ### Combination Strategy
 
 The tribunal uses **cascading multiplicative penalty**: only modules that **fire** (detect an anomaly) apply a penalty. Silent modules (returning 1.0) do not dilute the signal. This prevents false negatives from modules that are irrelevant to the specific input.
+
+---
+
+## Repository Structure (v6)
+
+```
+core/
+  tribunal_multimetrico.py    — v1.1.0 with R3.1 guard integration
+  arithmetic_detector.py
+  flow_coherence.py
+  negation_probe.py
+  reference_check.py
+  ricci_enhanced_cre.py
+scripts/
+  r3_1_differential.py        — R3.1 Differential Guard
+  audit_n1_corpus.py          — N1 audit (1,800 × 4 conditions)
+  n1_control.py               — Corpus quality control
+  convert_finqa.py            — FinQA conversion (1,657 pairs)
+  convert_medhallu.py         — MedHallu conversion (10,000 pairs)
+  evaluar_finqa_guard.py      — FinQA guard evaluation
+  recalibrar_umbral_v6.py     — v6 threshold recalibration
+  sweep_threshold_guard.py    — Grounding threshold sweep
+  auditoria_v6_forense.py     — Forensic audit (0 discrepancies)
+  build_v6_supplement.py      — Supplement ZIP builder
+  ... (26 scripts total)
+reports/
+  audit_n1_guard_v4.json      — N1 audit results (guard v4)
+  recalibracion_v6.json       — Recalibration results
+  pairs_finqa.jsonl           — FinQA converted pairs
+  evaluacion_finqa_guard.json — FinQA evaluation (87.0%)
+  ... (50+ reports total)
+papers/v6/
+  paper_v6.tex                — v6 paper (7 Arsentev fixes + R3.1)
+  response_to_reviewer_v6.md  — Point-by-point reviewer response
+  Manifest_hashes.json        — SHA-256 manifest
+  SAS_v6_Supplements.zip      — 26-file supplement
+```
 
 ---
 
