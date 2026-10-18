@@ -29,7 +29,7 @@ Hallucination-detection systems are usually judged by a single headline metric, 
 
 On a stratified 1{,}800-pair benchmark (HaluEval-Dialogue, HaluEval-QA, TruthfulQA), the tribunal reaches F1 = 98.99\% with zero false positives under an A$\rightarrow$A identical-text sanity check. We report this figure and then show, using a format-controlled negative (N1) on the same 1{,}800 IDs, that it measures format asymmetry between source and response rather than hallucination detection. The tribunal flags 1{,}569 of 1{,}800 verbatim correct answers presented alone (87.2\%), and in HaluEval-QA scores the correct answer as \emph{more} anomalous than the hallucinated response.
 
-Three further findings follow from the same audit. (i) A per-module analysis shows the tribunal has no content-sensitive module in its current set: the one module designed to capture semantic divergence (\texttt{cre\_isi}) gives the same per-ID score whether the response is byte-identical or completely different. (ii) The 87.97-point advantage of multiplicative combination over weighted averaging reported in v4 is an artifact of threshold calibration; under per-scheme thresholds on format-matched negatives, both schemes converge to F1 $\approx 0.69$ and the multiplicative scheme is worse by AUROC. (iii) A new differential guard (R3.1, grounding-based with compression abstention and short-response heuristics) corrects 1{,}133 of the 1{,}569 format-driven false positives on correct answers alone, raising F1 from 0.687 to 0.833 ($\Delta$F1 = $+0.146$), and generalizes to a financial domain (FinQA, 1{,}657 samples) with 87.0\% detection and zero regressions. The guard does not rely on substring matching and is not a constructional artifact.
+Three further findings follow from the same audit. (i) A per-module analysis shows the tribunal's seven-module core has no content-sensitive module (prior to the optional R3.1 guard): the one module designed to capture semantic divergence (\texttt{cre\_isi}) gives the same per-ID score whether the response is byte-identical or completely different. (ii) The 87.97-point advantage of multiplicative combination over weighted averaging reported in v4 is an artifact of threshold calibration; under per-scheme thresholds on format-matched negatives, both schemes converge to F1 $\approx 0.69$ and the multiplicative scheme is worse by AUROC. (iii) A new differential guard (R3.1, grounding-based with compression abstention and short-response heuristics) corrects 1{,}133 of the 1{,}569 format-driven false positives on correct answers alone, raising F1 from 0.687 to 0.833 ($\Delta$F1 = $+0.146$), and generalizes to a financial domain (FinQA, 1{,}657 samples) with 87.0\% detection and zero regressions. The guard does not rely on substring matching and is not a constructional artifact.
 
 The paper's contribution is the audit procedure that produced these retirements. Five of v4/v5's quantitative claims do not survive it. What does survive --- thresholds, the $\kappa_R$ sweep, the forensic audit of v2 metrics, the per-module architecture itself as a diagnostic instrument --- is reported with the same standard.
 \end{abstract}
@@ -59,7 +59,7 @@ This paper audits the SAS Multimetric Tribunal's own validation benchmark. Speci
     \item We retire the R3 negative control after a construction defect was identified: in 125 of 127 pairs, the text that was paraphrased is not a response but a label string or the question text.
     \item We introduce N1, a format-controlled negative on the same 1{,}800 IDs, constructed from verbatim correct answers already present in each dataset. N1 requires no generated text.
     \item We report the N1 result: the tribunal flags 87.2\% of correct answers presented alone. The published F1 measures format asymmetry, not hallucination detection.
-    \item We perform a per-module analysis that finds no content-sensitive module in the current architecture.
+    \item We perform a per-module analysis that finds no content-sensitive module in the current core architecture (prior to the optional R3.1 guard).
     \item We re-evaluate the multiplicative-vs-averaging ablation under per-scheme calibration and report that the 87.97-point gap is an artifact.
     \item We test whether adding a semantic-equivalence guard creates a differential advantage for the tribunal over a Jaccard baseline, and find it does not for the v5 substring-based guard. We then develop a differential guard (R3.1) that does not rely on substrings, validate it on N1 (F1 0.833), and generalize it to a financial domain (FinQA, 87.0\% detection, zero regressions).
 \end{enumerate}
@@ -74,7 +74,7 @@ This paper does not claim a novel detection algorithm. The contribution is the a
     \item \textbf{Five retirements of v4/v5 claims}: R3, the format interpretation of the headline F1, the 87.97-point multiplicative-vs-averaging gap, the v5 substring-based guard as a validated extension point, and the claim that the tribunal has no content-sensitive module (superseded by R3.1). Each is measured, not argued.
     \item \textbf{A per-module contribution analysis} showing that \texttt{cre\_isi} responds to a property of the source rather than the source-response pair.
     \item \textbf{A content-sensitive differential guard (R3.1)} that corrects 1,133 format-driven false positives on N1 (F1 0.687$\to$0.833) and generalizes to a financial domain (FinQA, 87.0\% detection, zero regressions).
-    \item \textbf{Two new format-controlled corpora}: medico\_medhallu (10,000 pairs, 4-variant) and financiero\_finqa (1,657 samples, per-row format), both with SHA-256 manifests.
+    \item \textbf{A format-controlled financial corpus}: \texttt{financiero\_finqa} (1,657 samples, per-row format) with SHA-256 manifest (a second corpus, \texttt{medico\_medhallu}, 10,000 pairs, is prepared and scheduled in the roadmap, \S\ref{sec:roadmap}).
     \item \textbf{A self-directed forensic audit} of the author's own previously published results, now in its third cycle.
 \end{enumerate}
 
@@ -313,7 +313,7 @@ A$\rightarrow$A'' & 1081 & 1053 & 97.4\% \\
 
 For the same source text, \texttt{cre\_isi} produces the same score whether the response is byte-identical (A$\rightarrow$A) or completely different (A$\rightarrow$A''). The median per-ID delta is exactly 0.0000. The module fires on 971 byte-identical pairs and 1{,}081 format-matched pairs, rates of 54\% and 60\%. If the module measured similarity between source and response, the second rate should differ substantially and the per-ID scores should change with the response. They do not.
 
-\texttt{cre\_isi} responds to a property of the source (most plausibly LSA dispersion correlating with text length) and not to the source-response relationship. The tribunal has no content-sensitive module in its current set. This is consistent with, and explains, the format-dominance finding.
+\texttt{cre\_isi} responds to a property of the source (most plausibly LSA dispersion correlating with text length) and not to the source-response relationship. The tribunal has no content-sensitive module in its current core set (the R3.1 guard, which is content-sensitive, is an optional add-on; see \S\ref{sec:r31-guard}). This is consistent with, and explains, the format-dominance finding.
 
 \section{The Multiplicative-vs-Averaging Ablation, Recalibrated}
 \label{sec:avg-recalibrated}
@@ -430,7 +430,7 @@ The published F1 reflects response length. This was stated as interpretation in 
 Longer responses score higher ISI in both conditions; the correlation is stronger on correct answers than on hallucinated ones. This is consistent with the claim that ISI tracks format (length and lexical overlap) rather than content, and it makes the length explanation the measured one rather than the plausible one. Any structural metric that penalizes reduced lexical overlap produces the same result on this design. This is a property of the benchmark, not of the tribunal.
 
 \subsection{The absence of content signal}
-The tribunal has no content-sensitive module. \texttt{cre\_isi}, the module designed to capture semantic divergence, responds to the source rather than to the pair. On format-matched negatives, the tribunal's AUROC is 0.514 --- barely above chance.
+The tribunal's seven-module core has no content-sensitive module (prior to the optional R3.1 guard). \texttt{cre\_isi}, the module designed to capture semantic divergence, responds to the source rather than to the pair. On format-matched negatives, the tribunal's AUROC is 0.514 --- barely above chance.
 
 The firing asymmetry in Table~7 (971 on A$\rightarrow$A and 1{,}081 on A$\rightarrow$A'' vs.\ 132 on A$\rightarrow$B and 68 on A$\rightarrow$A') is gated by two conditions in the tribunal's cascade (\S\ref{sec:multiplicative}). \texttt{cre\_isi} is only included in ISI$_{\text{HARD}}$ when it fires \emph{and} the two texts are not byte-identical; and its score is computed from the source's LSA dispersion, so it fires on long format-matched pairs (A$\rightarrow$A and A$\rightarrow$A'') regardless of the response, while short responses (A$\rightarrow$B, A$\rightarrow$A') rarely reach the dispersion threshold. The gate suppresses it on byte-identical pairs for the verdict but the firing count in Table~7 counts the module's own activation, which is why A$\rightarrow$A still shows 971 firings without any zone change.
 
@@ -475,7 +475,7 @@ R5 & Domain-adaptive $\kappa_D$ & Recalibrate per domain, on format-controlled n
 3.8 & \texttt{reference\_penalty}: additions vs.\ mutations & By design \\
 3.9 & Corpus coverage and domain generalization & Open \\
 3.10 & $\kappa_R$ grid extension below 0.15 & Closed \\
-3.11 & No content-sensitive module in current set & Measured (\S\ref{sec:cre-contribution}); R3.1 guard now provides one (\S\ref{sec:r31-guard}) \\
+3.11 & No content-sensitive module in current core set & Measured (\S\ref{sec:cre-contribution}); R3.1 guard now provides one (\S\ref{sec:r31-guard}) \\
 3.12 & R3 control withdrawn; N1 replaces it & Documented (\S\ref{sec:n1}) \\
 3.13 & 87.97-point multiplicative-vs-averaging gap is an artifact & Closed (\S\ref{sec:avg-recalibrated}) \\
 3.14 & R3.1 semantic-guard extensibility claim not supported & Superseded --- the differential guard (this revision) does not rely on substrings and is not a constructional artifact (\S\ref{sec:r31-guard}) \\
@@ -500,10 +500,10 @@ Hardware: AMD Ryzen 5 5600X, 16 GB RAM, Python 3.13, single-threaded.
 
 The tribunal core, the N1 control script, the validation script, the
 per-pair results, the guard, and the audit trail used in this paper
-correspond to the v6 revision of the project repository (tag
-\texttt{v6.0.0}). The complete audit trail is provided with this
+correspond to the v7 revision of the project repository (tag
+\texttt{v7.0.0}). The complete audit trail is provided with this
 submission as the supplementary artifact
-\texttt{SAS\_v6\_Supplements.zip}, which contains all files listed
+\texttt{SAS\_v7\_Supplements.zip}, which contains all files listed
 below together with the project changelog.
 
 Reproducibility manifest (SHA-256):
@@ -528,9 +528,9 @@ The tribunal uses no LLM and no trained parameters. Sampling is deterministic un
 
 \section{Conclusions}
 
-The SAS Multimetric Tribunal reports F1 = 98.99\% on a 1{,}800-pair benchmark. This paper shows, using a format-controlled negative on the same IDs, that the figure measures format asymmetry between source and response rather than hallucination detection. A per-module analysis shows the tribunal has no content-sensitive module. A recalibrated comparison shows the 87.97-point advantage of multiplicative combination over weighted averaging was an artifact.
+The SAS Multimetric Tribunal reports F1 = 98.99\% on a 1{,}800-pair benchmark. This paper shows, using a format-controlled negative on the same IDs, that the figure measures format asymmetry between source and response rather than hallucination detection. A per-module analysis shows the tribunal's seven-module core has no content-sensitive module (prior to the optional R3.1 guard). A recalibrated comparison shows the 87.97-point advantage of multiplicative combination over weighted averaging was an artifact.
 
-The R3.1 differential guard, developed in this revision, is the first module in the tribunal's line that separates content from format without relying on substring matching. It corrects 1{,}133 of the 1{,}569 format-driven false positives on correct answers alone (F1 0.687$\to$0.833) and generalizes to a financial domain with 87.0\% detection and zero regressions. Its remaining limitation is the compression-ratio abstention (168 regressions on N1, 31 abstentions on FinQA): long responses where grounding is uninformative are not judged.
+The R3.1 differential guard, developed in this revision, is the first module in the tribunal's line that separates content from format without relying on substring matching. It corrects 1{,}133 of the 1{,}569 format-driven false positives on correct answers alone (F1 0.687$\to$0.833) and generalizes to a financial domain with 87.0\% detection and zero regressions. Its remaining limitations on N1 (168 regressions) break down into 61 compression-ratio abstentions and 107 false equivalences (alongside 31 abstentions on FinQA).
 
 Five v4/v5 claims do not survive this revision. What does survive: $\kappa_D = 0.56$ and $\kappa_R = 0.15$ as thresholds; the extended $\kappa_R$ sweep; the forensic audit of v2 metrics; the corrected subcount (348$\to$453/401); SourceTargetGuard's measured contribution (3 TPs, 0.17\%); the runtime measurement (36 s for 7{,}200 evaluations); and the per-module architecture as a diagnostic instrument -- now with one content-sensitive module to start the R3 line.
 
@@ -542,9 +542,9 @@ The complete set of artifacts supporting this paper --- source code,
 per-pair results, the $\kappa_R$ sweep, both ablation results, the
 per-module analysis data, the project changelog documenting five
 retirements from v4/v5, and the SHA-256 manifest --- is provided with
-this submission as \texttt{SAS\_v6\_Supplements.zip}. Reviewers can
+this submission as \texttt{SAS\_v7\_Supplements.zip}. Reviewers can
 verify every numerical claim against the files in this archive. The
-supplement contains 26 files with a SHA-256 manifest (28 entries
+supplement contains 25 files with a SHA-256 manifest (27 entries
 including the manifest files themselves).
 
 The same artifacts are also available at:
