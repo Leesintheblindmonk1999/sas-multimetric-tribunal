@@ -501,7 +501,7 @@ Hardware: AMD Ryzen 5 5600X, 16 GB RAM, Python 3.13, single-threaded.
 The tribunal core, the N1 control script, the validation script, the
 per-pair results, the guard, and the audit trail used in this paper
 correspond to the v7 revision of the project repository (tag
-\texttt{v7.0.0}). The complete audit trail is provided with this
+\texttt{v7.0.0}, commit \texttt{e45f82b}). The complete audit trail is provided with this
 submission as the supplementary artifact
 \texttt{SAS\_v7\_Supplements.zip}, which contains all files listed
 below together with the project changelog.
@@ -521,7 +521,7 @@ Reproducibility manifest (SHA-256):
     \item \texttt{convert\_medhallu.py}: \texttt{74d9ae9e1aee1da3fc8d0fdd288eb7ad9df7191a74ac1471da3fbe83d65ac538}
     \item \texttt{sweep\_threshold\_guard.py}: \texttt{1cfff172d33110aba8b8e8473701aea82d623b33d673256220e13a79e8097226}
 \end{itemize}
-Full manifest with all 18 files: \S\ref{sec:reproducibility} of this revision and the \texttt{Manifest\_hashes.txt} in the supplement.
+Full manifest with all 25 files: \S\ref{sec:reproducibility} of this revision and the \texttt{Manifest\_hashes.txt} in the supplement.
 
 \subsection{Determinism}
 The tribunal uses no LLM and no trained parameters. Sampling is deterministic under \texttt{sorted(glob)} and a fixed seed. \texttt{cre\_isi} uses LSA embeddings, which are deterministic given fixed vocabulary and corpus.
