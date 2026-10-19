@@ -330,13 +330,13 @@ Scheme & Threshold & TP & FP & F1 & AUROC \\
 \midrule
 Multiplicative (this work) & 0.550 (optimized) & 1{,}762 & 1{,}561 & 0.688 & 0.514 \\
 Multiplicative (this work) & $\kappa_D = 0.56$ (fixed) & 1{,}764 & 1{,}569 & 0.687 & 0.514 \\
-Weighted average           & 0.830 (optimized)          & 1{,}735 & 1{,}461 & 0.694 & 0.632 \\
+Weighted average           & 0.830 (optimized)          & 1{,}735 & 1{,}461 & 0.695 & 0.632 \\
 Weighted average           & $\kappa_D = 0.56$ (fixed)          & 105 & 0          & 0.110 & 0.632 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The 87.97-point gap reported in v4 was an artifact of applying a threshold calibrated for the multiplicative scheme to the weighted average. Under per-scheme thresholds on real negatives, the two schemes converge to equivalent F1 (0.688 vs.\ 0.694, $\Delta$F1 = $-0.006$), and the multiplicative scheme is \emph{worse} by AUROC (0.514 vs.\ 0.632). Both are barely above chance. The multiplicative cascade does not separate hallucinated responses from correct responses better than a simple average.
+The 87.97-point gap reported in v4 was an artifact of applying a threshold calibrated for the multiplicative scheme to the weighted average. Under per-scheme thresholds on real negatives, the two schemes converge to equivalent F1 (0.688 vs.\ 0.695, $\Delta$F1 = $-0.007$), and the multiplicative scheme is \emph{worse} by AUROC (0.514 vs.\ 0.632). Both are barely above chance. The multiplicative cascade does not separate hallucinated responses from correct responses better than a simple average.
 
 For the reviewer's point 1 from the fourth round, we also report the multiplicative scheme with its threshold optimized on the same set (0.550): the F1 moves from 0.687 to 0.688, i.e. the fixed-$\kappa_D$ row was already near the multiplicative optimum. The asymmetry between the two schemes' thresholds (0.550 vs.\ 0.830) is a property of each score's distribution, not of the calibration procedure.
 
